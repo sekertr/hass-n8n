@@ -1,3 +1,3 @@
-This is a test version and is not recommended for use. It uses the latest n8n version (including pre-release).
+This is a test version that follows the latest n8n updates, including pre-releases. Use is not recommended in production environments.
 
-You can use hass-n8n from [this repo](https://github.com/Rbillon59/hass-n8n)
+For a more stable add-on, we recommend using the [Rbillion Repo](https://github.com/Rbillon59/hass-n8n)
