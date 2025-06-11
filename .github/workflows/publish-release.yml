@@ -17,8 +17,8 @@ jobs:
 
       - name: Update CHANGELOG.md and config.json
         env:
-          GITHUB_TOKEN: ${{ secrets.CR_PAT }}
-          GH_TOKEN: ${{ secrets.CR_PAT }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # Extract tag and release notes from the event payload
           TAG=$(jq -r '.release.tag_name' "$GITHUB_EVENT_PATH")
