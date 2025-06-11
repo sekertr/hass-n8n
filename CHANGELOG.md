@@ -1,9 +1,10 @@
 # Release 1.98.0
+1.98.0 (2025-06-11)
 ## repo changelogs:
 ### Bug Fixes
 * fix connection lost error due to wrong origin
 ## n8n changelogs:
-1.98.0 (2025-06-11)
+
 ### Bug Fixes
 * Add a missing word to tooltip
 * AI Agent Node: Allow using LangChain code node as a model for AI Agent
