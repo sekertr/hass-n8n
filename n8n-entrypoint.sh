@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash.
 
 export N8N_SECURE_COOKIE=false
 export N8N_HIRING_BANNER_ENABLED=false
