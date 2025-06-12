@@ -9,6 +9,9 @@
 ---
 
 - **core:** Fix http requests by using correct agent [#16258](https://github.com/n8n-io/n8n/pull/16258)   (4762273)
+## Knowing issues
+
+- Google Drive Credential is corrupted.
 
 # Release 1.98.0
 
