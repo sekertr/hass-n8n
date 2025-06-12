@@ -1,3 +1,16 @@
+# Release 1.98.1
+
+# 1.98.1 (2025-06-12)
+
+---
+
+## Bug Fixes
+
+---
+
+- **core:** Fix http requests by using correct agent [#16258](https://github.com/n8n-io/n8n/pull/16258)   (4762273)
+
+
 # Release 1.98.0.1
 
 # 1.98.0 (2025-06-11)
