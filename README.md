@@ -1,8 +1,12 @@
 > [!WARNING]  
-> This is a test version that follows the latest n8n updates, including pre-releases. Use is not recommended in production environments.
+> This is a test version that closely tracks the latest developments in n8n, including pre-release builds.  
+> As such, it may contain bugs or unstable features.  
+> **It is not recommended for use in production environments.**
 
-> [!TIP]
-> For a more stable add-on, I recommend using the [Rbillion59's Repo](https://github.com/Rbillon59/hass-n8n)
+> [!TIP]  
+> For a more stable and production-ready experience, it is recommended to use  
+> [Rbillion59's add-on repository](https://github.com/Rbillon59/hass-n8n).
+
 
 ---
 
