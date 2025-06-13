@@ -6,7 +6,10 @@
 
 ---
 
-The first three digits `a.b.c` represent the official n8n version, while the optional fourth digit `d` indicates additional modifications or bug fixes made by me. If no such changes were applied, the fourth digit may be omitted.
+The first three digits `a.b.c` represent the official n8n version, while the optional fourth digit `.d` indicates additional modifications or bug fixes made by me. If no such changes were applied, the fourth digit may be omitted.
+
+For example: `1.98.1.1`  
+This indicates that the base version is **n8n 1.98.1**, and the final `.1` refers to a custom update or patch applied on top of that version.
 
 ---
 ## Installation
