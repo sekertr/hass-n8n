@@ -20,10 +20,10 @@ This indicates that the base version is **n8n 1.98.1**, and the final `.1` refer
 
 To install the add-on, please follow the steps below:
 
-> ⚠️ **Important:** Ensure that you have added the following add-on repository to your Home Assistant add-on store:  
+> ⚠️ **Important:** Ensure that you have added the following repository to your Home Assistant add-on store beforehand:  
 > [https://github.com/sekertr/hass-n8n](https://github.com/sekertr/hass-n8n)
 
-1. Open the **Home Assistant** frontend.
-2. Navigate to **Supervisor** → **Add-on Store**.
-3. Locate the **hass-n8n** add-on in the list and click on it.
-4. Click the **INSTALL** button to begin the installation process.
+1. Open the **Home Assistant** web interface.
+2. Go to **Settings** → **Add-ons** → **Add-on Store**.
+3. Search for **n8n** in the list and select it.
+4. Click the **Install** button to begin the installation process.
