@@ -16,9 +16,6 @@ For example: `1.98.1.1`
 This indicates that the base version is **n8n 1.98.1**, and the final `.1` refers to a custom update or patch applied on top of that version.
 
 ---
-## License
-
-This project is licensed under the Apache License 2.0. See the [LICENSE](./LICENSE) file for details.
 
 ## Installation
 
@@ -39,3 +36,8 @@ To install the add-on, please follow the steps below:
       [![Open your Home Assistant instance and show the add add-on repository dialog with a specific repository URL pre-filled.](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fsekertr%2Fhass-n8n)
 5. Search for **n8n** in the add-on list and click to open its details page.
 6. Then, click the **Install** button to initiate the installation process.
+
+---
+## License
+
+This project is licensed under the Apache License 2.0. See the [LICENSE](./LICENSE) file for details.
