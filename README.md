@@ -8,14 +8,11 @@
 > [Rbillion59's add-on repository](https://github.com/Rbillon59/hass-n8n).
 
 
----
-
 The first three digits `a.b.c` represent the official n8n version, while the optional fourth digit `.d` indicates additional modifications or bug fixes made by me. If no such changes were applied, the fourth digit may be omitted.
 
 For example: `1.98.1.1`  
 This indicates that the base version is **n8n 1.98.1**, and the final `.1` refers to a custom update or patch applied on top of that version.
 
----
 
 ## Installation
 
@@ -37,7 +34,7 @@ To install the add-on, please follow the steps below:
 5. Search for **n8n** in the add-on list and click to open its details page.
 6. Then, click the **Install** button to initiate the installation process.
 
----
+
 ## License
 
 This project is licensed under the Apache License 2.0. See the [LICENSE](./LICENSE) file for details.
