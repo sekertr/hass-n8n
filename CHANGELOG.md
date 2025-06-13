@@ -1,17 +1,14 @@
 # Release 1.98.1.1
+## Bug Fixes
 - fixed google drive credentials.
-# Release 1.98.1
 
-## 1.98.1 (2025-06-12)
+# Release 1.98.1
 ## Bug Fixes
 - **core:** Fix http requests by using correct agent [#16258](https://github.com/n8n-io/n8n/pull/16258)   (4762273)
 ## Knowing issues
-
 - Google Drive Credential is corrupted.
 
 # Release 1.98.0
-
-## 1.98.0 (2025-06-11)
 ## Bug Fixes
 - Add a missing word to tooltip [#16198](https://github.com/n8n-io/n8n/pull/16198)   (0cfe6ee)
 - **AI Agent Node:** Allow using LangChain code node as a model for AI Agent [#16096](https://github.com/n8n-io/n8n/pull/16096)   (cb3bb91)
