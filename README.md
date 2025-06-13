@@ -16,6 +16,10 @@ For example: `1.98.1.1`
 This indicates that the base version is **n8n 1.98.1**, and the final `.1` refers to a custom update or patch applied on top of that version.
 
 ---
+## License
+
+This project is licensed under the Apache License 2.0. See the [LICENSE](./LICENSE) file for details.
+
 ## Installation
 
 To install the add-on, please follow the steps below:
