@@ -1,6 +1,6 @@
 # Release 1.99.0.1
 
-some bug fixes
+- fixed version bug. n8n version upgraded to 1.99.0
 
 
 # Release 1.99.0
