@@ -1,3 +1,8 @@
+# Release 1.98.1.2
+
+Fix: Preserve query string parameters in proxy_pass for correct backend routing
+
+
 # Release 1.98.1.1
 ### Bug Fixes
 - fixed google drive credentials.
