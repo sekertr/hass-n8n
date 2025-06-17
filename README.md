@@ -34,6 +34,53 @@ To install the add-on, please follow the steps below:
 5. Search for **n8n** in the add-on list and click to open its details page.
 6. Then, click the **Install** button to initiate the installation process.
 
+# Configuration
+
+The configuration of **n8n** is organized into two primary categories:
+
+- **Options**,
+- **Network**
+
+## Options
+General configuration settings that control how the n8n instance behaves. It includes:
+
+  - **Timezone(required)**  
+    Sets the timezone for the instance, which affects workflow scheduling and timestamp displays.  
+    You can find the full list of supported timezones [here](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List).
+
+  - **Environment Variables `env_vars_list` (required)**  
+    A list of environment variables used to configure various aspects of the n8n instance, such as authentication, logging, database connection, and more.
+    All the available environment variables are available [here](https://docs.n8n.io/hosting/environment-variables/environment-variables/).
+
+  - **Command-line Arguments `cmd_line_args`**  
+    Optional flags or arguments passed to the n8n process at startup, allowing advanced customization and behavior control.
+    
+Example options configuration:
+```yaml
+timezone: Europe/Istanbul
+env_vars_list:
+  - "WEBHOOK_URL: https://webhook.example.com"
+  - "EXTERNAL_URL: https://homeassistant.example.com"
+  - "N8N_AUTH_EXCLUDE_ENDPOINTS: api"
+  - "N8N_GENERIC_AUTH_TRUSTED_PROXIES: true"
+  - "N8N_LOG_LEVEL: debug"
+  - "N8N_DIAGNOSTICS_ENABLED: false"
+  - "N8N_PROTOCOL: http"
+cmd_line_args: ""
+```
+## Network
+This is where you configure network settings, including port definitions. You can change the default ports if you wish.
+
+### Default Ports:
+- `8081 (required for APIs)` : is reserved for handling n8n webhooks and API traffic.
+It is especially useful when running n8n under **Home Assistant Ingress**, as it ensures that public-facing communication—such as external webhook calls—continues to work as expected.
+- `5678 (not required if you use it under HA Ingress` : This is the primary port used for all n8n traffic.  
+By default, it is **not exposed** to the outside, as **Home Assistant Ingress** provides a more secure and integrated access method.
+
+> ⚠️ You may choose to expose port 5678 if you want to bypass the Ingress system, but **this is not recommended for security reasons**.
+
+
+
 
 ## License
 
