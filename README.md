@@ -72,7 +72,7 @@ cmd_line_args: ""
 This is where you configure network settings, including port definitions. You can change the default ports if you wish.
 
 ### Default Ports:
-- `8081 (required for APIs)` : is reserved for handling n8n webhooks and API traffic.
+- `8081 (required for APIs if you are running under HA Ingress)` : is reserved for handling n8n webhooks and API traffic.
 It is especially useful when running n8n under **Home Assistant Ingress**, as it ensures that public-facing communication—such as external webhook calls—continues to work as expected.
 - `5678 (not required if you use it under HA Ingress` : This is the primary port used for all n8n traffic.  
 By default, it is **not exposed** to the outside, as **Home Assistant Ingress** provides a more secure and integrated access method.
