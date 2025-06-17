@@ -1,3 +1,8 @@
+# Release 1.99.0.2
+
+- added /mcp path to work MCP Server nodes
+
+
 # Release 1.99.0.1
 
 - fixed version bug. n8n version upgraded to 1.99.0
