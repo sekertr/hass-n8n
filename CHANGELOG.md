@@ -1,3 +1,13 @@
+# Release 1.98.2
+
+### Bug Fixes
+
+- **core:** Fix pdf extract not working [#16463](https://github.com/n8n-io/n8n/pull/16463)   (56aeec8)
+- **core:** Reset destination node after partial execution of tools [#16376](https://github.com/n8n-io/n8n/pull/16376)   (45161b2)
+- **editor:** Logs not shown when tools are partially executed [#16274](https://github.com/n8n-io/n8n/pull/16274)   (ab6ebe4)
+- **n8n Form Node:** Prevent XSS with video and source tags [#16329](https://github.com/n8n-io/n8n/pull/16329)   (3241793)
+
+
 # Release 1.99.0.2
 
 - added /mcp path to work MCP Server nodes
