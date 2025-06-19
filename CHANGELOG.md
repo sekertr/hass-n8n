@@ -1,3 +1,12 @@
+# Release 1.99.1
+
+### Bug Fixes
+
+- **core:** Fix pdf extract not working [#16463](https://github.com/n8n-io/n8n/pull/16463)   (0d69ea4)
+- **core:** Prevent unauthorised workflow termination [#16405](https://github.com/n8n-io/n8n/pull/16405)   (e5edc60)
+- **n8n Form Node:** Prevent XSS with video and source tags [#16329](https://github.com/n8n-io/n8n/pull/16329)   (7940384)
+
+
 # Release 1.98.2
 
 ### Bug Fixes
