@@ -1,3 +1,10 @@
+# Release 1.100.1
+
+### Bug Fixes
+
+- **editor:** Fix insights loading on FE [#16677](https://github.com/n8n-io/n8n/pull/16677)   (99ce1d2)
+
+
 # Release 1.100.0
 
 ### Bug Fixes
