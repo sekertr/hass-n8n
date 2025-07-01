@@ -1,8 +1,3 @@
-# Release 1.101.0.1
-
-- Update n8n version to 1.101.0 
-
-
 # Release 1.101.0
 
 ### Bug Fixes
