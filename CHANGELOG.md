@@ -1,13 +1,11 @@
 # Release 1.101.1
 
-- Summary
-- Related Linear tickets, Github issues, and Community forum posts
-- Review / Merge checklist
-- PR title and summary are descriptive. (conventions)
-- Docs updated or follow-up ticket created.
-- Tests included.
-- PR Labeled with release/backport (if the PR is an urgent fix that needs to be backported)
+### Bug Fixes
 
+- AI Agent Node: Fix tool-usage with fallback mechanism
+- core: Remove unneeded cookies from webhook requests
+- editor: Only do new versions & what's new check after login 
+- Google Sheets Node: Include all headers
 
 # Release 1.101.0.2
 
