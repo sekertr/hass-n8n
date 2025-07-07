@@ -1,3 +1,64 @@
+# Release 1.102.0
+
+### Bug Fixes
+
+- Add install step for playwright binaries [#16945](https://github.com/n8n-io/n8n/pull/16945)   (05360ce)
+- **AI Agent Node:** Fix tool-usage with fallback mechanism [#16898](https://github.com/n8n-io/n8n/pull/16898)   (58fd1ec)
+- Clean up AI_CREDITS_EXPERIMENT [#16840](https://github.com/n8n-io/n8n/pull/16840)   (d1d5412)
+- Clean up EASY_AI_WORKFLOW_EXPERIMENT [#16839](https://github.com/n8n-io/n8n/pull/16839)   (3e04566)
+- **Code Node:** Only Block os.system vs Blocking import os [#16885](https://github.com/n8n-io/n8n/pull/16885)   (e54613f)
+- **core:** Apply same VM wrapper to both modes in task runner [#16872](https://github.com/n8n-io/n8n/pull/16872)   (af52a0d)
+- **core:** Block access to JS object constructor and js module in Pyodide [#16957](https://github.com/n8n-io/n8n/pull/16957)   (bde9008)
+- **core:** Deduplicate credential types when lazyloading [#16834](https://github.com/n8n-io/n8n/pull/16834)   (625ae3f)
+- **core:** Fix evaluation of N8N_SKIP_AUTH_ON_OAUTH_CALLBACK [#16944](https://github.com/n8n-io/n8n/pull/16944)   (945098d)
+- **core:** Fix partial execution in triggerless parent case [#16833](https://github.com/n8n-io/n8n/pull/16833)   (585295c)
+- **core:** Fix worker view [#17052](https://github.com/n8n-io/n8n/pull/17052)   (f817fb4)
+- **core:** Initialize source control unconditionally [#16929](https://github.com/n8n-io/n8n/pull/16929)   (faea69c)
+- **core:** Prevent mutation of credential type parents [#16841](https://github.com/n8n-io/n8n/pull/16841)   (cb1103e)
+- **core:** Remove unneeded cookies from webhook requests [#16736](https://github.com/n8n-io/n8n/pull/16736)   (830e068)
+- **editor:** AI Agent shows logs from multiple runs in same view [#16825](https://github.com/n8n-io/n8n/pull/16825)   (9133340)
+- **editor:** Clear error states before copy to editor action [#16922](https://github.com/n8n-io/n8n/pull/16922)   (716cb9a)
+- **editor:** Disable all potential eslint rule conflicts with prettier [#16832](https://github.com/n8n-io/n8n/pull/16832)   (9517d11)
+- **editor:** Fix inifnite loading in Resource Locator Dropdown under certain conditions [#16773](https://github.com/n8n-io/n8n/pull/16773)   (8e62c80)
+- **editor:** Fix mapping field icon sizes [#16886](https://github.com/n8n-io/n8n/pull/16886)   (346bc84)
+- **editor:** Fix table pagination state handling and adding more tests [#16986](https://github.com/n8n-io/n8n/pull/16986)   (34aae96)
+- **editor:** Make JSON copy button work in PiP window [#16887](https://github.com/n8n-io/n8n/pull/16887)   (8fda3fb)
+- **editor:** Make sure connectors are clickable when overlapped by node description [#16765](https://github.com/n8n-io/n8n/pull/16765)   (38c2e61)
+- **editor:** Only do new versions & what's new check after login [#16844](https://github.com/n8n-io/n8n/pull/16844)   (bbda2da)
+- **editor:** Refetch module settings on manual license activation [#16943](https://github.com/n8n-io/n8n/pull/16943)   (5b9897c)
+- **editor:** Reset dirty state on workflow activation only if its current workflow [#16997](https://github.com/n8n-io/n8n/pull/16997)   (bb9679c)
+- **editor:** Restore valid drag state when NDV is closed via ESC while dragging  [#16758](https://github.com/n8n-io/n8n/pull/16758)   (7cc5a05)
+- **editor:** Show correct error messages on Ask AI [#16913](https://github.com/n8n-io/n8n/pull/16913)   (3a733b9)
+- **editor:** Show escape characters in json view [#16930](https://github.com/n8n-io/n8n/pull/16930)   (bd8b7b4)
+- **editor:** Show shared with me only on multi user instances [#16770](https://github.com/n8n-io/n8n/pull/16770)   (29bf4a4)
+- **editor:** Support 'Save Workflow' key shortcut in new workflows [#16756](https://github.com/n8n-io/n8n/pull/16756)   (ffe8fbb)
+- **editor:** Sync log selection doesn't work for renamed nodes [#16878](https://github.com/n8n-io/n8n/pull/16878)   (ee463f0)
+- **editor:** Update bolt icon to filled [#16954](https://github.com/n8n-io/n8n/pull/16954)   (bf926ce)
+- Evaluation nodes - add missing test function and credentialTest to methods [#16734](https://github.com/n8n-io/n8n/pull/16734)   (044022f)
+- Fix lintfix command [#17003](https://github.com/n8n-io/n8n/pull/17003)   (5db122b)
+- **Google Sheets Node:** Include all headers [#16928](https://github.com/n8n-io/n8n/pull/16928)   (71771a7)
+- **HTTP Request Node:** Fix paginated requests with HttpBearerAuth [#17005](https://github.com/n8n-io/n8n/pull/17005)   (3b14830)
+- Prevent empty path in webhooks [#16864](https://github.com/n8n-io/n8n/pull/16864)   (bd69907)
+- Stop telemetry events to Posthog [#16788](https://github.com/n8n-io/n8n/pull/16788)   (d76f05b)
+### Features
+
+- **Airtop Node:** Implement windows list API and other improvements  [#16748](https://github.com/n8n-io/n8n/pull/16748)   (621745e)
+- **core:** Allow enforcement of MFA usage on instance [#16556](https://github.com/n8n-io/n8n/pull/16556)   (657e5a3)
+- **editor:** Allow users to update verified nodes from the node settings panel [#16447](https://github.com/n8n-io/n8n/pull/16447)   (6edd47d)
+- **editor:** Collapse button on table view [#16993](https://github.com/n8n-io/n8n/pull/16993)   (d3330b6)
+- **editor:** Log view improvements [#16489](https://github.com/n8n-io/n8n/pull/16489)   (4124b96)
+- **editor:** NDV UI overhaul experiment [#14209](https://github.com/n8n-io/n8n/pull/14209)   (6ef3841)
+- **editor:** Update grid size to 16px for better alignment [#16869](https://github.com/n8n-io/n8n/pull/16869)   (7ebde66)
+- **editor:** Update icons to Lucide icons [#16231](https://github.com/n8n-io/n8n/pull/16231)   (ed2cb3c)
+- LangChain Nodes: Upgrade LangChain and improve proxy handling for LLM nodes [#16778](https://github.com/n8n-io/n8n/pull/16778)   (cfe3699)
+- **Mistral AI Node:** New node [#16631](https://github.com/n8n-io/n8n/pull/16631)   (c11e4bd)
+- **MySQL Node:** Hints for executeQuery and select operations [#16753](https://github.com/n8n-io/n8n/pull/16753)   (f2eb386)
+- Weaviate Vector Store Node for Langchain [#16856](https://github.com/n8n-io/n8n/pull/16856)   (4813c01)
+### Performance Improvements
+
+- **core:** Eliminate unnecessary license server calls [#17047](https://github.com/n8n-io/n8n/pull/17047)   (6efff79)
+
+
 # Release 1.101.1.1
 
 ## What's Changed
