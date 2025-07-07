@@ -1,3 +1,8 @@
+# Release 1.102.0.1
+
+- Update n8n version to 1.102.0
+
+
 # Release 1.102.0
 
 ### Bug Fixes
