@@ -1,3 +1,12 @@
+# Release 1.102.1
+
+### Bug Fixes
+
+- **AI Agent Node:** Prevent fallback input to be added in version <2.1 [#17094](https://github.com/n8n-io/n8n/pull/17094)   (eb7fb8a)
+- **core:** On OAuth access token update only update partial credential [#17135](https://github.com/n8n-io/n8n/pull/17135)   (5a336c5)
+- **editor:** Fix RAG Callout keyboard navigation in nodes search [#17099](https://github.com/n8n-io/n8n/pull/17099)   (80c40ba)
+
+
 # Release 1.102.0.1
 
 - Update n8n version to 1.102.0
