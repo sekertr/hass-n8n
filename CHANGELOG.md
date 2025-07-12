@@ -1,3 +1,10 @@
+# Release 1.102.2
+
+### Bug Fixes
+
+- **Token Splitter Node:** Cache tokenizer JSONs in memory [#17201](https://github.com/n8n-io/n8n/pull/17201)   (55eb224)
+
+
 # Release 1.102.1.1
 
 
