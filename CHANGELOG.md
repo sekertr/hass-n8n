@@ -1,3 +1,15 @@
+# Release 1.103.0
+
+## What's Changed
+* chore: update changelog for release 1.102.2 by @github-actions[bot] in https://github.com/sekertr/hass-n8n/pull/28
+* Bump n8nio/n8n from 1.102.2 to 1.103.0 by @dependabot[bot] in https://github.com/sekertr/hass-n8n/pull/29
+
+## New Contributors
+* @dependabot[bot] made their first contribution in https://github.com/sekertr/hass-n8n/pull/29
+
+**Full Changelog**: https://github.com/sekertr/hass-n8n/compare/1.102.2...1.103.0
+
+
 # Release 1.102.2
 
 ### Bug Fixes
