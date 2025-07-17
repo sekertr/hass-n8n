@@ -1,3 +1,12 @@
+# Release 1.103.1.1
+
+## What's Changed
+* chore: update changelog for release 1.103.1 by @github-actions[bot] in https://github.com/sekertr/hass-n8n/pull/31
+
+
+**Full Changelog**: https://github.com/sekertr/hass-n8n/compare/1.103.1...1.103.1.1
+
+
 # Release 1.103.1
 
 - update n8n version to 1.103.1
