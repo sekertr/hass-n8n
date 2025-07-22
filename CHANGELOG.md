@@ -1,3 +1,8 @@
+# Release 1.103.2
+
+- n8n version 1.103.2
+
+
 # Release 1.104.0
 
 - updated n8n version to 1.104.0
