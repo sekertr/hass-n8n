@@ -1,3 +1,10 @@
+# Release 1.104.1
+
+### updated n8n version to 1.104.1:
+- Fix trimPayloadToSize mutating original objects in AI assistant
+- GitHub Document Loader Node: Fix node loading issue
+
+
 # Release 1.103.2
 
 - n8n version 1.103.2
