@@ -1,3 +1,8 @@
+# Release 1.103.2.1
+
+- Until the bug in version 1.104 is fixed, the n8n version has been downgraded to version 1.103.2.
+
+
 # Release 1.104.1
 
 ### updated n8n version to 1.104.1:
