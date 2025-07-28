@@ -1,3 +1,59 @@
+# Release 1.105.0
+
+### Bug Fixes
+
+- **core:** Add headers to telemetry cross origin request [#17631](https://github.com/n8n-io/n8n/pull/17631)   (251e892)
+- **core:** Decouple removing and closing destination from actually deleting it [#17614](https://github.com/n8n-io/n8n/pull/17614)   (b09f737)
+- **core:** Fetching schema files in Docker [#17623](https://github.com/n8n-io/n8n/pull/17623)   (5a3b0a2)
+- **core:** Fix getLiveExecutionRowsOnPostgres when there are multiple n8n schemas [#17635](https://github.com/n8n-io/n8n/pull/17635)   (9e3bfff)
+- **core:** Ignore pairedItem when checking for incorrect output data from a node [#17340](https://github.com/n8n-io/n8n/pull/17340)   (2708fe8)
+- **core:** Make the module loading for local dev more generic [#17547](https://github.com/n8n-io/n8n/pull/17547)   (01b95a9)
+- **core:** Optimize connection type lookups [#17585](https://github.com/n8n-io/n8n/pull/17585)   (70eab1b)
+- **core:** Remove non-included nodes regardless of the package when using NODES_INCLUDE [#17517](https://github.com/n8n-io/n8n/pull/17517)   (1641d39)
+- Do not throw on tool errors, instead return error message [#17558](https://github.com/n8n-io/n8n/pull/17558)   (f11ec53)
+- **editor:** Add background same as that of the parent [#17625](https://github.com/n8n-io/n8n/pull/17625)   (8660057)
+- **editor:** Case-sensitive credential search in NodeCredentials component [#17564](https://github.com/n8n-io/n8n/pull/17564)   (3ce9a99)
+- **editor:** Do not show new NDV for sticky notes [#17537](https://github.com/n8n-io/n8n/pull/17537)   (4de3759)
+- **editor:** Fix canvas layouting when tab is not active [#17638](https://github.com/n8n-io/n8n/pull/17638)   (2df76e0)
+- **editor:** Fix error when there is no path back to referenced node [#16059](https://github.com/n8n-io/n8n/pull/16059)   (d6ac924)
+- **editor:** Fix layout of binary data preview in the log view [#17584](https://github.com/n8n-io/n8n/pull/17584)   (456c4e8)
+- **editor:** Fix trimPayloadToSize mutating original objects in AI assistant [#17498](https://github.com/n8n-io/n8n/pull/17498)   (1010043)
+- **editor:** Hide What's New notification in executions demo view [#17742](https://github.com/n8n-io/n8n/pull/17742)   (cebb1f6)
+- **editor:** Improve filter change handling with debounced updates for date fields [#17618](https://github.com/n8n-io/n8n/pull/17618)   (ae08917)
+- **editor:** Make inline text edit component reactive to prop changes [#17557](https://github.com/n8n-io/n8n/pull/17557)   (9c793a4)
+- **editor:** Make sure HTML editor field is not editable when workflow is in read only mode [#17561](https://github.com/n8n-io/n8n/pull/17561)   (18c02df)
+- **editor:** Persist SSO protocol setting properly in the UI [#17572](https://github.com/n8n-io/n8n/pull/17572)   (4b2be26)
+- **editor:** Prevent default action on Enter key in commit and push dialog [#17578](https://github.com/n8n-io/n8n/pull/17578)   (e317c92)
+- **editor:** Prevent unnecessary updates on model value change in InlineTextEdit component [#17553](https://github.com/n8n-io/n8n/pull/17553)   (832b7fd)
+- **editor:** Remove inline script and style from index.html [#17531](https://github.com/n8n-io/n8n/pull/17531)   (0db24ce)
+- **editor:** Render HTML in the log view [#17586](https://github.com/n8n-io/n8n/pull/17586)   (46635c5)
+- **editor:** Tweak configurable node width [#17512](https://github.com/n8n-io/n8n/pull/17512)   (3825f8a)
+- **GitHub Document Loader Node:** Fix node loading issue [#17494](https://github.com/n8n-io/n8n/pull/17494)   (8fb3d8d)
+- **Google Gemini Node:** Error when used as tool with "Message a model" operation [#17491](https://github.com/n8n-io/n8n/pull/17491)   (f30cc7b)
+- **Google Sheets Node:** Get Rows operation returns an empty string when the cell has a value of 0 [#17642](https://github.com/n8n-io/n8n/pull/17642)   (9808783)
+- **MySQL Node:** Do not replace $ values with null [#17327](https://github.com/n8n-io/n8n/pull/17327)   (4b626e5)
+- **OpenAI Node:** Fix memory connector for assistant message [#17501](https://github.com/n8n-io/n8n/pull/17501)   (e51b056)
+- Prevent error when importing nodes with malformed collection params [#17580](https://github.com/n8n-io/n8n/pull/17580)   (4713827)
+- **RabbitMQ Trigger Node:** Respect the "Delete From Queue When" option with manual executions [#17554](https://github.com/n8n-io/n8n/pull/17554)   (2bd0aa3)
+- **Telegram Node:** Determine the MIME type when downloading the file [#17725](https://github.com/n8n-io/n8n/pull/17725)   (a9c29e3)
+- Update packages for security fixes [#17733](https://github.com/n8n-io/n8n/pull/17733)   (edeb8ef)
+- Update settings icons on canvas style [#17636](https://github.com/n8n-io/n8n/pull/17636)   (0338ebb)
+- **Webhook Node:** Don't wrap response in an iframe if it doesn't have HTML [#17671](https://github.com/n8n-io/n8n/pull/17671)   (69beafb)
+### Features
+
+- **core:** Increase Cron observability [#17626](https://github.com/n8n-io/n8n/pull/17626)   (08c38a7)
+- **editor:** Add dragging and hiding for evaluation table columns [#17587](https://github.com/n8n-io/n8n/pull/17587)   (921cdb6)
+- **editor:** Add follow up question nps [#17459](https://github.com/n8n-io/n8n/pull/17459)   (e18ffe8)
+- **editor:** Add settings icons to the node on canvas [#15467](https://github.com/n8n-io/n8n/pull/15467)   (a2f21a7)
+- **editor:** New users see whatsnew notification only if new [#17409](https://github.com/n8n-io/n8n/pull/17409)   (a1d2a55)
+- **editor:** Release the Focus Panel [#17734](https://github.com/n8n-io/n8n/pull/17734)   (a415dbf)
+- **editor:** Use remote filtering for error workflow search in settings [#17624](https://github.com/n8n-io/n8n/pull/17624)   (e1ef35a)
+- Proxy all RudderStack frontend telemetry events through the backend [#17177](https://github.com/n8n-io/n8n/pull/17177)   (5524b21)
+- Respond to chat and wait for response [#12546](https://github.com/n8n-io/n8n/pull/12546)   (a98ed2c)
+- **RSS Read Node:** Add support for custom response fields [#16875](https://github.com/n8n-io/n8n/pull/16875)   (d520059)
+- Track inputs and outputs in Evaluations [#17404](https://github.com/n8n-io/n8n/pull/17404)   (c18fabb)
+
+
 # Release 1.103.2.1
 
 - Until the bug in version 1.104 is fixed, the n8n version has been downgraded to version 1.103.2.
