@@ -1,3 +1,10 @@
+# Release 1.105.1
+
+## Bug Fixes
+- **core**: Replace misleading "No path back to node" error with helpful execution message
+- **editor**: Account for subpath when serving `config.js`
+
+
 # Release 1.105.0
 
 ### Bug Fixes
