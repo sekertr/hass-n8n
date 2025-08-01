@@ -1,3 +1,9 @@
+# Release 1.105.2
+
+## Bug fixes
+- **editor:** Fix invisible node creator icons 
+
+
 # Release 1.105.1
 
 ## Bug Fixes
