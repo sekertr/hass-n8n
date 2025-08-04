@@ -1,3 +1,51 @@
+# Release 1.106.0
+
+### Bug Fixes
+
+- **core:** Assign execute method to declarative nodes even if they have methods property [#17796](https://github.com/n8n-io/n8n/pull/17796)   (3f1016f)
+- **core:** Check that src folder exists an fallback to dist when loading modules [#17754](https://github.com/n8n-io/n8n/pull/17754)   (6c0be29)
+- **core:** Handle symlinks in blocked paths [#17735](https://github.com/n8n-io/n8n/pull/17735)   (c2c3e08)
+- **core:** Replace misleading "No path back to node" error with helpful execution message [#17759](https://github.com/n8n-io/n8n/pull/17759)   (164800f)
+- **editor:** Account for subpath when serving config.js [#17832](https://github.com/n8n-io/n8n/pull/17832)   (b745cad)
+- **editor:** Change the checkbox logic for log streaming event selection [#17653](https://github.com/n8n-io/n8n/pull/17653)   (43f2675)
+- **editor:** Fix canvas moving check [#17856](https://github.com/n8n-io/n8n/pull/17856)   (ddc4c0b)
+- **editor:** Fix invisible node creator icons [#17870](https://github.com/n8n-io/n8n/pull/17870)   (a83b76c)
+- **editor:** Store last entered cURL command for each HTTP node [#17834](https://github.com/n8n-io/n8n/pull/17834)   (e8e7b23)
+- Fix issue with icon themes not loading for preview nodes [#17869](https://github.com/n8n-io/n8n/pull/17869)   (6d1f2cb)
+- Fix issue with some community nodes not displaying correctly [#17866](https://github.com/n8n-io/n8n/pull/17866)   (f150343)
+- **Gmail Trigger Node:** Filter sent emails from trigger results [#17691](https://github.com/n8n-io/n8n/pull/17691)   (4bab296)
+- **Google Gemini Node:** Don't pass hardcoded value for durationSeconds when generating a video [#17793](https://github.com/n8n-io/n8n/pull/17793)   (460e3b1)
+- **Google Sheets Node:** Make it possible to set cell values empty on updates [#17224](https://github.com/n8n-io/n8n/pull/17224)   (d924d82)
+- Hide settings hint from log view [#17813](https://github.com/n8n-io/n8n/pull/17813)   (a46fa60)
+- **Microsoft Teams Trigger Node:** Forbidden when trying to listen for channel messages [#17777](https://github.com/n8n-io/n8n/pull/17777)   (bc97584)
+- **Stop and Error Node:** Show error message when error type is an object [#17898](https://github.com/n8n-io/n8n/pull/17898)   (aced4bf)
+- **Structured Output Parser Node:** Handle passed objects that do not match schema [#17774](https://github.com/n8n-io/n8n/pull/17774)   (1fb78cb)
+### Features
+
+- Abort AI builder requests on chat stop [#17854](https://github.com/n8n-io/n8n/pull/17854)   (ce98f7c)
+- Add @n8n/node-cli package with an empty create command [#17620](https://github.com/n8n-io/n8n/pull/17620)   (79c6b60)
+- **AWS Bedrock Chat Model Node:** Add inference profile support [#17807](https://github.com/n8n-io/n8n/pull/17807)   (80513ae)
+- **Beeminder Node:** Update Beeminder node to include all resources and operations [#17713](https://github.com/n8n-io/n8n/pull/17713)   (b491ed9)
+- **ClickUp Node:** Add subtasks and markdown support to the get task operation [#16811](https://github.com/n8n-io/n8n/pull/16811)   (a5184e4)
+- **core:** Use hostname in host ID for Docker [#16544](https://github.com/n8n-io/n8n/pull/16544)   (308a6f6)
+- **editor:** Add front-end for Data Store feature [#17590](https://github.com/n8n-io/n8n/pull/17590)   (b89c254)
+- Env to disable webhook response iframe sandboxing [#17851](https://github.com/n8n-io/n8n/pull/17851)   (1ed8239)
+- **FTP Node:** Add support for concurrent reads when using SFTP [#17896](https://github.com/n8n-io/n8n/pull/17896)   (e437dac)
+- **Google BigQuery Node:** Add parameterized query support [#14302](https://github.com/n8n-io/n8n/pull/14302)   (096e535)
+- **MongoDB Node:** Add search index CRUD API to MongoDB CRUD Node  [#16490](https://github.com/n8n-io/n8n/pull/16490)   (1554e76)
+- **n8n Form Trigger Node:** Add CSS variable to customize input background [#15460](https://github.com/n8n-io/n8n/pull/15460)   (22f505d)
+- **Slack Trigger Node:** Add support for signature verification [#17838](https://github.com/n8n-io/n8n/pull/17838)   (1330581)
+- Table in confirm modal to see all workflows using nodes before updating / uninstalling [#17488](https://github.com/n8n-io/n8n/pull/17488)   (76230d2)
+- **Vercel AI Gateway Node:** Add Vercel AI Gateway model Node [#17524](https://github.com/n8n-io/n8n/pull/17524)   (e97cd8a)
+- **Webhook Node:** Add notices about using the 'Content-Type' header [#17739](https://github.com/n8n-io/n8n/pull/17739)   (1c5a27d)
+- **Wordpress Node:** Add date fields [#17755](https://github.com/n8n-io/n8n/pull/17755)   (724b5a5)
+### Performance Improvements
+
+- **core:** Detect event loop blocking [#17805](https://github.com/n8n-io/n8n/pull/17805)   (b8b8507)
+- **core:** Introduce decorator to report slow method calls [#17729](https://github.com/n8n-io/n8n/pull/17729)   (056302e)
+- **core:** Stop typechecking during build [#17833](https://github.com/n8n-io/n8n/pull/17833)   (08a7b36)
+
+
 # Release 1.105.2
 
 ## Bug fixes
