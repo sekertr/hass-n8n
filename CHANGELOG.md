@@ -1,3 +1,13 @@
+# Release 1.106.2
+
+- <h2><a href="https://github.com/n8n-io/n8n/compare/n8n@1.106.1...n8n@1.106.2">1.106.2</a> (2025-08-08)</h2>
+- <h3>Bug Fixes</h3>
+- <ul>
+- <li><strong>Beeminder Node:</strong> Remove unnecessary form data conversion for API token auth to work (<a href="https://github.com/n8n-io/n8n/issues/18133" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/18133/hovercard">#18133</a>) (<a href="https://github.com/n8n-io/n8n/commit/e593468b61659edd90409b6437012d9fbe45ecb2">e593468</a>)</li>
+- <li><strong>core:</strong> Fix metric default value handling and add AI model connection validation for setMetric operation in Evaluation (<a href="https://github.com/n8n-io/n8n/issues/18088" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/18088/hovercard">#18088</a>) (<a href="https://github.com/n8n-io/n8n/commit/8eefda9388c00ecea7863433d246427dec3c2a41">8eefda9</a>)</li>
+- </ul>
+
+
 # Release 1.106.1
 
 - <h2><a href="https://github.com/n8n-io/n8n/compare/n8n@1.106.0...n8n@1.106.1">1.106.1</a> (2025-08-07)</h2>
