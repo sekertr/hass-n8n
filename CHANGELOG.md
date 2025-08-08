@@ -1,3 +1,15 @@
+# Release 1.106.1
+
+- <h2><a href="https://github.com/n8n-io/n8n/compare/n8n@1.106.0...n8n@1.106.1">1.106.1</a> (2025-08-07)</h2>
+- <h3>Bug Fixes</h3>
+- <ul>
+- <li><strong>core:</strong> Handle non-existing files when checking if it is a symlink (<a href="https://github.com/n8n-io/n8n/issues/18010" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/18010/hovercard">#18010</a>) (<a href="https://github.com/n8n-io/n8n/commit/c7f03437cca017077dbe53f84ad26604191009ea">c7f0343</a>)</li>
+- <li><strong>core:</strong> Prevent re-entry during workflow activation (<a href="https://github.com/n8n-io/n8n/issues/17965" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/17965/hovercard">#17965</a>) (<a href="https://github.com/n8n-io/n8n/commit/24535185a7a4886e31cab1db375b343c195a1144">2453518</a>)</li>
+- <li><strong>core:</strong> Protect against duplicate cron registration (<a href="https://github.com/n8n-io/n8n/issues/18005" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/18005/hovercard">#18005</a>) (<a href="https://github.com/n8n-io/n8n/commit/6f3fcc0d7b43c2846ace6b6dfca58f16dffa584f">6f3fcc0</a>)</li>
+- <li><strong>editor:</strong> Connection port mapped incorrectly when changed dynamically (<a href="https://github.com/n8n-io/n8n/issues/17958" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/17958/hovercard">#17958</a>) (<a href="https://github.com/n8n-io/n8n/commit/c425630454c8cdb85dfdc6b1a917844231607ddc">c425630</a>)</li>
+- </ul>
+
+
 # Release 1.106.0
 
 ### Bug Fixes
