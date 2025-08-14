@@ -1,3 +1,15 @@
+# Release 1.107.1
+
+- <h2><a href="https://github.com/n8n-io/n8n/compare/n8n@1.107.0...n8n@1.107.1">1.107.1</a> (2025-08-14)</h2>
+- <h3>Bug Fixes</h3>
+- <ul>
+- <li><strong>core:</strong> Support MCP server when offloading is enabled (<a href="https://github.com/n8n-io/n8n/issues/18214" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/18214/hovercard">#18214</a>) (<a href="https://github.com/n8n-io/n8n/commit/308fd46171cf0e54c594b5e6546a0eead861315e">308fd46</a>)</li>
+- <li><strong>Local File Trigger Node:</strong> Add chokidar dependency back (<a href="https://github.com/n8n-io/n8n/issues/18260" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/18260/hovercard">#18260</a>) (<a href="https://github.com/n8n-io/n8n/commit/46ed96977c98bded04c0a4d1b3e236bf751d66a3">46ed969</a>)</li>
+- <li>pnpm-lock (<a href="https://github.com/n8n-io/n8n/commit/f58cc64c42239ceae3c6f15456dc23a329f7f8a6">f58cc64</a>)</li>
+- <li>Update dependencies to close cves (<a href="https://github.com/n8n-io/n8n/issues/18215" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/18215/hovercard">#18215</a>) (<a href="https://github.com/n8n-io/n8n/commit/0ae9998a385dd03d68331ded09200f2469f842e9">0ae9998</a>)</li>
+- </ul>
+
+
 # Release 1.107.0
 
 - <h1><a href="https://github.com/n8n-io/n8n/compare/n8n@1.106.0...n8n@1.107.0">1.107.0</a> (2025-08-11)</h1>
