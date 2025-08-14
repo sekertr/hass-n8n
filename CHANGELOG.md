@@ -1,98 +1,96 @@
-# Release 1.107.1
+## Release 1.107.1
 
-- <h2><a href="https://github.com/n8n-io/n8n/compare/n8n@1.107.0...n8n@1.107.1">1.107.1</a> (2025-08-14)</h2>
-- <h3>Bug Fixes</h3>
-- <ul>
-- <li><strong>core:</strong> Support MCP server when offloading is enabled (<a href="https://github.com/n8n-io/n8n/issues/18214" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/18214/hovercard">#18214</a>) (<a href="https://github.com/n8n-io/n8n/commit/308fd46171cf0e54c594b5e6546a0eead861315e">308fd46</a>)</li>
-- <li><strong>Local File Trigger Node:</strong> Add chokidar dependency back (<a href="https://github.com/n8n-io/n8n/issues/18260" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/18260/hovercard">#18260</a>) (<a href="https://github.com/n8n-io/n8n/commit/46ed96977c98bded04c0a4d1b3e236bf751d66a3">46ed969</a>)</li>
-- <li>pnpm-lock (<a href="https://github.com/n8n-io/n8n/commit/f58cc64c42239ceae3c6f15456dc23a329f7f8a6">f58cc64</a>)</li>
-- <li>Update dependencies to close cves (<a href="https://github.com/n8n-io/n8n/issues/18215" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/18215/hovercard">#18215</a>) (<a href="https://github.com/n8n-io/n8n/commit/0ae9998a385dd03d68331ded09200f2469f842e9">0ae9998</a>)</li>
-- </ul>
+### Bug Fixes
+
+* **Core:** Support MCP server support when offloading is enabled ([#11779](https://github.com/n8n-io/n8n/issues/11779)) ([f0c3809](https://github.com/n8n-io/n8n/commit/f0c3809df6a0505028a786a7993eb2efdd4c8884))
+* **Local File Trigger Node:** re-add chokidar dependency ([#11769](https://github.com/n8n-io/n8n/issues/11769)) ([76e45f0](https://github.com/n8n-io/n8n/commit/76e45f0e1dc9265f7b5088f3a922a87c35f58a44))
+
+### Dependencies
+
+* **core, workflow:** update pnpm-lock and fix security vulnerabilities ([#11780](https://github.com/n8n-io/n8n/issues/11780)) ([e1b35e3](https://github.com/n8n-io/n8n/commit/e1b35e35a6be5f494de57d9c2d6373b77ac0c8f6))
+
+## Release 1.107.0
+
+### Bug Fixes
+
+* **API:** Add shared field to workflows list rest API handler ([#17804](https://github.com/n8n-io/n8n/issues/17804)) ([31af6d1](https://github.com/n8n-io/n8n/commit/31af6d11bb9c3f99449ef0deae4d4401e0efda8d))
+* **Beeminder Node:** Remove unnecessary form data conversion for API token auth to work ([#18133](https://github.com/n8n-io/n8n/issues/18133)) ([716577e](https://github.com/n8n-io/n8n/commit/716577e2820deb35b7057eb9414c9fbe9b6b4fde))
+* **Chat Trigger Node:** Prevent XSS vulnerabilities and improve parameter validation ([#18148](https://github.com/n8n-io/n8n/issues/18148)) ([d4ef191](https://github.com/n8n-io/n8n/commit/d4ef191be0b39b65efa68559a3b8d5dad2e102b2))
+* **core:** Consider pinned data as valid paths for single node execution ([#17959](https://github.com/n8n-io/n8n/issues/17959)) ([32f4794](https://github.com/n8n-io/n8n/commit/32f47948d6cb6ba33cd253aa855a7bcf79f28713))
+* **core:** Fix `null` handling in Python sandbox ([#18189](https://github.com/n8n-io/n8n/issues/18189)) ([b5f47ec](https://github.com/n8n-io/n8n/commit/b5f47ec110dc70cb1761e60d6bfae860ddedf2bf))
+* **core:** Fix disallowed module error in task runner ([#18190](https://github.com/n8n-io/n8n/issues/18190)) ([09caa05](https://github.com/n8n-io/n8n/commit/09caa0572623ff4aead2aeb708978528d9c110ed))
+* **core:** Fix metric default value handling and add AI model connection validation for setMetric operation in Evaluation ([#18088](https://github.com/n8n-io/n8n/issues/18088)) ([03c75c3](https://github.com/n8n-io/n8n/commit/03c75c365bb7d384924ccaf1114fc267c7569327))
+* **core:** Handle non-existing files when checking if it is a symlink ([#18010](https://github.com/n8n-io/n8n/issues/18010)) ([49f3115](https://github.com/n8n-io/n8n/commit/49f3115429fd465f5292ef06785c00a210ad029e))
+* **core:** Handle null workflow settings in toSaveSettings ([#17972](https://github.com/n8n-io/n8n/issues/17972)) ([642e68e](https://github.com/n8n-io/n8n/commit/642e68e345c023d6232b02cb83fb84e0342faca0))
+* **core:** Handle Redis cache prefix on cluster mode ([#17957](https://github.com/n8n-io/n8n/issues/17957)) ([f4a0413](https://github.com/n8n-io/n8n/commit/f4a04132d9550af55c364fa9d7df9c57b838dcb7))
+* **core:** Mark invalid enqueued executions as crashed during startup for legacy SQLite driver ([#17629](https://github.com/n8n-io/n8n/issues/17629)) ([318a91a](https://github.com/n8n-io/n8n/commit/318a91a3e9cd31d2790ae9a90b0267e4549e5737))
+* **core:** Prevent re-entry during workflow activation ([#17965](https://github.com/n8n-io/n8n/issues/17965)) ([e8dad4e](https://github.com/n8n-io/n8n/commit/e8dad4e030dc91207d72385c202241260e33fe7e))
+* **core:** Protect against duplicate cron registration ([#18005](https://github.com/n8n-io/n8n/issues/18005)) ([948ebe6](https://github.com/n8n-io/n8n/commit/948ebe67023542353d325141ec1d88612413041f))
+* **core:** Remove temporary uploaded files from webhook calls ([#18128](https://github.com/n8n-io/n8n/issues/18128)) ([c610c3a](https://github.com/n8n-io/n8n/commit/c610c3af3eafd05e2b9e78c4e66dba588c4852a1))
+* **editor:** Add a hint for showing archived workflows when there are no active ones ([#18120](https://github.com/n8n-io/n8n/issues/18120)) ([7e4c5af](https://github.com/n8n-io/n8n/commit/7e4c5af38397031e3850e277562dbe61020c91aa))
+* **editor:** Connection port mapped incorrectly when changed dynamically ([#17958](https://github.com/n8n-io/n8n/issues/17958)) ([566789c](https://github.com/n8n-io/n8n/commit/566789caee49d157b7154adbe60dadb0ea858e06))
+* **editor:** Correct ai template url ([#17908](https://github.com/n8n-io/n8n/issues/17908)) ([bdc3a91](https://github.com/n8n-io/n8n/commit/bdc3a9172df09a2b218fd447cd9c3eab6bcfcec6))
+* **editor:** Enhance changes dropdown in WorkflowDiffModal ([#18033](https://github.com/n8n-io/n8n/issues/18033)) ([bc76643](https://github.com/n8n-io/n8n/commit/bc7664397607972dae72d97b2cacf592d3c93f83))
+* **editor:** Enhance SourceControlPullModal with improved item structure and styling ([#18049](https://github.com/n8n-io/n8n/issues/18049)) ([d6bc4ab](https://github.com/n8n-io/n8n/commit/d6bc4abee21c39efcd13f3f1f9e5c98b1094a48d))
+* **editor:** Fix an issue with overlapping elements in the Assignment component ([#18041](https://github.com/n8n-io/n8n/issues/18041)) ([c7108f4](https://github.com/n8n-io/n8n/commit/c7108f4a0631e3ec8a971da81e2fc8ed7727cfe8))
+* **editor:** Fix loading of error workflows in settings ([#18126](https://github.com/n8n-io/n8n/issues/18126)) ([3d846f6](https://github.com/n8n-io/n8n/commit/3d846f62d916c1476940f73241b29beff1b97f47))
+* **editor:** Focus editable text input when clicking anywhere on the element ([#17780](https://github.com/n8n-io/n8n/issues/17780)) ([7b92e33](https://github.com/n8n-io/n8n/commit/7b92e33b3b2530775004ce36ea9dacac1175e533))
+* **editor:** Hide Evaluations setup wizard if protected instance ([#18055](https://github.com/n8n-io/n8n/issues/18055)) ([99c2f37](https://github.com/n8n-io/n8n/commit/99c2f3715eb9eef1677c55d2ece4418aa3be435f))
+* **editor:** Improve workflow diff components ([#18018](https://github.com/n8n-io/n8n/issues/18018)) ([95ed3c5](https://github.com/n8n-io/n8n/commit/95ed3c5c929e7f9632edb92f67370901f162a3d9))
+* **editor:** Improve WorkflowDiffModal UI ([#17862](https://github.com/n8n-io/n8n/issues/17862)) ([eca95f3](https://github.com/n8n-io/n8n/commit/eca95f3432148e710d87e233ca9b4d5feafddb5c))
+* **editor:** Migrate from [@import](https://github.com/import) to [@use](https://github.com/use) for SCSS files to address deprecation warnings ([#17858](https://github.com/n8n-io/n8n/issues/17858)) ([b7887bf](https://github.com/n8n-io/n8n/commit/b7887bf899f7e11afade26a911f0b02eb9eff8e5))
+* **editor:** Update node status icons precedence (executing -> highest) ([#18003](https://github.com/n8n-io/n8n/issues/18003)) ([dd04924](https://github.com/n8n-io/n8n/commit/dd049249be17d556c40105a22ac4e68bd7f526e1))
+* **editor:** Using a for-of loop on Map entries (forEach supported from node v22) ([#18064](https://github.com/n8n-io/n8n/issues/18064)) ([743c120](https://github.com/n8n-io/n8n/commit/743c1208809d9bcfd038764807e4b7df8012a36f))
+* Empty onclick breaks range parser in HTML editor ([#18032](https://github.com/n8n-io/n8n/issues/18032)) ([b6c7810](https://github.com/n8n-io/n8n/commit/b6c781084463faf8d139dbaed649cff75a4170a3))
+* Extend deduplication check to all webhook-based triggers and chat trigger ([#18044](https://github.com/n8n-io/n8n/issues/18044)) ([847a5d8](https://github.com/n8n-io/n8n/commit/847a5d822f77a3362f382c17070d49ccc6e3d999))
+* Fix hot reloading of custom nodes ([#18094](https://github.com/n8n-io/n8n/issues/18094)) ([a5fa808](https://github.com/n8n-io/n8n/commit/a5fa808d4a872b1fbaedf5be62223a4760e544a8))
+* **GraphQL Node:** Refresh OAuth2 token when it expires ([#17891](https://github.com/n8n-io/n8n/issues/17891)) ([381c146](https://github.com/n8n-io/n8n/commit/381c146dd46afe93105bdd859012fc0c19e3d156))
+* **HubSpot Node:** Add missing fields for Contact - Upsert ([#18035](https://github.com/n8n-io/n8n/issues/18035)) ([678f468](https://github.com/n8n-io/n8n/commit/678f468f6881691d5c7bdc49d6206b429b442f2f))
+* **Hugging Face Inference Model Node, Embeddings Hugging Face Inference Node:** Fix credential validation for HF nodes and add provider for  ([#18047](https://github.com/n8n-io/n8n/issues/18047)) ([a1682e8](https://github.com/n8n-io/n8n/commit/a1682e8fe436c52a2a95cceb6cde6316ae586764))
+* **Jira Software Node:** Get All Issues operation with Return All hangs ([#17825](https://github.com/n8n-io/n8n/issues/17825)) ([2792b6c](https://github.com/n8n-io/n8n/commit/2792b6cb0a2c3a2dcab207a91ca1dd6403d10efe))
+* **Mandrill Node:** Fix a typo in subaccount in options ([#18103](https://github.com/n8n-io/n8n/issues/18103)) ([833bcdd](https://github.com/n8n-io/n8n/commit/833bcdde00fb9a03536b6af0469af0e2c5951f5c))
+* Properly serialize metadata objects in Chat UI  ([#17963](https://github.com/n8n-io/n8n/issues/17963)) ([c4c46b8](https://github.com/n8n-io/n8n/commit/c4c46b8ff93abab45426682f8b371997fb42d52d))
+* **Reranker Cohere Node:** Add 'Top N' parameter to control document return count ([#17921](https://github.com/n8n-io/n8n/issues/17921)) ([523a55d](https://github.com/n8n-io/n8n/commit/523a55d5ee9421cab285dbea88fd5ecfea121ed4))
 
 
-# Release 1.107.0
+### Features
 
-- <h1><a href="https://github.com/n8n-io/n8n/compare/n8n@1.106.0...n8n@1.107.0">1.107.0</a> (2025-08-11)</h1>
-- <h3>Bug Fixes</h3>
-- <ul>
-- <li><strong>API:</strong> Add shared field to workflows list rest API handler (<a href="https://github.com/n8n-io/n8n/issues/17804" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/17804/hovercard">#17804</a>) (<a href="https://github.com/n8n-io/n8n/commit/31af6d11bb9c3f99449ef0deae4d4401e0efda8d">31af6d1</a>)</li>
-- <li><strong>Beeminder Node:</strong> Remove unnecessary form data conversion for API token auth to work (<a href="https://github.com/n8n-io/n8n/issues/18133" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/18133/hovercard">#18133</a>) (<a href="https://github.com/n8n-io/n8n/commit/716577e2820deb35b7057eb9414c9fbe9b6b4fde">716577e</a>)</li>
-- <li><strong>Chat Trigger Node:</strong> Prevent XSS vulnerabilities and improve parameter validation (<a href="https://github.com/n8n-io/n8n/issues/18148" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/18148/hovercard">#18148</a>) (<a href="https://github.com/n8n-io/n8n/commit/d4ef191be0b39b65efa68559a3b8d5dad2e102b2">d4ef191</a>)</li>
-- <li><strong>core:</strong> Consider pinned data as valid paths for single node execution (<a href="https://github.com/n8n-io/n8n/issues/17959" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/17959/hovercard">#17959</a>) (<a href="https://github.com/n8n-io/n8n/commit/32f47948d6cb6ba33cd253aa855a7bcf79f28713">32f4794</a>)</li>
-- <li><strong>core:</strong> Fix <code>null</code> handling in Python sandbox (<a href="https://github.com/n8n-io/n8n/issues/18189" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/18189/hovercard">#18189</a>) (<a href="https://github.com/n8n-io/n8n/commit/b5f47ec110dc70cb1761e60d6bfae860ddedf2bf">b5f47ec</a>)</li>
-- <li><strong>core:</strong> Fix disallowed module error in task runner (<a href="https://github.com/n8n-io/n8n/issues/18190" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/18190/hovercard">#18190</a>) (<a href="https://github.com/n8n-io/n8n/commit/09caa0572623ff4aead2aeb708978528d9c110ed">09caa05</a>)</li>
-- <li><strong>core:</strong> Fix metric default value handling and add AI model connection validation for setMetric operation in Evaluation (<a href="https://github.com/n8n-io/n8n/issues/18088" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/18088/hovercard">#18088</a>) (<a href="https://github.com/n8n-io/n8n/commit/03c75c365bb7d384924ccaf1114fc267c7569327">03c75c3</a>)</li>
-- <li><strong>core:</strong> Handle non-existing files when checking if it is a symlink (<a href="https://github.com/n8n-io/n8n/issues/18010" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/18010/hovercard">#18010</a>) (<a href="https://github.com/n8n-io/n8n/commit/49f3115429fd465f5292ef06785c00a210ad029e">49f3115</a>)</li>
-- <li><strong>core:</strong> Handle null workflow settings in toSaveSettings (<a href="https://github.com/n8n-io/n8n/issues/17972" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/17972/hovercard">#17972</a>) (<a href="https://github.com/n8n-io/n8n/commit/642e68e345c023d6232b02cb83fb84e0342faca0">642e68e</a>)</li>
-- <li><strong>core:</strong> Handle Redis cache prefix on cluster mode (<a href="https://github.com/n8n-io/n8n/issues/17957" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/17957/hovercard">#17957</a>) (<a href="https://github.com/n8n-io/n8n/commit/f4a04132d9550af55c364fa9d7df9c57b838dcb7">f4a0413</a>)</li>
-- <li><strong>core:</strong> Mark invalid enqueued executions as crashed during startup for legacy SQLite driver (<a href="https://github.com/n8n-io/n8n/issues/17629" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/17629/hovercard">#17629</a>) (<a href="https://github.com/n8n-io/n8n/commit/318a91a3e9cd31d2790ae9a90b0267e4549e5737">318a91a</a>)</li>
-- <li><strong>core:</strong> Prevent re-entry during workflow activation (<a href="https://github.com/n8n-io/n8n/issues/17965" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/17965/hovercard">#17965</a>) (<a href="https://github.com/n8n-io/n8n/commit/e8dad4e030dc91207d72385c202241260e33fe7e">e8dad4e</a>)</li>
-- <li><strong>core:</strong> Protect against duplicate cron registration (<a href="https://github.com/n8n-io/n8n/issues/18005" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/18005/hovercard">#18005</a>) (<a href="https://github.com/n8n-io/n8n/commit/948ebe67023542353d325141ec1d88612413041f">948ebe6</a>)</li>
-- <li><strong>core:</strong> Remove temporary uploaded files from webhook calls (<a href="https://github.com/n8n-io/n8n/issues/18128" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/18128/hovercard">#18128</a>) (<a href="https://github.com/n8n-io/n8n/commit/c610c3af3eafd05e2b9e78c4e66dba588c4852a1">c610c3a</a>)</li>
-- <li><strong>editor:</strong> Add a hint for showing archived workflows when there are no active ones (<a href="https://github.com/n8n-io/n8n/issues/18120" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/18120/hovercard">#18120</a>) (<a href="https://github.com/n8n-io/n8n/commit/7e4c5af38397031e3850e277562dbe61020c91aa">7e4c5af</a>)</li>
-- <li><strong>editor:</strong> Connection port mapped incorrectly when changed dynamically (<a href="https://github.com/n8n-io/n8n/issues/17958" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/17958/hovercard">#17958</a>) (<a href="https://github.com/n8n-io/n8n/commit/566789caee49d157b7154adbe60dadb0ea858e06">566789c</a>)</li>
-- <li><strong>editor:</strong> Correct ai template url (<a href="https://github.com/n8n-io/n8n/issues/17908" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/17908/hovercard">#17908</a>) (<a href="https://github.com/n8n-io/n8n/commit/bdc3a9172df09a2b218fd447cd9c3eab6bcfcec6">bdc3a91</a>)</li>
-- <li><strong>editor:</strong> Enhance changes dropdown in WorkflowDiffModal (<a href="https://github.com/n8n-io/n8n/issues/18033" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/18033/hovercard">#18033</a>) (<a href="https://github.com/n8n-io/n8n/commit/bc7664397607972dae72d97b2cacf592d3c93f83">bc76643</a>)</li>
-- <li><strong>editor:</strong> Enhance SourceControlPullModal with improved item structure and styling (<a href="https://github.com/n8n-io/n8n/issues/18049" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/18049/hovercard">#18049</a>) (<a href="https://github.com/n8n-io/n8n/commit/d6bc4abee21c39efcd13f3f1f9e5c98b1094a48d">d6bc4ab</a>)</li>
-- <li><strong>editor:</strong> Fix an issue with overlapping elements in the Assignment component (<a href="https://github.com/n8n-io/n8n/issues/18041" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/18041/hovercard">#18041</a>) (<a href="https://github.com/n8n-io/n8n/commit/c7108f4a0631e3ec8a971da81e2fc8ed7727cfe8">c7108f4</a>)</li>
-- <li><strong>editor:</strong> Fix loading of error workflows in settings (<a href="https://github.com/n8n-io/n8n/issues/18126" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/18126/hovercard">#18126</a>) (<a href="https://github.com/n8n-io/n8n/commit/3d846f62d916c1476940f73241b29beff1b97f47">3d846f6</a>)</li>
-- <li><strong>editor:</strong> Focus editable text input when clicking anywhere on the element (<a href="https://github.com/n8n-io/n8n/issues/17780" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/17780/hovercard">#17780</a>) (<a href="https://github.com/n8n-io/n8n/commit/7b92e33b3b2530775004ce36ea9dacac1175e533">7b92e33</a>)</li>
-- <li><strong>editor:</strong> Hide Evaluations setup wizard if protected instance (<a href="https://github.com/n8n-io/n8n/issues/18055" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/18055/hovercard">#18055</a>) (<a href="https://github.com/n8n-io/n8n/commit/99c2f3715eb9eef1677c55d2ece4418aa3be435f">99c2f37</a>)</li>
-- <li><strong>editor:</strong> Improve workflow diff components (<a href="https://github.com/n8n-io/n8n/issues/18018" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/18018/hovercard">#18018</a>) (<a href="https://github.com/n8n-io/n8n/commit/95ed3c5c929e7f9632edb92f67370901f162a3d9">95ed3c5</a>)</li>
-- <li><strong>editor:</strong> Improve WorkflowDiffModal UI (<a href="https://github.com/n8n-io/n8n/issues/17862" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/17862/hovercard">#17862</a>) (<a href="https://github.com/n8n-io/n8n/commit/eca95f3432148e710d87e233ca9b4d5feafddb5c">eca95f3</a>)</li>
-- <li><strong>editor:</strong> Migrate from <a href="https://github.com/import">@import</a> to <a href="https://github.com/use">@use</a> for SCSS files to address deprecation warnings (<a href="https://github.com/n8n-io/n8n/issues/17858" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/17858/hovercard">#17858</a>) (<a href="https://github.com/n8n-io/n8n/commit/b7887bf899f7e11afade26a911f0b02eb9eff8e5">b7887bf</a>)</li>
-- <li><strong>editor:</strong> Update node status icons precedence (executing -&gt; highest) (<a href="https://github.com/n8n-io/n8n/issues/18003" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/18003/hovercard">#18003</a>) (<a href="https://github.com/n8n-io/n8n/commit/dd049249be17d556c40105a22ac4e68bd7f526e1">dd04924</a>)</li>
-- <li><strong>editor:</strong> Using a for-of loop on Map entries (forEach supported from node v22) (<a href="https://github.com/n8n-io/n8n/issues/18064" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/18064/hovercard">#18064</a>) (<a href="https://github.com/n8n-io/n8n/commit/743c1208809d9bcfd038764807e4b7df8012a36f">743c120</a>)</li>
-- <li>Empty onclick breaks range parser in HTML editor (<a href="https://github.com/n8n-io/n8n/issues/18032" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/18032/hovercard">#18032</a>) (<a href="https://github.com/n8n-io/n8n/commit/b6c781084463faf8d139dbaed649cff75a4170a3">b6c7810</a>)</li>
-- <li>Extend deduplication check to all webhook-based triggers and chat trigger (<a href="https://github.com/n8n-io/n8n/issues/18044" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/18044/hovercard">#18044</a>) (<a href="https://github.com/n8n-io/n8n/commit/847a5d822f77a3362f382c17070d49ccc6e3d999">847a5d8</a>)</li>
-- <li>Fix hot reloading of custom nodes (<a href="https://github.com/n8n-io/n8n/issues/18094" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/18094/hovercard">#18094</a>) (<a href="https://github.com/n8n-io/n8n/commit/a5fa808d4a872b1fbaedf5be62223a4760e544a8">a5fa808</a>)</li>
-- <li><strong>GraphQL Node:</strong> Refresh OAuth2 token when it expires (<a href="https://github.com/n8n-io/n8n/issues/17891" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/17891/hovercard">#17891</a>) (<a href="https://github.com/n8n-io/n8n/commit/381c146dd46afe93105bdd859012fc0c19e3d156">381c146</a>)</li>
-- <li><strong>HubSpot Node:</strong> Add missing fields for Contact - Upsert (<a href="https://github.com/n8n-io/n8n/issues/18035" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/18035/hovercard">#18035</a>) (<a href="https://github.com/n8n-io/n8n/commit/678f468f6881691d5c7bdc49d6206b429b442f2f">678f468</a>)</li>
-- <li><strong>Hugging Face Inference Model Node, Embeddings Hugging Face Inference Node:</strong> Fix credential validation for HF nodes and add provider for  (<a href="https://github.com/n8n-io/n8n/issues/18047" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/18047/hovercard">#18047</a>) (<a href="https://github.com/n8n-io/n8n/commit/a1682e8fe436c52a2a95cceb6cde6316ae586764">a1682e8</a>)</li>
-- <li><strong>Jira Software Node:</strong> Get All Issues operation with Return All hangs (<a href="https://github.com/n8n-io/n8n/issues/17825" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/17825/hovercard">#17825</a>) (<a href="https://github.com/n8n-io/n8n/commit/2792b6cb0a2c3a2dcab207a91ca1dd6403d10efe">2792b6c</a>)</li>
-- <li><strong>Mandrill Node:</strong> Fix a typo in subaccount in options (<a href="https://github.com/n8n-io/n8n/issues/18103" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/18103/hovercard">#18103</a>) (<a href="https://github.com/n8n-io/n8n/commit/833bcdde00fb9a03536b6af0469af0e2c5951f5c">833bcdd</a>)</li>
-- <li>Properly serialize metadata objects in Chat UI  (<a href="https://github.com/n8n-io/n8n/issues/17963" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/17963/hovercard">#17963</a>) (<a href="https://github.com/n8n-io/n8n/commit/c4c46b8ff93abab45426682f8b371997fb42d52d">c4c46b8</a>)</li>
-- <li><strong>Reranker Cohere Node:</strong> Add 'Top N' parameter to control document return count (<a href="https://github.com/n8n-io/n8n/issues/17921" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/17921/hovercard">#17921</a>) (<a href="https://github.com/n8n-io/n8n/commit/523a55d5ee9421cab285dbea88fd5ecfea121ed4">523a55d</a>)</li>
-- </ul>
-- <h3>Features</h3>
-- <ul>
-- <li>Add token to sendAndWait operations links to walidate in webhook (<a href="https://github.com/n8n-io/n8n/issues/17566" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/17566/hovercard">#17566</a>) (<a href="https://github.com/n8n-io/n8n/commit/9cb5754f3383a16ce4dc2bb9133cede856172baa">9cb5754</a>)</li>
-- <li><strong>core:</strong> Add Support for Additional Body Properties in OAuth2 API Client Credentials Flow (<a href="https://github.com/n8n-io/n8n/issues/16573" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/16573/hovercard">#16573</a>) (<a href="https://github.com/n8n-io/n8n/commit/22ca768c13406a86899e36a36dcc18d63f492723">22ca768</a>)</li>
-- <li><strong>core:</strong> Unlock queue metrics for multi-main (<a href="https://github.com/n8n-io/n8n/issues/17977" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/17977/hovercard">#17977</a>) (<a href="https://github.com/n8n-io/n8n/commit/3b701b15d68c7ae038855b4b261cef15aa44a316">3b701b1</a>)</li>
-- <li><strong>Discord Node:</strong> Add support for OAuth custom scopes (<a href="https://github.com/n8n-io/n8n/issues/16708" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/16708/hovercard">#16708</a>) (<a href="https://github.com/n8n-io/n8n/commit/61f2838a9060aa85458a903bab2549d9a768ee60">61f2838</a>)</li>
-- <li><strong>editor:</strong> Add pre-built agents experiment (<a href="https://github.com/n8n-io/n8n/issues/18124" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/18124/hovercard">#18124</a>) (<a href="https://github.com/n8n-io/n8n/commit/5a69d2a2f35cc86685b6eb42e870a2e3ed85c248">5a69d2a</a>)</li>
-- <li><strong>editor:</strong> Add Production checklist for active workflows (<a href="https://github.com/n8n-io/n8n/issues/17756" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/17756/hovercard">#17756</a>) (<a href="https://github.com/n8n-io/n8n/commit/6046d24c741570d1d092230808a392bce0103d33">6046d24</a>)</li>
-- <li><strong>editor:</strong> Expand telemetry for "User added node to workflow canvas" event (<a href="https://github.com/n8n-io/n8n/issues/18150" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/18150/hovercard">#18150</a>) (<a href="https://github.com/n8n-io/n8n/commit/9b103af9355cf957abddd789c1554595be97c5d8">9b103af</a>)</li>
-- <li><strong>editor:</strong> Stop auto-renaming legacy default node names (<a href="https://github.com/n8n-io/n8n/issues/18012" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/18012/hovercard">#18012</a>) (<a href="https://github.com/n8n-io/n8n/commit/5fc356f6e7ed36ba8aa1da2e2d04cb3fe1701134">5fc356f</a>)</li>
-- <li><strong>Email Trigger (IMAP) Node:</strong> Option to disable last message id tracking (<a href="https://github.com/n8n-io/n8n/issues/17964" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/17964/hovercard">#17964</a>) (<a href="https://github.com/n8n-io/n8n/commit/25379fe5221ecf1772d093c8c76bdac680eb6e64">25379fe</a>)</li>
-- <li><strong>Ollama Credentials:</strong> Add optional API key support to Ollama credentials (Openwebui proxy) (<a href="https://github.com/n8n-io/n8n/issues/17857" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/17857/hovercard">#17857</a>) (<a href="https://github.com/n8n-io/n8n/commit/acfb79bd970c5a84f38564cc069b32d87e2a4cd9">acfb79b</a>)</li>
-- </ul>
-- <h3>Performance Improvements</h3>
-- <ul>
-- <li><strong>core:</strong> Enable Sentry tracing (<a href="https://github.com/n8n-io/n8n/issues/18192" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/18192/hovercard">#18192</a>) (<a href="https://github.com/n8n-io/n8n/commit/80e9e6fc330cf8f6c6e22aeff964733dd3bff183">80e9e6f</a>)</li>
-- </ul>
+* Add token to sendAndWait operations links to walidate in webhook ([#17566](https://github.com/n8n-io/n8n/issues/17566)) ([9cb5754](https://github.com/n8n-io/n8n/commit/9cb5754f3383a16ce4dc2bb9133cede856172baa))
+* **core:** Add Support for Additional Body Properties in OAuth2 API Client Credentials Flow ([#16573](https://github.com/n8n-io/n8n/issues/16573)) ([22ca768](https://github.com/n8n-io/n8n/commit/22ca768c13406a86899e36a36dcc18d63f492723))
+* **core:** Unlock queue metrics for multi-main ([#17977](https://github.com/n8n-io/n8n/issues/17977)) ([3b701b1](https://github.com/n8n-io/n8n/commit/3b701b15d68c7ae038855b4b261cef15aa44a316))
+* **Discord Node:** Add support for OAuth custom scopes ([#16708](https://github.com/n8n-io/n8n/issues/16708)) ([61f2838](https://github.com/n8n-io/n8n/commit/61f2838a9060aa85458a903bab2549d9a768ee60))
+* **editor:** Add pre-built agents experiment ([#18124](https://github.com/n8n-io/n8n/issues/18124)) ([5a69d2a](https://github.com/n8n-io/n8n/commit/5a69d2a2f35cc86685b6eb42e870a2e3ed85c248))
+* **editor:** Add Production checklist for active workflows ([#17756](https://github.com/n8n-io/n8n/issues/17756)) ([6046d24](https://github.com/n8n-io/n8n/commit/6046d24c741570d1d092230808a392bce0103d33))
+* **editor:** Expand telemetry for "User added node to workflow canvas" event ([#18150](https://github.com/n8n-io/n8n/issues/18150)) ([9b103af](https://github.com/n8n-io/n8n/commit/9b103af9355cf957abddd789c1554595be97c5d8))
+* **editor:** Stop auto-renaming legacy default node names ([#18012](https://github.com/n8n-io/n8n/issues/18012)) ([5fc356f](https://github.com/n8n-io/n8n/commit/5fc356f6e7ed36ba8aa1da2e2d04cb3fe1701134))
+* **Email Trigger (IMAP) Node:** Option to disable last message id tracking ([#17964](https://github.com/n8n-io/n8n/issues/17964)) ([25379fe](https://github.com/n8n-io/n8n/commit/25379fe5221ecf1772d093c8c76bdac680eb6e64))
+* **Ollama Credentials:** Add optional API key support to Ollama credentials (Openwebui proxy) ([#17857](https://github.com/n8n-io/n8n/issues/17857)) ([acfb79b](https://github.com/n8n-io/n8n/commit/acfb79bd970c5a84f38564cc069b32d87e2a4cd9))
+
+
+### Performance Improvements
+
+* **core:** Enable Sentry tracing ([#18192](https://github.com/n8n-io/n8n/issues/18192)) ([80e9e6f](https://github.com/n8n-io/n8n/commit/80e9e6fc330cf8f6c6e22aeff964733dd3bff183))
+
+
 
 
 # Release 1.106.2
 
-- <h2><a href="https://github.com/n8n-io/n8n/compare/n8n@1.106.1...n8n@1.106.2">1.106.2</a> (2025-08-08)</h2>
-- <h3>Bug Fixes</h3>
-- <ul>
-- <li><strong>Beeminder Node:</strong> Remove unnecessary form data conversion for API token auth to work (<a href="https://github.com/n8n-io/n8n/issues/18133" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/18133/hovercard">#18133</a>) (<a href="https://github.com/n8n-io/n8n/commit/e593468b61659edd90409b6437012d9fbe45ecb2">e593468</a>)</li>
-- <li><strong>core:</strong> Fix metric default value handling and add AI model connection validation for setMetric operation in Evaluation (<a href="https://github.com/n8n-io/n8n/issues/18088" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/18088/hovercard">#18088</a>) (<a href="https://github.com/n8n-io/n8n/commit/8eefda9388c00ecea7863433d246427dec3c2a41">8eefda9</a>)</li>
-- </ul>
+
+### Bug Fixes
+
+* **Beeminder Node:** Remove unnecessary form data conversion for API token auth to work ([#18133](https://github.com/n8n-io/n8n/issues/18133)) ([e593468](https://github.com/n8n-io/n8n/commit/e593468b61659edd90409b6437012d9fbe45ecb2))
+* **core:** Fix metric default value handling and add AI model connection validation for setMetric operation in Evaluation ([#18088](https://github.com/n8n-io/n8n/issues/18088)) ([8eefda9](https://github.com/n8n-io/n8n/commit/8eefda9388c00ecea7863433d246427dec3c2a41))
 
 
 # Release 1.106.1
 
-- <h2><a href="https://github.com/n8n-io/n8n/compare/n8n@1.106.0...n8n@1.106.1">1.106.1</a> (2025-08-07)</h2>
-- <h3>Bug Fixes</h3>
-- <ul>
-- <li><strong>core:</strong> Handle non-existing files when checking if it is a symlink (<a href="https://github.com/n8n-io/n8n/issues/18010" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/18010/hovercard">#18010</a>) (<a href="https://github.com/n8n-io/n8n/commit/c7f03437cca017077dbe53f84ad26604191009ea">c7f0343</a>)</li>
-- <li><strong>core:</strong> Prevent re-entry during workflow activation (<a href="https://github.com/n8n-io/n8n/issues/17965" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/17965/hovercard">#17965</a>) (<a href="https://github.com/n8n-io/n8n/commit/24535185a7a4886e31cab1db375b343c195a1144">2453518</a>)</li>
-- <li><strong>core:</strong> Protect against duplicate cron registration (<a href="https://github.com/n8n-io/n8n/issues/18005" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/18005/hovercard">#18005</a>) (<a href="https://github.com/n8n-io/n8n/commit/6f3fcc0d7b43c2846ace6b6dfca58f16dffa584f">6f3fcc0</a>)</li>
-- <li><strong>editor:</strong> Connection port mapped incorrectly when changed dynamically (<a href="https://github.com/n8n-io/n8n/issues/17958" data-hovercard-type="pull_request" data-hovercard-url="/n8n-io/n8n/pull/17958/hovercard">#17958</a>) (<a href="https://github.com/n8n-io/n8n/commit/c425630454c8cdb85dfdc6b1a917844231607ddc">c425630</a>)</li>
-- </ul>
+### Bug Fixes
+
+* **core:** Handle non-existing files when checking if it is a symlink ([#18010](https://github.com/n8n-io/n8n/issues/18010)) ([c7f0343](https://github.com/n8n-io/n8n/commit/c7f03437cca017077dbe53f84ad26604191009ea))
+* **core:** Prevent re-entry during workflow activation ([#17965](https://github.com/n8n-io/n8n/issues/17965)) ([2453518](https://github.com/n8n-io/n8n/commit/24535185a7a4886e31cab1db375b343c195a1144))
+* **core:** Protect against duplicate cron registration ([#18005](https://github.com/n8n-io/n8n/issues/18005)) ([6f3fcc0](https://github.com/n8n-io/n8n/commit/6f3fcc0d7b43c2846ace6b6dfca58f16dffa584f))
+* **editor:** Connection port mapped incorrectly when changed dynamically ([#17958](https://github.com/n8n-io/n8n/issues/17958)) ([c425630](https://github.com/n8n-io/n8n/commit/c425630454c8cdb85dfdc6b1a917844231607ddc))
 
 
 # Release 1.106.0
@@ -626,4 +624,5 @@ Fix: Preserve query string parameters in proxy_pass for correct backend routing
 ### Performance Improvements
 - **core:** Load source control only if licensed [#15908](https://github.com/n8n-io/n8n/pull/15908)   (d7e94eb)
 - **core:** Populate cache only with static webhooks [#16048](https://github.com/n8n-io/n8n/pull/16048)   (a18822a)
+
 
