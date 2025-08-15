@@ -1,3 +1,11 @@
+# Release 1.107.2
+
+### Bug Fixes
+
+- **editor:** Fix node graph generation for evaluation node in set metrics mode [#18344](https://github.com/n8n-io/n8n/pull/18344)   (6bf294b)
+- **editor:** Revert changes from PRs #16059, #17959, #17759, and #17585 [#18382](https://github.com/n8n-io/n8n/pull/18382)   (27bda02)
+
+
 ## Release 1.107.1
 
 ### Bug Fixes
