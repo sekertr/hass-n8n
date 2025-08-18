@@ -1,3 +1,47 @@
+# Release 1.108.0
+
+### Bug Fixes
+
+- Add missing type check, updated turbo config ([#18341](https://github.com/n8n-io/n8n/pull/18341)) ([8259b5f](https://github.com/n8n-io/n8n/commit/8259b5f))
+- **Airtable Node:** Create record: skip type validation when typecast is enabled ([#18393](https://github.com/n8n-io/n8n/pull/18393)) ([dcd060c](https://github.com/n8n-io/n8n/commit/dcd060c))
+- **core:** Account for readonly properties when replacing circular references ([#18408](https://github.com/n8n-io/n8n/pull/18408)) ([3848673](https://github.com/n8n-io/n8n/commit/3848673))
+- **core:** Check all node outputs when using "Always Output Data" before adding an empty object ([#17602](https://github.com/n8n-io/n8n/pull/17602)) ([f1a87af](https://github.com/n8n-io/n8n/commit/f1a87af))
+- **core:** Fix error message parsing for disallowed modules ([#18216](https://github.com/n8n-io/n8n/pull/18216)) ([04738d4](https://github.com/n8n-io/n8n/commit/04738d4))
+- **core:** Normalize quotes in strings in env vars ([#18219](https://github.com/n8n-io/n8n/pull/18219)) ([71f5151](https://github.com/n8n-io/n8n/commit/71f5151))
+- **core:** Populate MCP endpoints in frontend settings ([#17939](https://github.com/n8n-io/n8n/pull/17939)) ([14787fd](https://github.com/n8n-io/n8n/commit/14787fd))
+- **core:** Support inserting dates to data store via the insert endpoint ([#18404](https://github.com/n8n-io/n8n/pull/18404)) ([dc86984](https://github.com/n8n-io/n8n/commit/dc86984))
+- **core:** Support MCP server when offloading is enabled ([#18214](https://github.com/n8n-io/n8n/pull/18214)) ([26aed72](https://github.com/n8n-io/n8n/commit/26aed72))
+- **core:** Update moment-timezone to resolve Mexico DST issue ([#18431](https://github.com/n8n-io/n8n/pull/18431)) ([cb7dd2e](https://github.com/n8n-io/n8n/commit/cb7dd2e))
+- **editor:** Fix 'Shared with me' page tabs and header ([#18199](https://github.com/n8n-io/n8n/pull/18199)) ([eecfa68](https://github.com/n8n-io/n8n/commit/eecfa68))
+- **editor:** Fix node graph generation for evaluation node in set metrics mode ([#18344](https://github.com/n8n-io/n8n/pull/18344)) ([8442382](https://github.com/n8n-io/n8n/commit/8442382))
+- **editor:** Fix schema view output index filtering  ([#18383](https://github.com/n8n-io/n8n/pull/18383)) ([675bb50](https://github.com/n8n-io/n8n/commit/675bb50))
+- **editor:** Fix TS type export for ListDataStoreContentFilter ([#18282](https://github.com/n8n-io/n8n/pull/18282)) ([f1080db](https://github.com/n8n-io/n8n/commit/f1080db))
+- **editor:** Restore background color of NDV backdrop ([#18327](https://github.com/n8n-io/n8n/pull/18327)) ([5917dc8](https://github.com/n8n-io/n8n/commit/5917dc8))
+- **editor:** Revert changes from PRs [#16059](https://github.com/n8n-io/n8n/pull/16059), [#17959](https://github.com/n8n-io/n8n/pull/17959), [#17759](https://github.com/n8n-io/n8n/pull/17759), and [#17585](https://github.com/n8n-io/n8n/pull/17585) ([#18382](https://github.com/n8n-io/n8n/pull/18382)) ([62f4361](https://github.com/n8n-io/n8n/commit/62f4361))
+- **editor:** Show custom project icons on create sidebar dropdown ([#18204](https://github.com/n8n-io/n8n/pull/18204)) ([d2cc939](https://github.com/n8n-io/n8n/commit/d2cc939))
+- **editor:** Source control workflow diff release ([#17974](https://github.com/n8n-io/n8n/pull/17974)) ([abf7b11](https://github.com/n8n-io/n8n/commit/abf7b11))
+- **editor:** Update SourceControlPullModal to look and feel the same as SourceControlPushModal ([#18129](https://github.com/n8n-io/n8n/pull/18129)) ([d06581e](https://github.com/n8n-io/n8n/commit/d06581e))
+- **editor:** Use native behaviour on arrow left and right in nodes panel ([#18401](https://github.com/n8n-io/n8n/pull/18401)) ([08d8249](https://github.com/n8n-io/n8n/commit/08d8249))
+- **Google Gemini Node:** Use custom host from credential ([#18405](https://github.com/n8n-io/n8n/pull/18405)) ([041672e](https://github.com/n8n-io/n8n/commit/041672e))
+- **Grist Node:** Test for integer precision loss ([#17136](https://github.com/n8n-io/n8n/pull/17136)) ([735e064](https://github.com/n8n-io/n8n/commit/735e064))
+- **Local File Trigger Node:** Add chokidar dependency back ([#18260](https://github.com/n8n-io/n8n/pull/18260)) ([9043869](https://github.com/n8n-io/n8n/commit/9043869))
+- **n8n Form Trigger Node:** Make order of form field name inputs consistent ([#18410](https://github.com/n8n-io/n8n/pull/18410)) ([2203d1e](https://github.com/n8n-io/n8n/commit/2203d1e))
+- Update dependencies to close cves ([#18215](https://github.com/n8n-io/n8n/pull/18215)) ([d7d44f9](https://github.com/n8n-io/n8n/commit/d7d44f9))
+- **Wait Node:** Add validation for wait amount and unit ([#18239](https://github.com/n8n-io/n8n/pull/18239)) ([9515cbd](https://github.com/n8n-io/n8n/commit/9515cbd))
+### Features
+
+- Add n8n-node CLI with commands to scaffold and develop nodes ([#18090](https://github.com/n8n-io/n8n/pull/18090)) ([c26104b](https://github.com/n8n-io/n8n/commit/c26104b))
+- Add performance plan presets for testcontainers ([#18231](https://github.com/n8n-io/n8n/pull/18231)) ([726f0ff](https://github.com/n8n-io/n8n/commit/726f0ff))
+- Checkboxes and Radio Buttons field types ([#17934](https://github.com/n8n-io/n8n/pull/17934)) ([fdab0ab](https://github.com/n8n-io/n8n/commit/fdab0ab))
+- **editor:** Improve feedback buttons behavior ([#18247](https://github.com/n8n-io/n8n/pull/18247)) ([83c3a98](https://github.com/n8n-io/n8n/commit/83c3a98))
+- **editor:** Make popped out log view window maximizable ([#18223](https://github.com/n8n-io/n8n/pull/18223)) ([aeef79d](https://github.com/n8n-io/n8n/commit/aeef79d))
+- **MCP Client Tool Node:** Add Timeout config for the MCP Client tool ([#15886](https://github.com/n8n-io/n8n/pull/15886)) ([f575427](https://github.com/n8n-io/n8n/commit/f575427))
+- **Todoist Node:** Add more resources and operations  ([#17925](https://github.com/n8n-io/n8n/pull/17925)) ([409085e](https://github.com/n8n-io/n8n/commit/409085e))
+### Performance Improvements
+
+- **editor:** Fix log view related slowdown of manual execution with large data ([#18256](https://github.com/n8n-io/n8n/pull/18256)) ([56c278c](https://github.com/n8n-io/n8n/commit/56c278c))
+
+
 # Release 1.107.2
 
 ### Bug Fixes
