@@ -7,6 +7,7 @@
 > For a more stable and production-ready experience, it is recommended to use  
 > [Rbillion59's add-on repository](https://github.com/Rbillon59/hass-n8n).
 
+⚡️ A new release is automatically published within 5 minutes after a new n8n version becomes available.
 
 The first three digits `a.b.c` represent the official n8n version, while the optional fourth digit `.d` indicates additional modifications or bug fixes made by me. If no such changes were applied, the fourth digit may be omitted.
 
