@@ -1,3 +1,10 @@
+# Release 1.108.1
+
+### Bug Fixes
+
+- **core:** Dynamically import @sentry/node-native ([#18586](https://github.com/n8n-io/n8n/pull/18586)) ([4312ff2](https://github.com/n8n-io/n8n/commit/4312ff2))
+
+
 # Release 1.108.0
 
 ### Bug Fixes
