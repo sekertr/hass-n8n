@@ -1,3 +1,44 @@
+# Release 1.109.0
+
+### Bug Fixes
+
+- Also run DB tests in CI when any test inside CLI package have changes ([#18527](https://github.com/n8n-io/n8n/pull/18527)) ([3386047](https://github.com/n8n-io/n8n/commit/3386047))
+- Change siderbar to use innerWidth instead of outerWidth ([#18727](https://github.com/n8n-io/n8n/pull/18727)) ([4206b4a](https://github.com/n8n-io/n8n/commit/4206b4a))
+- **core:** Don't reveal whether files exists if they're not within allowed paths ([#18480](https://github.com/n8n-io/n8n/pull/18480)) ([970351b](https://github.com/n8n-io/n8n/commit/970351b))
+- **core:** Dynamically import @sentry/node-native ([#18586](https://github.com/n8n-io/n8n/pull/18586)) ([0f463c7](https://github.com/n8n-io/n8n/commit/0f463c7))
+- **core:** Ensure error.message is a string before checking for specific messages ([#17417](https://github.com/n8n-io/n8n/pull/17417)) ([0d4c890](https://github.com/n8n-io/n8n/commit/0d4c890))
+- **core:** Fix getting webhook methods from path only when dynamic webhook path ([#17803](https://github.com/n8n-io/n8n/pull/17803)) ([a5c6e2f](https://github.com/n8n-io/n8n/commit/a5c6e2f))
+- **core:** Handle insights by workflow table for deleted workflows ([#18496](https://github.com/n8n-io/n8n/pull/18496)) ([741dd69](https://github.com/n8n-io/n8n/commit/741dd69))
+- **core:** Integer overflow in insights runtime calculation ([#18122](https://github.com/n8n-io/n8n/pull/18122)) ([c767831](https://github.com/n8n-io/n8n/commit/c767831))
+- **core:** Make first queue reconciliation immediate on startup ([#18490](https://github.com/n8n-io/n8n/pull/18490)) ([961fc53](https://github.com/n8n-io/n8n/commit/961fc53))
+- **core:** Move /module-settings behind auth ([#18492](https://github.com/n8n-io/n8n/pull/18492)) ([df54c10](https://github.com/n8n-io/n8n/commit/df54c10))
+- **core:** Redact secrets from credential test error message ([#18386](https://github.com/n8n-io/n8n/pull/18386)) ([309048a](https://github.com/n8n-io/n8n/commit/309048a))
+- **core:** Restore community node types controller ([#18665](https://github.com/n8n-io/n8n/pull/18665)) ([110439c](https://github.com/n8n-io/n8n/commit/110439c))
+- Do not wait for community nodes to load ([#18628](https://github.com/n8n-io/n8n/pull/18628)) ([f7a6631](https://github.com/n8n-io/n8n/commit/f7a6631))
+- **editor:** Add fallback color for NodeItem Icons ([#18607](https://github.com/n8n-io/n8n/pull/18607)) ([c8dc7d9](https://github.com/n8n-io/n8n/commit/c8dc7d9))
+- **editor:** Change the underlying data store db column types to support decimal numbers ([#18549](https://github.com/n8n-io/n8n/pull/18549)) ([25d6636](https://github.com/n8n-io/n8n/commit/25d6636))
+- **editor:** Dont check for whats new if in demo mode ([#18532](https://github.com/n8n-io/n8n/pull/18532)) ([9881b9e](https://github.com/n8n-io/n8n/commit/9881b9e))
+- **editor:** Fix importing curl commands with comma ([#18409](https://github.com/n8n-io/n8n/pull/18409)) ([d3431c0](https://github.com/n8n-io/n8n/commit/d3431c0))
+- **editor:** Hide sso auth protocol selection if no license available ([#18655](https://github.com/n8n-io/n8n/pull/18655)) ([8b4e8f3](https://github.com/n8n-io/n8n/commit/8b4e8f3))
+- **editor:** Refactor for-of loops to replace forEach on Set.values() for node 20 compatibility ([#18529](https://github.com/n8n-io/n8n/pull/18529)) ([06b586a](https://github.com/n8n-io/n8n/commit/06b586a))
+- **editor:** Show test URL when trigger is listening because of a connected node ([#18403](https://github.com/n8n-io/n8n/pull/18403)) ([010b6dc](https://github.com/n8n-io/n8n/commit/010b6dc))
+- **editor:** Update misleading toaster success message when creating a personal workflow / credential ([#18541](https://github.com/n8n-io/n8n/pull/18541)) ([b6681bb](https://github.com/n8n-io/n8n/commit/b6681bb))
+- **HTTP Request Node:** Handle response errors correctly when continueOnFail is set ([#18207](https://github.com/n8n-io/n8n/pull/18207)) ([5c53c22](https://github.com/n8n-io/n8n/commit/5c53c22))
+- **Microsoft SQL Node:** Correctly resolve expressions with dollar signs ([#18411](https://github.com/n8n-io/n8n/pull/18411)) ([f49f2cb](https://github.com/n8n-io/n8n/commit/f49f2cb))
+- **Slack Node:** Refine label name for reply broadcast setting ([#15658](https://github.com/n8n-io/n8n/pull/15658)) ([5339350](https://github.com/n8n-io/n8n/commit/5339350))
+### Features
+
+- **core:** Enable modules to append to workflow context ([#18551](https://github.com/n8n-io/n8n/pull/18551)) ([0488ea3](https://github.com/n8n-io/n8n/commit/0488ea3))
+- **editor:** Add Alt+Meta+O keyboard shortcut for the About modal ([#18530](https://github.com/n8n-io/n8n/pull/18530)) ([94526b9](https://github.com/n8n-io/n8n/commit/94526b9))
+- **editor:** Add mechanism for showing hidden nodes if required modules are enabled ([#18585](https://github.com/n8n-io/n8n/pull/18585)) ([da88075](https://github.com/n8n-io/n8n/commit/da88075))
+- Evaluation framework for AI Workflow Builder ([#18016](https://github.com/n8n-io/n8n/pull/18016)) ([fb3a2ae](https://github.com/n8n-io/n8n/commit/fb3a2ae))
+- **OpenAI Node:** Add reasoning effort for GPT-5 ([#18644](https://github.com/n8n-io/n8n/pull/18644)) ([ca8629e](https://github.com/n8n-io/n8n/commit/ca8629e))
+### Performance Improvements
+
+- **core:** Optimize workflow getNodeConnectionIndexes ([#18542](https://github.com/n8n-io/n8n/pull/18542)) ([554327e](https://github.com/n8n-io/n8n/commit/554327e))
+- **OpenAI Node:** Use streaming for file operations ([#18666](https://github.com/n8n-io/n8n/pull/18666)) ([1f1730c](https://github.com/n8n-io/n8n/commit/1f1730c))
+
+
 # Release 1.108.1
 
 ### Bug Fixes
