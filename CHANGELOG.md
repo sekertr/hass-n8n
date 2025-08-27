@@ -1,3 +1,10 @@
+# Release 1.109.1
+
+### Bug Fixes
+
+- **core:** Fix waiting webhooks validation when n8n is behind proxy ([#18767](https://github.com/n8n-io/n8n/pull/18767)) ([741f68b](https://github.com/n8n-io/n8n/commit/741f68b))
+
+
 # Release 1.109.0
 
 ### Bug Fixes
