@@ -1,3 +1,48 @@
+# Release 1.110.0
+
+### Bug Fixes
+
+- Add timeout to community node types request ([#18545](https://github.com/n8n-io/n8n/pull/18545)) ([644faf4](https://github.com/n8n-io/n8n/commit/644faf4))
+- **core:** Add optional context parameter to track creation source for workflows, credentials, and projects ([#18736](https://github.com/n8n-io/n8n/pull/18736)) ([98bde4f](https://github.com/n8n-io/n8n/commit/98bde4f))
+- **core:** Fix truncate table names ([#18867](https://github.com/n8n-io/n8n/pull/18867)) ([215d5a1](https://github.com/n8n-io/n8n/commit/215d5a1))
+- **core:** Fix waiting webhooks validation when n8n is behind proxy ([#18767](https://github.com/n8n-io/n8n/pull/18767)) ([f2eca28](https://github.com/n8n-io/n8n/commit/f2eca28))
+- **core:** Resolve SSH path issues on Windows ([#18889](https://github.com/n8n-io/n8n/pull/18889)) ([66b6b8f](https://github.com/n8n-io/n8n/commit/66b6b8f))
+- **core:** Sanitize all non-alphanumeric characters from tool names ([#18800](https://github.com/n8n-io/n8n/pull/18800)) ([b73f239](https://github.com/n8n-io/n8n/commit/b73f239))
+- **editor:** Allow password managers to autocomplete MFA code during login ([#18865](https://github.com/n8n-io/n8n/pull/18865)) ([0c803a6](https://github.com/n8n-io/n8n/commit/0c803a6))
+- **editor:** Debug in Editor preserves binary data and prevents incorrect dirty marking ([#18998](https://github.com/n8n-io/n8n/pull/18998)) ([6aeced8](https://github.com/n8n-io/n8n/commit/6aeced8))
+- **editor:** Do not focus expression input if it was not in focus before switching ([#18744](https://github.com/n8n-io/n8n/pull/18744)) ([a6406b9](https://github.com/n8n-io/n8n/commit/a6406b9))
+- **editor:** Fix "error connecting to n8n" error if not logged in ([#18818](https://github.com/n8n-io/n8n/pull/18818)) ([51c21e0](https://github.com/n8n-io/n8n/commit/51c21e0))
+- **editor:** Fix broken project creation no-changelog ([#19027](https://github.com/n8n-io/n8n/pull/19027)) ([864b51d](https://github.com/n8n-io/n8n/commit/864b51d))
+- **editor:** Fix role DTO exported types ([#18977](https://github.com/n8n-io/n8n/pull/18977)) ([2882547](https://github.com/n8n-io/n8n/commit/2882547))
+- **editor:** Fix wf history button visibility issue ([#18804](https://github.com/n8n-io/n8n/pull/18804)) ([e29ed15](https://github.com/n8n-io/n8n/commit/e29ed15))
+- **editor:** Fix workflow list pagination visibility ([#18847](https://github.com/n8n-io/n8n/pull/18847)) ([4d84d58](https://github.com/n8n-io/n8n/commit/4d84d58))
+- **editor:** Make Code node lint errors colorblind friendly ([#18958](https://github.com/n8n-io/n8n/pull/18958)) ([619ff93](https://github.com/n8n-io/n8n/commit/619ff93))
+- **editor:** Prevent execution data from leaking into workflow diffs UI ([#18605](https://github.com/n8n-io/n8n/pull/18605)) ([4bbf7cb](https://github.com/n8n-io/n8n/commit/4bbf7cb))
+- **editor:** Remove the enlarged thumb-target area for the scrollbar ([#18810](https://github.com/n8n-io/n8n/pull/18810)) ([cff3f4a](https://github.com/n8n-io/n8n/commit/cff3f4a))
+- **editor:** Set workflow name width at different breakpoints ([#18956](https://github.com/n8n-io/n8n/pull/18956)) ([e663858](https://github.com/n8n-io/n8n/commit/e663858))
+- **editor:** Support line breaks in resource mapper field names ([#18982](https://github.com/n8n-io/n8n/pull/18982)) ([5ea4be4](https://github.com/n8n-io/n8n/commit/5ea4be4))
+- **Filter Node:** Propagate toggle changes correctly ([#18864](https://github.com/n8n-io/n8n/pull/18864)) ([a53aa57](https://github.com/n8n-io/n8n/commit/a53aa57))
+- **GithubTrigger Node:** Correctly access httpCode from error object ([#17697](https://github.com/n8n-io/n8n/pull/17697)) ([6379ce5](https://github.com/n8n-io/n8n/commit/6379ce5))
+- **HubSpot Node:** Assign owner ID ([#18753](https://github.com/n8n-io/n8n/pull/18753)) ([07db137](https://github.com/n8n-io/n8n/commit/07db137))
+- **HubSpot Node:** Require DueDate for task creation ([#18799](https://github.com/n8n-io/n8n/pull/18799)) ([e665cbf](https://github.com/n8n-io/n8n/commit/e665cbf))
+- **Rename Keys Node:** Add a warning for regex that affect performance ([#18911](https://github.com/n8n-io/n8n/pull/18911)) ([0d1a0b5](https://github.com/n8n-io/n8n/commit/0d1a0b5))
+- **Slack Trigger Node:** Handle undefined item in event channel extraction ([#18676](https://github.com/n8n-io/n8n/pull/18676)) ([ed090f0](https://github.com/n8n-io/n8n/commit/ed090f0))
+- Update packages in base image to resolve CVE-2025-58050 ([#19034](https://github.com/n8n-io/n8n/pull/19034)) ([bb033fc](https://github.com/n8n-io/n8n/commit/bb033fc))
+### Features
+
+- Add option to restrict credential usage in http request node ([#17583](https://github.com/n8n-io/n8n/pull/17583)) ([f7f70f2](https://github.com/n8n-io/n8n/commit/f7f70f2))
+- Adds community scanner package ([#18946](https://github.com/n8n-io/n8n/pull/18946)) ([8dae565](https://github.com/n8n-io/n8n/commit/8dae565))
+- **core:** Allow custom project roles from being set to a user project relation ([#18926](https://github.com/n8n-io/n8n/pull/18926)) ([027edbe](https://github.com/n8n-io/n8n/commit/027edbe))
+- **core:** Rebuild project roles to load from the database ([#17909](https://github.com/n8n-io/n8n/pull/17909)) ([f757790](https://github.com/n8n-io/n8n/commit/f757790))
+- **editor:** Add Python to Code actions ([#18668](https://github.com/n8n-io/n8n/pull/18668)) ([38f25d7](https://github.com/n8n-io/n8n/commit/38f25d7))
+- **editor:** Display custom roles in the project role dropdown ([#18983](https://github.com/n8n-io/n8n/pull/18983)) ([bf198f8](https://github.com/n8n-io/n8n/commit/bf198f8))
+- **editor:** Provide default ExecuteWorkflow node names based on the selected workflow ([#18953](https://github.com/n8n-io/n8n/pull/18953)) ([73cc042](https://github.com/n8n-io/n8n/commit/73cc042))
+- **editor:** Support relative dependent parameters for collection NodeProperties ([#18916](https://github.com/n8n-io/n8n/pull/18916)) ([a15391a](https://github.com/n8n-io/n8n/commit/a15391a))
+### Performance Improvements
+
+- Skip browser logging for production tasks in native Python runner ([#19028](https://github.com/n8n-io/n8n/pull/19028)) ([d0ffd6e](https://github.com/n8n-io/n8n/commit/d0ffd6e))
+
+
 # Release 1.109.1
 
 ### Bug Fixes
