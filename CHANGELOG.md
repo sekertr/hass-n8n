@@ -1,3 +1,12 @@
+# Release 1.110.1
+
+### Bug Fixes
+
+- **Basic LLM Chain Node:** Remove fallback connection on lower versions ([#19053](https://github.com/n8n-io/n8n/pull/19053)) ([92fba1d](https://github.com/n8n-io/n8n/commit/92fba1d))
+- **core:** Fix OIDC configuration update path ([#19065](https://github.com/n8n-io/n8n/pull/19065)) ([bb9d742](https://github.com/n8n-io/n8n/commit/bb9d742))
+- **Gemini Node:** Allow Nano Banana model to be selected ([#19080](https://github.com/n8n-io/n8n/pull/19080)) ([5a1e472](https://github.com/n8n-io/n8n/commit/5a1e472))
+
+
 # Release 1.110.0
 
 ### Bug Fixes
