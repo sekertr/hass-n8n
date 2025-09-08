@@ -1,3 +1,51 @@
+# Release 1.111.0
+
+### Bug Fixes
+
+- Add folder scopes to global owner and admin roles ([#19230](https://github.com/n8n-io/n8n/pull/19230)) ([2113532](https://github.com/n8n-io/n8n/commit/2113532))
+- **AMQP Trigger Node:** Update rhea library, tweak reconnection options ([#18980](https://github.com/n8n-io/n8n/pull/18980)) ([efc3a2d](https://github.com/n8n-io/n8n/commit/efc3a2d))
+- API: Fix public api workflow openApi examples ([#19170](https://github.com/n8n-io/n8n/pull/19170)) ([e822cf5](https://github.com/n8n-io/n8n/commit/e822cf5))
+- **Basic LLM Chain Node:** Remove fallback connection on lower versions ([#19053](https://github.com/n8n-io/n8n/pull/19053)) ([583dd48](https://github.com/n8n-io/n8n/commit/583dd48))
+- Changes in tooltip message on data table columns ([#19172](https://github.com/n8n-io/n8n/pull/19172)) ([56fee52](https://github.com/n8n-io/n8n/commit/56fee52))
+- **core:** AI agent node data accessibility ([#18757](https://github.com/n8n-io/n8n/pull/18757)) ([f0e9221](https://github.com/n8n-io/n8n/commit/f0e9221))
+- **core:** Ensure getNodeOutputs always returns an array ([#19069](https://github.com/n8n-io/n8n/pull/19069)) ([0f22f3b](https://github.com/n8n-io/n8n/commit/0f22f3b))
+- **core:** Fix OIDC configuration update path ([#19065](https://github.com/n8n-io/n8n/pull/19065)) ([1ced801](https://github.com/n8n-io/n8n/commit/1ced801))
+- **core:** Fix role management controller no-changelog ([#19107](https://github.com/n8n-io/n8n/pull/19107)) ([5be3181](https://github.com/n8n-io/n8n/commit/5be3181))
+- **core:** Inline config.js to index.html to prevent CF from caching it ([#18945](https://github.com/n8n-io/n8n/pull/18945)) ([17ce65a](https://github.com/n8n-io/n8n/commit/17ce65a))
+- **core:** Replace actual root when manually running tools of Agent Tools ([#19243](https://github.com/n8n-io/n8n/pull/19243)) ([188a013](https://github.com/n8n-io/n8n/commit/188a013))
+- **core:** Resolve Python multiprocessing queue deadlock ([#19084](https://github.com/n8n-io/n8n/pull/19084)) ([de30ecc](https://github.com/n8n-io/n8n/commit/de30ecc))
+- **core:** Set more reasonable defaults for scaling mode queue lock ([#19059](https://github.com/n8n-io/n8n/pull/19059)) ([35e4772](https://github.com/n8n-io/n8n/commit/35e4772))
+- **core:** Update cached project association when moving a workflow ([#19227](https://github.com/n8n-io/n8n/pull/19227)) ([c5bbb6a](https://github.com/n8n-io/n8n/commit/c5bbb6a))
+- **editor:** Don't show update notification for unverified updates ([#18910](https://github.com/n8n-io/n8n/pull/18910)) ([abaa2c8](https://github.com/n8n-io/n8n/commit/abaa2c8))
+- **editor:** Fix minor style bugs around parameter input ([#19150](https://github.com/n8n-io/n8n/pull/19150)) ([346d3b4](https://github.com/n8n-io/n8n/commit/346d3b4))
+- **editor:** Fix pagination in Data Table list UI ([#19192](https://github.com/n8n-io/n8n/pull/19192)) ([0b24fb5](https://github.com/n8n-io/n8n/commit/0b24fb5))
+- **editor:** Handle connection errors and credentials better in MCP Client Tool when executing directly  ([#19239](https://github.com/n8n-io/n8n/pull/19239)) ([97d0edd](https://github.com/n8n-io/n8n/commit/97d0edd))
+- **editor:** Load available resources for dynamic options ([#19235](https://github.com/n8n-io/n8n/pull/19235)) ([b713c50](https://github.com/n8n-io/n8n/commit/b713c50))
+- **editor:** Prevent search dialog from covering inline expression parameters ([#19238](https://github.com/n8n-io/n8n/pull/19238)) ([0d7f9ae](https://github.com/n8n-io/n8n/commit/0d7f9ae))
+- **editor:** Prevent variable value overflow ([#19026](https://github.com/n8n-io/n8n/pull/19026)) ([a90584b](https://github.com/n8n-io/n8n/commit/a90584b))
+- **editor:** Render last item on markdown task lists correctly ([#19225](https://github.com/n8n-io/n8n/pull/19225)) ([627dbd9](https://github.com/n8n-io/n8n/commit/627dbd9))
+- **editor:** Workflow diff UX improvements ([#19047](https://github.com/n8n-io/n8n/pull/19047)) ([277685e](https://github.com/n8n-io/n8n/commit/277685e))
+- **Gemini Node:** Allow Nano Banana model to be selected ([#19080](https://github.com/n8n-io/n8n/pull/19080)) ([238fe84](https://github.com/n8n-io/n8n/commit/238fe84))
+- **GoogleDrive Node:** Fix google service accounts uploading to shared drives ([#18952](https://github.com/n8n-io/n8n/pull/18952)) ([63672ad](https://github.com/n8n-io/n8n/commit/63672ad))
+- Improve error handling for community package installation ([#19103](https://github.com/n8n-io/n8n/pull/19103)) ([2001397](https://github.com/n8n-io/n8n/commit/2001397))
+- Improve input handling in package scanner ([#19147](https://github.com/n8n-io/n8n/pull/19147)) ([c10da38](https://github.com/n8n-io/n8n/commit/c10da38))
+- Include third party licenses in the docker image ([#19144](https://github.com/n8n-io/n8n/pull/19144)) ([cda1a18](https://github.com/n8n-io/n8n/commit/cda1a18))
+- **Merge Node:** Fix possible stack overflow ([#19101](https://github.com/n8n-io/n8n/pull/19101)) ([4313aa3](https://github.com/n8n-io/n8n/commit/4313aa3))
+- **OpenAI Node:** Add proxy agent for Message an assistant operation ([#19250](https://github.com/n8n-io/n8n/pull/19250)) ([7025452](https://github.com/n8n-io/n8n/commit/7025452))
+- Put static types files behind authentication ([#18660](https://github.com/n8n-io/n8n/pull/18660)) ([69e6498](https://github.com/n8n-io/n8n/commit/69e6498))
+- **Wait Node:** Allow wait node to accept 0 waiting time input ([#19159](https://github.com/n8n-io/n8n/pull/19159)) ([5968403](https://github.com/n8n-io/n8n/commit/5968403))
+### Features
+
+- Add release and lint scripts to node CLI ([#18935](https://github.com/n8n-io/n8n/pull/18935)) ([be8061c](https://github.com/n8n-io/n8n/commit/be8061c))
+- **Airtop Node:** Implement double-click and right click variants ([#18306](https://github.com/n8n-io/n8n/pull/18306)) ([9566f2b](https://github.com/n8n-io/n8n/commit/9566f2b))
+- API: Add cancel status filters to the public api executions endpoint ([#19136](https://github.com/n8n-io/n8n/pull/19136)) ([4a21f79](https://github.com/n8n-io/n8n/commit/4a21f79))
+- **core:** Allow filtering workflows by availableInMCP ([#18646](https://github.com/n8n-io/n8n/pull/18646)) ([6432555](https://github.com/n8n-io/n8n/commit/6432555))
+- **core:** Update email templates ([#19137](https://github.com/n8n-io/n8n/pull/19137)) ([a794ab6](https://github.com/n8n-io/n8n/commit/a794ab6))
+- **MongoDB Node:** Add driver info to MongoDB nodes ([#18615](https://github.com/n8n-io/n8n/pull/18615)) ([9a2d942](https://github.com/n8n-io/n8n/commit/9a2d942))
+- **MongoDB Vector Store Node:** Allow pre and post filtering ([#18506](https://github.com/n8n-io/n8n/pull/18506)) ([ee91aa0](https://github.com/n8n-io/n8n/commit/ee91aa0))
+- PAY-2613 add missing status field for select ([#19071](https://github.com/n8n-io/n8n/pull/19071)) ([9569965](https://github.com/n8n-io/n8n/commit/9569965))
+
+
 # Release 1.110.1
 
 ### Bug Fixes
