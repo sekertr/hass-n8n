@@ -1,3 +1,53 @@
+# Release 1.112.0
+
+### Bug Fixes
+
+- ** Switch Node:** Disable expressions for Number of Outputs in v3.3 ([#19075](https://github.com/n8n-io/n8n/pull/19075)) ([f37e9da](https://github.com/n8n-io/n8n/commit/f37e9da))
+- **AI Agent Node:** Fix double wrapping issue in ToolsAgent output parsing ([#19376](https://github.com/n8n-io/n8n/pull/19376)) ([df31868](https://github.com/n8n-io/n8n/commit/df31868))
+- **Code Tool Node:** Fix console.log output not being logged on browser ([#19422](https://github.com/n8n-io/n8n/pull/19422)) ([1e2f421](https://github.com/n8n-io/n8n/commit/1e2f421))
+- **core:** Add support for .cn Amazon regions ([#19363](https://github.com/n8n-io/n8n/pull/19363)) ([fea0a62](https://github.com/n8n-io/n8n/commit/fea0a62))
+- **core:** Fix crashed execution recovery in scaling mode ([#19412](https://github.com/n8n-io/n8n/pull/19412)) ([3576443](https://github.com/n8n-io/n8n/commit/3576443))
+- **core:** Force synchronize tag mappings also when no tag was updated ([#19332](https://github.com/n8n-io/n8n/pull/19332)) ([e054fc7](https://github.com/n8n-io/n8n/commit/e054fc7))
+- **core:** Improve Websocket connection setup for custom headers ([#19242](https://github.com/n8n-io/n8n/pull/19242)) ([1e00a7c](https://github.com/n8n-io/n8n/commit/1e00a7c))
+- **core:** Skip canceled executions in unfinished execution recovery ([#19452](https://github.com/n8n-io/n8n/pull/19452)) ([b388b23](https://github.com/n8n-io/n8n/commit/b388b23))
+- **core:** Wrap Data Table insert, update, upsert  in transactions ([#19333](https://github.com/n8n-io/n8n/pull/19333)) ([9509ef3](https://github.com/n8n-io/n8n/commit/9509ef3))
+- **Default Data Loader Node:** Use text loader for text/markdown mime-types ([#19549](https://github.com/n8n-io/n8n/pull/19549)) ([2b0203e](https://github.com/n8n-io/n8n/commit/2b0203e))
+- **editor:** Add debounce to text parameter input ([#19339](https://github.com/n8n-io/n8n/pull/19339)) ([18cccb2](https://github.com/n8n-io/n8n/commit/18cccb2))
+- **editor:** Don't show archived only hint at empty folders ([#19538](https://github.com/n8n-io/n8n/pull/19538)) ([c0d5d77](https://github.com/n8n-io/n8n/commit/c0d5d77))
+- **editor:** Fix highlighting in SQL editor ([#19291](https://github.com/n8n-io/n8n/pull/19291)) ([03b865d](https://github.com/n8n-io/n8n/commit/03b865d))
+- **editor:** Focus on selection when clicking 'tidy up' ([#19303](https://github.com/n8n-io/n8n/pull/19303)) ([3ee827c](https://github.com/n8n-io/n8n/commit/3ee827c))
+- **editor:** Handle lots of text better in chat input ([#19381](https://github.com/n8n-io/n8n/pull/19381)) ([45e8209](https://github.com/n8n-io/n8n/commit/45e8209))
+- **editor:** Improve datetime handling in Data table UI ([#19425](https://github.com/n8n-io/n8n/pull/19425)) ([1853faf](https://github.com/n8n-io/n8n/commit/1853faf))
+- **editor:** Input loses focus after typing to a fixed collection parameter ([#19372](https://github.com/n8n-io/n8n/pull/19372)) ([815ecfe](https://github.com/n8n-io/n8n/commit/815ecfe))
+- **editor:** Make inputs dragged to Python Code editor produce working code ([#19415](https://github.com/n8n-io/n8n/pull/19415)) ([c5ee969](https://github.com/n8n-io/n8n/commit/c5ee969))
+- **editor:** Make JSON highlight color different from background on light theme ([#19543](https://github.com/n8n-io/n8n/pull/19543)) ([e589cde](https://github.com/n8n-io/n8n/commit/e589cde))
+- **editor:** Only show previous nodes for tools in input panel ([#19335](https://github.com/n8n-io/n8n/pull/19335)) ([bd8dfc0](https://github.com/n8n-io/n8n/commit/bd8dfc0))
+- **editor:** Optimize workflow selector search performance by implementing pagination ([#19252](https://github.com/n8n-io/n8n/pull/19252)) ([8f60b52](https://github.com/n8n-io/n8n/commit/8f60b52))
+- **editor:** Prevent tooltip flickering when a trigger node is pinned ([#19233](https://github.com/n8n-io/n8n/pull/19233)) ([18d91b6](https://github.com/n8n-io/n8n/commit/18d91b6))
+- **editor:** Show claim free ai credits modal on credentials ([#19241](https://github.com/n8n-io/n8n/pull/19241)) ([cf356e7](https://github.com/n8n-io/n8n/commit/cf356e7))
+- **editor:** Show correct options in the NDV runs selector ([#19297](https://github.com/n8n-io/n8n/pull/19297)) ([bae6e3b](https://github.com/n8n-io/n8n/commit/bae6e3b))
+- **Execute Workflow Node:** Fix 'Continue (using error output)' mode to output errors correctly ([#19240](https://github.com/n8n-io/n8n/pull/19240)) ([6ed39e8](https://github.com/n8n-io/n8n/commit/6ed39e8))
+- **Gmail Trigger Node:** Handle self-sent emails in inbox ([#19351](https://github.com/n8n-io/n8n/pull/19351)) ([47f1d14](https://github.com/n8n-io/n8n/commit/47f1d14))
+- Override axios to 1.12.0 ([#19544](https://github.com/n8n-io/n8n/pull/19544)) ([796e44e](https://github.com/n8n-io/n8n/commit/796e44e))
+- **Perplexity Node:** Update model from 'r1-1776' to 'sonar' in API and tests ([#19440](https://github.com/n8n-io/n8n/pull/19440)) ([2ed4078](https://github.com/n8n-io/n8n/commit/2ed4078))
+- **Set Node:** Handle special replacement patterns in JSON expressions ([#18162](https://github.com/n8n-io/n8n/pull/18162)) ([2514301](https://github.com/n8n-io/n8n/commit/2514301))
+- Show correct "canceled" node status for chat model nodes ([#19366](https://github.com/n8n-io/n8n/pull/19366)) ([b6abd1e](https://github.com/n8n-io/n8n/commit/b6abd1e))
+- **Slack Node:** Add 'search:read' scope to Slack OAuth2 credentials to support searching messages ([#19229](https://github.com/n8n-io/n8n/pull/19229)) ([a139611](https://github.com/n8n-io/n8n/commit/a139611))
+- **Telegram Node:** Use parameter index instead of 0 for binaryData ([#19236](https://github.com/n8n-io/n8n/pull/19236)) ([38a6140](https://github.com/n8n-io/n8n/commit/38a6140))
+- Upgrade Langchain dependencies to address LiteLLM issue and Gemma Models not supporting images ([#19299](https://github.com/n8n-io/n8n/pull/19299)) ([e87344d](https://github.com/n8n-io/n8n/commit/e87344d))
+### Features
+
+- API: Add running status query on the executions public api endpoint ([#19205](https://github.com/n8n-io/n8n/pull/19205)) ([3af4541](https://github.com/n8n-io/n8n/commit/3af4541))
+- **core:** Add HTTPS protocol support for repository connections ([#18250](https://github.com/n8n-io/n8n/pull/18250)) ([5c6094d](https://github.com/n8n-io/n8n/commit/5c6094d))
+- **core:** Add retry execution endpoint to public api ([#19132](https://github.com/n8n-io/n8n/pull/19132)) ([c4f41bb](https://github.com/n8n-io/n8n/commit/c4f41bb))
+- **editor:** Add toggle viewport sync to workflow diffs & UI improvements ([#19373](https://github.com/n8n-io/n8n/pull/19373)) ([d7b8474](https://github.com/n8n-io/n8n/commit/d7b8474))
+- **editor:** Enhance diffs formatting for jsCode and sticky notes ([#19289](https://github.com/n8n-io/n8n/pull/19289)) ([6cd1dbd](https://github.com/n8n-io/n8n/commit/6cd1dbd))
+- **editor:** Separate node execution and validation error states ([#19029](https://github.com/n8n-io/n8n/pull/19029)) ([477dd27](https://github.com/n8n-io/n8n/commit/477dd27))
+- **Gemini Node:** Edit Image Using Nano Banana ([#19105](https://github.com/n8n-io/n8n/pull/19105)) ([87d79c9](https://github.com/n8n-io/n8n/commit/87d79c9))
+- **OpenAI Node:** Support custom headers for model requests ([#17835](https://github.com/n8n-io/n8n/pull/17835)) ([0b4de85](https://github.com/n8n-io/n8n/commit/0b4de85))
+- **Redis Node:** Add option to disable TLS verification in Redis node ([#19143](https://github.com/n8n-io/n8n/pull/19143)) ([52d44c2](https://github.com/n8n-io/n8n/commit/52d44c2))
+
+
 # Release 1.111.0
 
 ### Bug Fixes
