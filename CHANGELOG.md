@@ -1,3 +1,10 @@
+# Release 1.112.2
+
+### Bug Fixes
+
+- Always generate tags.json file when using environments ([#19698](https://github.com/n8n-io/n8n/pull/19698)) ([374aa9d](https://github.com/n8n-io/n8n/commit/374aa9d))
+
+
 # Release 1.112.1
 
 
