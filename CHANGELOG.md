@@ -1,3 +1,10 @@
+# Release 1.112.3
+
+### Bug Fixes
+
+- **core:** Credential export for personal projects ([#19720](https://github.com/n8n-io/n8n/pull/19720)) ([de26236](https://github.com/n8n-io/n8n/commit/de26236))
+
+
 # Release 1.112.2
 
 ### Bug Fixes
