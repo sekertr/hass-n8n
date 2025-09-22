@@ -1,3 +1,57 @@
+# Release 1.113.0
+
+### Bug Fixes
+
+- Add accurate concurrent executions count to executions list ([#19249](https://github.com/n8n-io/n8n/pull/19249)) ([dc75be3](https://github.com/n8n-io/n8n/commit/dc75be3))
+- **AI Agent Node:** Ignore non-text chunks ([#19568](https://github.com/n8n-io/n8n/pull/19568)) ([ccee1ac](https://github.com/n8n-io/n8n/commit/ccee1ac))
+- **AI Agent Node:** Respect context window length in streaming mode ([#19567](https://github.com/n8n-io/n8n/pull/19567)) ([6b25c57](https://github.com/n8n-io/n8n/commit/6b25c57))
+- Always generate tags.json file when using environments ([#19698](https://github.com/n8n-io/n8n/pull/19698)) ([dee2216](https://github.com/n8n-io/n8n/commit/dee2216))
+- API: Fix broken Terms of Service link in Swagger documentation ([#19216](https://github.com/n8n-io/n8n/pull/19216)) ([2a59418](https://github.com/n8n-io/n8n/commit/2a59418))
+- **AWS Textract Node:** Handle all binary data modes correctly ([#19258](https://github.com/n8n-io/n8n/pull/19258)) ([64fa0ce](https://github.com/n8n-io/n8n/commit/64fa0ce))
+- **core:** Credential export for personal projects ([#19720](https://github.com/n8n-io/n8n/pull/19720)) ([feebfd2](https://github.com/n8n-io/n8n/commit/feebfd2))
+- **core:** Don't show license activation error message twice ([#19833](https://github.com/n8n-io/n8n/pull/19833)) ([9b96149](https://github.com/n8n-io/n8n/commit/9b96149))
+- **core:** Ensure external secrets are refreshed at job start with error logging ([#19539](https://github.com/n8n-io/n8n/pull/19539)) ([53630d7](https://github.com/n8n-io/n8n/commit/53630d7))
+- Disable update button when the user is not allowed to update ([#19223](https://github.com/n8n-io/n8n/pull/19223)) ([dfb0c4e](https://github.com/n8n-io/n8n/commit/dfb0c4e))
+- **editor:** Canvas connections show X items total label when multiple run iterations ([#19648](https://github.com/n8n-io/n8n/pull/19648)) ([61edb72](https://github.com/n8n-io/n8n/commit/61edb72))
+- **editor:** Fix position of notification toast and "Ask AI" floating button ([#19694](https://github.com/n8n-io/n8n/pull/19694)) ([80e08db](https://github.com/n8n-io/n8n/commit/80e08db))
+- **editor:** Keep chat session when switching to other tabs ([#19483](https://github.com/n8n-io/n8n/pull/19483)) ([7e63e56](https://github.com/n8n-io/n8n/commit/7e63e56))
+- **editor:** Make project member role selection dropdown scrollable ([#19772](https://github.com/n8n-io/n8n/pull/19772)) ([3fbe08e](https://github.com/n8n-io/n8n/commit/3fbe08e))
+- **editor:** Reintroduce user deletion actions in the members table in Users and Project settings page ([#19604](https://github.com/n8n-io/n8n/pull/19604)) ([bcedf5c](https://github.com/n8n-io/n8n/commit/bcedf5c))
+- **editor:** Unify data type icons ([#19545](https://github.com/n8n-io/n8n/pull/19545)) ([2caf23d](https://github.com/n8n-io/n8n/commit/2caf23d))
+- **Gemini Vertex Node:** Upgrading Langchain/google-vertexai to allow errors to bubble up correctly ([#19639](https://github.com/n8n-io/n8n/pull/19639)) ([3f1e764](https://github.com/n8n-io/n8n/commit/3f1e764))
+- **Github Node:** Modify regex validation to support custom urls ([#19076](https://github.com/n8n-io/n8n/pull/19076)) ([3537a73](https://github.com/n8n-io/n8n/commit/3537a73))
+- **Google Gemini Node:** Use streams when uploading file ([#19537](https://github.com/n8n-io/n8n/pull/19537)) ([82e707c](https://github.com/n8n-io/n8n/commit/82e707c))
+- **Google Sheets Node:** Add a warning about using expressions ([#19840](https://github.com/n8n-io/n8n/pull/19840)) ([6a0aac2](https://github.com/n8n-io/n8n/commit/6a0aac2))
+- Improve Node CLI error messages and dev command exit behavior ([#19637](https://github.com/n8n-io/n8n/pull/19637)) ([14a7c36](https://github.com/n8n-io/n8n/commit/14a7c36))
+- **n8n Form Node:** Add html table tags to allowedTags, CSP headers on form completion, free text sanitization removed ([#19446](https://github.com/n8n-io/n8n/pull/19446)) ([7ea920d](https://github.com/n8n-io/n8n/commit/7ea920d))
+- **Notion Node:** Fix regex for getMany operation ([#19419](https://github.com/n8n-io/n8n/pull/19419)) ([185fc41](https://github.com/n8n-io/n8n/commit/185fc41))
+- Open form popup for Form Trigger even if it has execution data ([#19416](https://github.com/n8n-io/n8n/pull/19416)) ([1c45d8b](https://github.com/n8n-io/n8n/commit/1c45d8b))
+- **Salesforce Node:** Login prompt in Oauth2 credentials for authUrl ([#19450](https://github.com/n8n-io/n8n/pull/19450)) ([5591fdc](https://github.com/n8n-io/n8n/commit/5591fdc))
+- **Salesforce Trigger Node:** Update polling logic to account for Salesforce processing delay ([#19377](https://github.com/n8n-io/n8n/pull/19377)) ([b480f49](https://github.com/n8n-io/n8n/commit/b480f49))
+- String columns do not need comparable conditions ([#19565](https://github.com/n8n-io/n8n/pull/19565)) ([a400716](https://github.com/n8n-io/n8n/commit/a400716))
+- **webhook Node:** More informative error for webhook response config mismatch ([#19693](https://github.com/n8n-io/n8n/pull/19693)) ([354bcf4](https://github.com/n8n-io/n8n/commit/354bcf4))
+- **Webhook Trigger Node:** Duplicate webhook paths are not detected for methods other than GET ([#19378](https://github.com/n8n-io/n8n/pull/19378)) ([3a38b32](https://github.com/n8n-io/n8n/commit/3a38b32))
+### Features
+
+- Add a GH action to create a patch release branch ([#19477](https://github.com/n8n-io/n8n/pull/19477)) ([ddab467](https://github.com/n8n-io/n8n/commit/ddab467))
+- Add N8N_GIT_NODE_DISABLE_BARE_REPOS environment variable to allow users to disable bare repositories in Git Node ([#19559](https://github.com/n8n-io/n8n/pull/19559)) ([5bf3db5](https://github.com/n8n-io/n8n/commit/5bf3db5))
+- Allow filtering insight by projectId ([#19552](https://github.com/n8n-io/n8n/pull/19552)) ([8086a21](https://github.com/n8n-io/n8n/commit/8086a21))
+- **core:** Implement request-response logic in workflow execution engine ([#19193](https://github.com/n8n-io/n8n/pull/19193)) ([d1b17d9](https://github.com/n8n-io/n8n/commit/d1b17d9))
+- **core:** Prompt user to confirm password when changing email and mfa is disabled ([#19408](https://github.com/n8n-io/n8n/pull/19408)) ([f0388aa](https://github.com/n8n-io/n8n/commit/f0388aa))
+- **editor:** [Insights] Add filter by project ([#19643](https://github.com/n8n-io/n8n/pull/19643)) ([5cef76a](https://github.com/n8n-io/n8n/commit/5cef76a))
+- **editor:** Add create new button in resource locator for data table node ([#19788](https://github.com/n8n-io/n8n/pull/19788)) ([0c82007](https://github.com/n8n-io/n8n/commit/0c82007))
+- **editor:** Add node popularity scores to improve search ranking ([#19561](https://github.com/n8n-io/n8n/pull/19561)) ([ae1af11](https://github.com/n8n-io/n8n/commit/ae1af11))
+- **editor:** Change default sidebar state to collapsed ([#19692](https://github.com/n8n-io/n8n/pull/19692)) ([5e5d342](https://github.com/n8n-io/n8n/commit/5e5d342))
+- **editor:** UI Data table filters ([#19596](https://github.com/n8n-io/n8n/pull/19596)) ([4c59c3b](https://github.com/n8n-io/n8n/commit/4c59c3b))
+- Enabling data tables as a default module ([#19687](https://github.com/n8n-io/n8n/pull/19687)) ([948d449](https://github.com/n8n-io/n8n/commit/948d449))
+- **Evaluation Node:** Add support for Data Tables as evaluations data source ([#19700](https://github.com/n8n-io/n8n/pull/19700)) ([323180e](https://github.com/n8n-io/n8n/commit/323180e))
+- **Git Node:** Add support for branches ([#18870](https://github.com/n8n-io/n8n/pull/18870)) ([7522607](https://github.com/n8n-io/n8n/commit/7522607))
+- PAY-3769 add db export command ([#19579](https://github.com/n8n-io/n8n/pull/19579)) ([2435b94](https://github.com/n8n-io/n8n/commit/2435b94))
+- PAY-3770 add db import command ([#19584](https://github.com/n8n-io/n8n/pull/19584)) ([cf4a551](https://github.com/n8n-io/n8n/commit/cf4a551))
+- PAY-3773 export entities tooling ([#19658](https://github.com/n8n-io/n8n/pull/19658)) ([652f267](https://github.com/n8n-io/n8n/commit/652f267))
+- Support thinking settings for Gemini models ([#19591](https://github.com/n8n-io/n8n/pull/19591)) ([bb0cd86](https://github.com/n8n-io/n8n/commit/bb0cd86))
+
+
 # Release 1.112.3
 
 ### Bug Fixes
