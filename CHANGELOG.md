@@ -1,3 +1,12 @@
+# Release 1.113.1
+
+### Bug Fixes
+
+- **core:** Use different query to get sqlite data table sizes ([#19878](https://github.com/n8n-io/n8n/pull/19878)) ([24f08e1](https://github.com/n8n-io/n8n/commit/24f08e1))
+- **editor:** Fix UI being blocked from loading while data table limits are being fetched ([#19871](https://github.com/n8n-io/n8n/pull/19871)) ([436c5ab](https://github.com/n8n-io/n8n/commit/436c5ab))
+- **editor:** Make the data table size cache longer by default ([#19875](https://github.com/n8n-io/n8n/pull/19875)) ([71cf584](https://github.com/n8n-io/n8n/commit/71cf584))
+
+
 # Release 1.113.0
 
 ### Bug Fixes
