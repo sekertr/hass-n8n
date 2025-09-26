@@ -1,3 +1,10 @@
+# Release 1.113.3
+
+### Bug Fixes
+
+- **OpenAI Node:** Missing header for assistant API calls ([#20060](https://github.com/n8n-io/n8n/pull/20060)) ([326e52c](https://github.com/n8n-io/n8n/commit/326e52c))
+
+
 # Release 1.113.2
 
 
