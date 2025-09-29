@@ -1,3 +1,78 @@
+# Release 1.114.0
+
+### Bug Fixes
+
+- **ChatTrigger Node:** Chat submit button, fix disabled state coloring ([#20085](https://github.com/n8n-io/n8n/pull/20085)) ([47cbd72](https://github.com/n8n-io/n8n/commit/47cbd72))
+- **core:** Allow accessing nodes.json in preview mode ([#19920](https://github.com/n8n-io/n8n/pull/19920)) ([a26810b](https://github.com/n8n-io/n8n/commit/a26810b))
+- **core:** Batch markAsCrashed updates to avoid oversized queries ([#19904](https://github.com/n8n-io/n8n/pull/19904)) ([2db47fd](https://github.com/n8n-io/n8n/commit/2db47fd))
+- **core:** Ensure cancellation interrupts runner tasks in worker ([#19864](https://github.com/n8n-io/n8n/pull/19864)) ([fac005b](https://github.com/n8n-io/n8n/commit/fac005b))
+- **core:** Fix PKCE OAuth2 flows to work without client secret ([#19601](https://github.com/n8n-io/n8n/pull/19601)) ([199d919](https://github.com/n8n-io/n8n/commit/199d919))
+- **core:** Iterate over all main output branches when extracting response ([#19963](https://github.com/n8n-io/n8n/pull/19963)) ([0b7db24](https://github.com/n8n-io/n8n/commit/0b7db24))
+- **core:** Only print deprecation notices on start command ([#19987](https://github.com/n8n-io/n8n/pull/19987)) ([4d024ec](https://github.com/n8n-io/n8n/commit/4d024ec))
+- **core:** Preserve sourceOverwrite in pairedItem data during workflow execution ([#20064](https://github.com/n8n-io/n8n/pull/20064)) ([7de2edd](https://github.com/n8n-io/n8n/commit/7de2edd))
+- **core:** Remove Data Table experimental warning log ([#19978](https://github.com/n8n-io/n8n/pull/19978)) ([7273d41](https://github.com/n8n-io/n8n/commit/7273d41))
+- **core:** Surface workflow config errors to the webhook caller  ([#19858](https://github.com/n8n-io/n8n/pull/19858)) ([8327257](https://github.com/n8n-io/n8n/commit/8327257))
+- **core:** Use different query to get sqlite data table sizes ([#19878](https://github.com/n8n-io/n8n/pull/19878)) ([24f08e1](https://github.com/n8n-io/n8n/commit/24f08e1))
+- **editor:** Adjust insight's project filter placeholder ([#19909](https://github.com/n8n-io/n8n/pull/19909)) ([4c0e19f](https://github.com/n8n-io/n8n/commit/4c0e19f))
+- **editor:** Clean up NDV RunData loading states ([#20082](https://github.com/n8n-io/n8n/pull/20082)) ([874c890](https://github.com/n8n-io/n8n/commit/874c890))
+- **editor:** Fix data tables id column sort icon ([#19981](https://github.com/n8n-io/n8n/pull/19981)) ([0475599](https://github.com/n8n-io/n8n/commit/0475599))
+- **editor:** Fix empty credential translation ([#20019](https://github.com/n8n-io/n8n/pull/20019)) ([fa66401](https://github.com/n8n-io/n8n/commit/fa66401))
+- **editor:** Fix keyboard navigation in node creator with pre-built agents experiment ([#19853](https://github.com/n8n-io/n8n/pull/19853)) ([a56d6ab](https://github.com/n8n-io/n8n/commit/a56d6ab))
+- **editor:** Fix reka popover issue when uncontrolled ([#19952](https://github.com/n8n-io/n8n/pull/19952)) ([36df7da](https://github.com/n8n-io/n8n/commit/36df7da))
+- **editor:** Fix rlc input selection issue when not in list mode ([#20004](https://github.com/n8n-io/n8n/pull/20004)) ([c6443c3](https://github.com/n8n-io/n8n/commit/c6443c3))
+- **editor:** Fix UI being blocked from loading while data table limits are being fetched ([#19871](https://github.com/n8n-io/n8n/pull/19871)) ([436c5ab](https://github.com/n8n-io/n8n/commit/436c5ab))
+- **editor:** Improve arrow key navigation in chat message panel ([#19926](https://github.com/n8n-io/n8n/pull/19926)) ([0f19655](https://github.com/n8n-io/n8n/commit/0f19655))
+- **editor:** Make shortcuts for toggling input/output panel work in the popped out log view ([#19911](https://github.com/n8n-io/n8n/pull/19911)) ([8049da2](https://github.com/n8n-io/n8n/commit/8049da2))
+- **editor:** Make the data table size cache longer by default ([#19875](https://github.com/n8n-io/n8n/pull/19875)) ([71cf584](https://github.com/n8n-io/n8n/commit/71cf584))
+- **editor:** Mark Workflow Extraction Modal Submit Button as loading and show error toast on error  ([#19976](https://github.com/n8n-io/n8n/pull/19976)) ([60560ba](https://github.com/n8n-io/n8n/commit/60560ba))
+- **editor:** Reflect Wait node's execution status correctly in log view ([#19898](https://github.com/n8n-io/n8n/pull/19898)) ([a679359](https://github.com/n8n-io/n8n/commit/a679359))
+- **Gmail Trigger Node:** Show warning about multiple items returned ([#19896](https://github.com/n8n-io/n8n/pull/19896)) ([83173fb](https://github.com/n8n-io/n8n/commit/83173fb))
+- **MCP Client Tool Node:** Change default transport to HTTP Streamable ([#20053](https://github.com/n8n-io/n8n/pull/20053)) ([e0a9de7](https://github.com/n8n-io/n8n/commit/e0a9de7))
+- **Microsoft Excel 365 Node:** Allow appending to empty sheets ([#19642](https://github.com/n8n-io/n8n/pull/19642)) ([c96e6ae](https://github.com/n8n-io/n8n/commit/c96e6ae))
+- Only show AI assistant when AI service URL is setup ([#18774](https://github.com/n8n-io/n8n/pull/18774)) ([002f380](https://github.com/n8n-io/n8n/commit/002f380))
+- **OpenAI Node:** Missing header for assistant API calls ([#20060](https://github.com/n8n-io/n8n/pull/20060)) ([a6c7e39](https://github.com/n8n-io/n8n/commit/a6c7e39))
+- Pass project ID to the wf execution demo iframe ([#19785](https://github.com/n8n-io/n8n/pull/19785)) ([a0efb97](https://github.com/n8n-io/n8n/commit/a0efb97))
+- **Postgres Node:** Fix citext and user defined field type mapping ([#19780](https://github.com/n8n-io/n8n/pull/19780)) ([669a7b5](https://github.com/n8n-io/n8n/commit/669a7b5))
+- **Slack Node:** Reply to message ([#19760](https://github.com/n8n-io/n8n/pull/19760)) ([977d37f](https://github.com/n8n-io/n8n/commit/977d37f))
+- **WhatsApp Business Cloud Node:** Include whatsapp id in contact properties ([#19762](https://github.com/n8n-io/n8n/pull/19762)) ([ea9093c](https://github.com/n8n-io/n8n/commit/ea9093c))
+- **Wordpress Node:** Handle before query parameter when getting many posts or pages ([#20041](https://github.com/n8n-io/n8n/pull/20041)) ([3963e97](https://github.com/n8n-io/n8n/commit/3963e97))
+### Features
+
+- Add community node ESLint plugin, use in scanner ([#19660](https://github.com/n8n-io/n8n/pull/19660)) ([b55c95c](https://github.com/n8n-io/n8n/commit/b55c95c))
+- Binary data access improvements ([#19629](https://github.com/n8n-io/n8n/pull/19629)) ([182a40e](https://github.com/n8n-io/n8n/commit/182a40e))
+- **core:** Add custom data range query to insights endpoints ([#20009](https://github.com/n8n-io/n8n/pull/20009)) ([24ea97a](https://github.com/n8n-io/n8n/commit/24ea97a))
+- **core:** Add HTTPS protocol support for environments ([#19482](https://github.com/n8n-io/n8n/pull/19482)) ([9806e6f](https://github.com/n8n-io/n8n/commit/9806e6f))
+- **core:** Add startDate and endDate filter query to insights endpoints ([#19954](https://github.com/n8n-io/n8n/pull/19954)) ([7c3e1c9](https://github.com/n8n-io/n8n/commit/7c3e1c9))
+- **core:** Adjust n8n email template styling ([#19969](https://github.com/n8n-io/n8n/pull/19969)) ([dbf3284](https://github.com/n8n-io/n8n/commit/dbf3284))
+- **core:** Throw customized error on assigned custom role deletion ([#19900](https://github.com/n8n-io/n8n/pull/19900)) ([a01e5a5](https://github.com/n8n-io/n8n/commit/a01e5a5))
+- **editor:** Add keyboard shortcut for run data search in the log view and mapper popover ([#19745](https://github.com/n8n-io/n8n/pull/19745)) ([1ca9bbe](https://github.com/n8n-io/n8n/commit/1ca9bbe))
+- **editor:** Show node update button in ndv and nodecreator ([#19696](https://github.com/n8n-io/n8n/pull/19696)) ([ef5ec8a](https://github.com/n8n-io/n8n/commit/ef5ec8a))
+- Make project member updates immediate ([#19837](https://github.com/n8n-io/n8n/pull/19837)) ([b59f976](https://github.com/n8n-io/n8n/commit/b59f976))
+- PAY-3774 entities import logic ([#19770](https://github.com/n8n-io/n8n/pull/19770)) ([560c951](https://github.com/n8n-io/n8n/commit/560c951))
+- PAY-3775 disable ref to use master ([#20086](https://github.com/n8n-io/n8n/pull/20086)) ([03d351a](https://github.com/n8n-io/n8n/commit/03d351a))
+- PAY-3775 github action to test exporting to sqlite ([#20069](https://github.com/n8n-io/n8n/pull/20069)) ([0e9464a](https://github.com/n8n-io/n8n/commit/0e9464a))
+- PAY-3855 ensure latest migrations run ([#19917](https://github.com/n8n-io/n8n/pull/19917)) ([2160c55](https://github.com/n8n-io/n8n/commit/2160c55))
+### Performance Improvements
+
+- **editor:** Skip calculating log tree entirely when the panel is closed ([#19870](https://github.com/n8n-io/n8n/pull/19870)) ([677cdda](https://github.com/n8n-io/n8n/commit/677cdda))
+- Note
+- Release 1.114.0 with core/editor bug fixes, new insights filters and HTTPS env support, community-node linting, and a small editor performance optimization.
+- Core:
+- Bug fixes: cancellation handling, PKCE OAuth2 w/o client secret, webhook error surfacing, batch crash updates, nodes.json access in preview, response extraction across branches, deprecation notices only on start, pairedItem preservation, SQLite table size query tweak.
+- Features: insights endpoints gain custom range and startDate/endDate filters; HTTPS protocol support for environments; adjusted email template styling; custom error on deleting assigned custom roles.
+- Editor/UI:
+- Bug fixes: NDV run-data loading, data table limits blocking, sort icon, keyboard navigation, UI shortcuts in popped-out log, placeholders, rlc selection, uncontrolled popovers, Wait node status, workflow extraction modal states; show AI assistant only when configured; improved chat panel arrow navigation.
+- Feature: keyboard shortcut for run-data search; show node update button in NDV and node creator.
+- Performance: skip log tree calculation when panel is closed.
+- Nodes:
+- Fixes across Gmail Trigger (multi-item warning), OpenAI (missing header), Slack reply, WhatsApp Business Cloud contact props, Microsoft Excel 365 append to empty sheet, Postgres type mappings, Wordpress before query handling, MCP client tool default transport.
+- Tooling/CI:
+- Add community node ESLint plugin and use in scanner; project member updates immediate; PAY-3774/3775/3855 workflow tooling and migrations updates.
+- Release mechanics:
+- Bump versions across packages and update CHANGELOG.md for 1.114.0.
+- Written by Cursor Bugbot for commit 217423f. This will update automatically on new commits. Configure here.
+
+
 # Release 1.113.3
 
 ### Bug Fixes
