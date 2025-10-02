@@ -1,3 +1,17 @@
+# Release 1.114.1
+
+### Bug Fixes
+
+- **Anthropic Chat Model Node:** Fix Sonnet 4.5 not working with default topP ([#20286](https://github.com/n8n-io/n8n/pull/20286)) ([4cb9567](https://github.com/n8n-io/n8n/commit/4cb9567))
+- **core:** Add globals and locals to denylist in native Python runner ([#20172](https://github.com/n8n-io/n8n/pull/20172)) ([b078c8f](https://github.com/n8n-io/n8n/commit/b078c8f))
+- Note
+- Release 1.114.1 with fixes for Anthropic Chat Model default topP and Python runner denylist.
+- Bug fixes:
+- **Anthropic Chat Model Node:** Fix Sonnet 4.5 not working with default topP.
+- **core:** Add globals and locals to denylist in native Python runner.
+- Written by Cursor Bugbot for commit f40232e. This will update automatically on new commits. Configure here.
+
+
 # Release 1.114.0
 
 ### Bug Fixes
