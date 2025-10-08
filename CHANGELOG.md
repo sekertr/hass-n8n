@@ -1,3 +1,10 @@
+# Release 1.115.1
+
+### Bug Fixes
+
+- **core:** Fix worker setup completion ([#20495](https://github.com/n8n-io/n8n/pull/20495)) ([09ecd9c](https://github.com/n8n-io/n8n/commit/09ecd9c))
+
+
 # Release 1.115.0
 
 ### Bug Fixes
