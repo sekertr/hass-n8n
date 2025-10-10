@@ -1,3 +1,14 @@
+# Release 1.115.2
+
+### Bug Fixes
+
+- ai-builder: Fix loading of Data Table nodes for AI Builder ([#20546](https://github.com/n8n-io/n8n/pull/20546)) ([e7749fd](https://github.com/n8n-io/n8n/commit/e7749fd))
+- **editor:** Compact large ITaskDataConnections before sending to AI Builder ([#20545](https://github.com/n8n-io/n8n/pull/20545)) ([e4b1459](https://github.com/n8n-io/n8n/commit/e4b1459))
+- **editor:** Keep source control and user area fixed to bottom of sidebar ([#20530](https://github.com/n8n-io/n8n/pull/20530)) ([8ed0c52](https://github.com/n8n-io/n8n/commit/8ed0c52))
+- **Github Node:** Fix GitHub node no longer shows repo owner for Get Issues operation ([#20580](https://github.com/n8n-io/n8n/pull/20580)) ([5b50465](https://github.com/n8n-io/n8n/commit/5b50465))
+- Update libxml2 ([#20635](https://github.com/n8n-io/n8n/pull/20635)) ([ddcaf8e](https://github.com/n8n-io/n8n/commit/ddcaf8e))
+
+
 # Release 1.115.1
 
 ### Bug Fixes
