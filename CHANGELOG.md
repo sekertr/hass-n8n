@@ -1,3 +1,10 @@
+# Release 1.116.1
+
+### Bug Fixes
+
+- **core:** Fix normalization in per-item mode in native Python runner ([#20750](https://github.com/n8n-io/n8n/pull/20750)) ([f3be6c7](https://github.com/n8n-io/n8n/commit/f3be6c7))
+
+
 # Release 1.116.0
 
 ### Bug Fixes
