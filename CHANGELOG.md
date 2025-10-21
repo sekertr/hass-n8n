@@ -1,3 +1,68 @@
+# Release 1.117.0
+
+### Bug Fixes
+
+- **AI Agent Node:** Track source node toolkit tools are executed from ([#20866](https://github.com/n8n-io/n8n/pull/20866)) ([e195677](https://github.com/n8n-io/n8n/commit/e195677))
+- ai-builder: Accept empty expressionValues in builder request ([#20993](https://github.com/n8n-io/n8n/pull/20993)) ([3f9866e](https://github.com/n8n-io/n8n/commit/3f9866e))
+- ai-builder: AI builder memory consumption issue ([#20982](https://github.com/n8n-io/n8n/pull/20982)) ([b4a92f3](https://github.com/n8n-io/n8n/commit/b4a92f3))
+- ai-builder: Assistant side panel open without blocking calls ([#20714](https://github.com/n8n-io/n8n/pull/20714)) ([39b7966](https://github.com/n8n-io/n8n/commit/39b7966))
+- ai-builder: Submit AI workflow builder prompt on enter, newline on shift+enter ([#20863](https://github.com/n8n-io/n8n/pull/20863)) ([5b5cef8](https://github.com/n8n-io/n8n/commit/5b5cef8))
+- Call n8n Sub-Workflow Tool Node: Return structured data from Workflow Tool when called by engine ([#20869](https://github.com/n8n-io/n8n/pull/20869)) ([44d1835](https://github.com/n8n-io/n8n/commit/44d1835))
+- **core:** Fix folders file overwrite for admin on push ([#20813](https://github.com/n8n-io/n8n/pull/20813)) ([4a3e7d7](https://github.com/n8n-io/n8n/commit/4a3e7d7))
+- **core:** Fix normalization in per-item mode in native Python runner ([#20750](https://github.com/n8n-io/n8n/pull/20750)) ([2224647](https://github.com/n8n-io/n8n/commit/2224647))
+- **core:** Prevent binary payload duplication in JS runner ([#20753](https://github.com/n8n-io/n8n/pull/20753)) ([f193b7a](https://github.com/n8n-io/n8n/commit/f193b7a))
+- **core:** Prevent duplicate nodeExecuteBefore events for agent nodes ([#20726](https://github.com/n8n-io/n8n/pull/20726)) ([d4cd6bf](https://github.com/n8n-io/n8n/commit/d4cd6bf))
+- **core:** Proxy all HTTP traffic instead of only axios ([#20614](https://github.com/n8n-io/n8n/pull/20614)) ([f41b864](https://github.com/n8n-io/n8n/commit/f41b864))
+- **core:** Set rfc3164 option to false for syslog client initialization ([#20664](https://github.com/n8n-io/n8n/pull/20664)) ([bdcb049](https://github.com/n8n-io/n8n/commit/bdcb049))
+- **core:** Stop task process correctly in native Python runner ([#20840](https://github.com/n8n-io/n8n/pull/20840)) ([c560f05](https://github.com/n8n-io/n8n/commit/c560f05))
+- Detect resource owner change in source control ([#20811](https://github.com/n8n-io/n8n/pull/20811)) ([e12df06](https://github.com/n8n-io/n8n/commit/e12df06))
+- **editor:** Disallow drag-and-drop for non-immediate-ancestors of Python code node ([#20773](https://github.com/n8n-io/n8n/pull/20773)) ([0fab5ea](https://github.com/n8n-io/n8n/commit/0fab5ea))
+- **editor:** Enhance error handling and toast notifications in WorkflowDiffModal ([#20812](https://github.com/n8n-io/n8n/pull/20812)) ([2ee3d26](https://github.com/n8n-io/n8n/commit/2ee3d26))
+- **editor:** Expand URL validation to accept any HTTPS URL for workflow import instead of requiring a .json extension ([#20509](https://github.com/n8n-io/n8n/pull/20509)) ([f0a3978](https://github.com/n8n-io/n8n/commit/f0a3978))
+- **editor:** Fetch workflow and version in parallel to prevent double render flicker ([#20568](https://github.com/n8n-io/n8n/pull/20568)) ([76969eb](https://github.com/n8n-io/n8n/commit/76969eb))
+- **editor:** Fix command bar test workflow command issue ([#20910](https://github.com/n8n-io/n8n/pull/20910)) ([be27e94](https://github.com/n8n-io/n8n/commit/be27e94))
+- **editor:** Hide Execute and refine section when error occurs after workflow update ([#20876](https://github.com/n8n-io/n8n/pull/20876)) ([3d9d19e](https://github.com/n8n-io/n8n/commit/3d9d19e))
+- **editor:** Update ProjectSettings UI to always show save/cancel buttons and add search functionality for members ([#20828](https://github.com/n8n-io/n8n/pull/20828)) ([fa02786](https://github.com/n8n-io/n8n/commit/fa02786))
+- **editor:** Use existing workflowState when setting node execution issues ([#20777](https://github.com/n8n-io/n8n/pull/20777)) ([ef89640](https://github.com/n8n-io/n8n/commit/ef89640))
+- **Embeddings OpenAI Node:** Add encodingFormat parameter to fix LM Studio compatibility ([#20877](https://github.com/n8n-io/n8n/pull/20877)) ([61b8dbc](https://github.com/n8n-io/n8n/commit/61b8dbc))
+- Fix source control pull information toast ([#20787](https://github.com/n8n-io/n8n/pull/20787)) ([fbb35d4](https://github.com/n8n-io/n8n/commit/fbb35d4))
+- **Gmail Trigger Node:** Prevent missing emails between polling intervals ([#20794](https://github.com/n8n-io/n8n/pull/20794)) ([f3ebf05](https://github.com/n8n-io/n8n/commit/f3ebf05))
+- **HTTP Request Node:** Support array in query request parrameters ([#20510](https://github.com/n8n-io/n8n/pull/20510)) ([54dcfde](https://github.com/n8n-io/n8n/commit/54dcfde))
+- **LM Chat Azure OpenAI Node:** Set model name to ensure correct internal logic ([#20893](https://github.com/n8n-io/n8n/pull/20893)) ([24f1ad9](https://github.com/n8n-io/n8n/commit/24f1ad9))
+- **Mistral Cloud Chat Mode Node:** Support JSON response from latest Magistral models ([#20853](https://github.com/n8n-io/n8n/pull/20853)) ([b8f43d3](https://github.com/n8n-io/n8n/commit/b8f43d3))
+- MongoDB connection string parameter marked as password ([#20868](https://github.com/n8n-io/n8n/pull/20868)) ([1eccd74](https://github.com/n8n-io/n8n/commit/1eccd74))
+- **n8n Form Node:** CSP headers should not be set on response with redirect ([#20864](https://github.com/n8n-io/n8n/pull/20864)) ([7f651ca](https://github.com/n8n-io/n8n/commit/7f651ca))
+- **Notion Node:** Fix typo in Notion 'Operation' options ([#20809](https://github.com/n8n-io/n8n/pull/20809)) ([b32c8ce](https://github.com/n8n-io/n8n/commit/b32c8ce))
+- **OpenAI Node:** Re-enable list of models for non-OpenAI providers ([#20647](https://github.com/n8n-io/n8n/pull/20647)) ([131a57e](https://github.com/n8n-io/n8n/commit/131a57e))
+- **OpenAI Node:** Remove local shell, update simplify output logic ([#20957](https://github.com/n8n-io/n8n/pull/20957)) ([f282b02](https://github.com/n8n-io/n8n/commit/f282b02))
+- **OpenAI Node:** Rename "Create" to "Generate" ([#20905](https://github.com/n8n-io/n8n/pull/20905)) ([d20a2e5](https://github.com/n8n-io/n8n/commit/d20a2e5))
+- **Qdrant Vector Store Node:** Add support for custom content and metadata keys ([#20873](https://github.com/n8n-io/n8n/pull/20873)) ([049c599](https://github.com/n8n-io/n8n/commit/049c599))
+- Sentry.io Node: Add credential tests and authenticate methods, fix self-hosted credentials ([#20195](https://github.com/n8n-io/n8n/pull/20195)) ([11f8a3f](https://github.com/n8n-io/n8n/commit/11f8a3f))
+- **Slack Node:** Fix incorrect option name stopping user groups from working ([#20660](https://github.com/n8n-io/n8n/pull/20660)) ([7edbd7d](https://github.com/n8n-io/n8n/commit/7edbd7d))
+### Features
+
+- Add GET /sso/provisioning/config endpoint for sso provisioning config ([#20850](https://github.com/n8n-io/n8n/pull/20850)) ([c40aaa5](https://github.com/n8n-io/n8n/commit/c40aaa5))
+- Add new env vars for sso provisioning configuration ([#20749](https://github.com/n8n-io/n8n/pull/20749)) ([28a4e2c](https://github.com/n8n-io/n8n/commit/28a4e2c))
+- ai-builder: Increase prompt limit to 5000 characters ([#20865](https://github.com/n8n-io/n8n/pull/20865)) ([f37e7c2](https://github.com/n8n-io/n8n/commit/f37e7c2))
+- ai-builder: Optimize Anthropic prompt caching with 4-breakpoint strategy ([#20484](https://github.com/n8n-io/n8n/pull/20484)) ([3afb4db](https://github.com/n8n-io/n8n/commit/3afb4db))
+- **Anthropic Node:** Support custom headers for model requests ([#20253](https://github.com/n8n-io/n8n/pull/20253)) ([7706ec8](https://github.com/n8n-io/n8n/commit/7706ec8))
+- Assign owner to pulled resources  ([#20920](https://github.com/n8n-io/n8n/pull/20920)) ([cec27a8](https://github.com/n8n-io/n8n/commit/cec27a8))
+- **core:** Add telemetry to monitor project variables usage ([#20593](https://github.com/n8n-io/n8n/pull/20593)) ([fbe2783](https://github.com/n8n-io/n8n/commit/fbe2783))
+- **core:** Database migration to add workflow dependency index table ([#20723](https://github.com/n8n-io/n8n/pull/20723)) ([ed3b19a](https://github.com/n8n-io/n8n/commit/ed3b19a))
+- editor, ai-builder: Add resolved expressions context to AI builder ([#20605](https://github.com/n8n-io/n8n/pull/20605)) ([5c74a0b](https://github.com/n8n-io/n8n/commit/5c74a0b))
+- **editor:** Add custom roles CRUD UI ([#19224](https://github.com/n8n-io/n8n/pull/19224)) ([d4eb0bb](https://github.com/n8n-io/n8n/commit/d4eb0bb))
+- **editor:** Auto-assign credentials to other nodes ([#20722](https://github.com/n8n-io/n8n/pull/20722)) ([5130c11](https://github.com/n8n-io/n8n/commit/5130c11))
+- **editor:** Enable rendering verified nodes in preview service ([#20065](https://github.com/n8n-io/n8n/pull/20065)) ([1c07bba](https://github.com/n8n-io/n8n/commit/1c07bba))
+- **editor:** Make the main create resource button aware of the selected tab ([#20725](https://github.com/n8n-io/n8n/pull/20725)) ([7aa2f48](https://github.com/n8n-io/n8n/commit/7aa2f48))
+- **Lemonade Model Node:** Add Lemonade server as a node ([#20557](https://github.com/n8n-io/n8n/pull/20557)) ([f310b13](https://github.com/n8n-io/n8n/commit/f310b13))
+- **OpenAI Node:** Add Responses API and video generation support ([#20657](https://github.com/n8n-io/n8n/pull/20657)) ([91c09bb](https://github.com/n8n-io/n8n/commit/91c09bb))
+- **oracleDb Node:** Add Oracle Database SQL Node ([#20867](https://github.com/n8n-io/n8n/pull/20867)) ([b211401](https://github.com/n8n-io/n8n/commit/b211401))
+- SSO provisioning settings UI ([#20961](https://github.com/n8n-io/n8n/pull/20961)) ([04438f8](https://github.com/n8n-io/n8n/commit/04438f8))
+### Performance Improvements
+
+- **core:** Optimize hot paths in native Python runner ([#20844](https://github.com/n8n-io/n8n/pull/20844)) ([a4264f0](https://github.com/n8n-io/n8n/commit/a4264f0))
+
+
 # Release 1.116.1
 
 ### Bug Fixes
