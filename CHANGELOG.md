@@ -1,3 +1,13 @@
+# Release 1.117.1
+
+### Bug Fixes
+
+- **OpenAI Node:** Don't include function calls when conversation id is used ([#21047](https://github.com/n8n-io/n8n/pull/21047)) ([a787162](https://github.com/n8n-io/n8n/commit/a787162))
+### Features
+
+- **OpenAI Node:** Remove completions from V2 ([#21078](https://github.com/n8n-io/n8n/pull/21078)) ([d8f90f1](https://github.com/n8n-io/n8n/commit/d8f90f1))
+
+
 # Release 1.117.0
 
 ### Bug Fixes
