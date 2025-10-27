@@ -1,3 +1,51 @@
+# Release 1.118.0
+
+### Bug Fixes
+
+- **AI Agent Node:** Only use ai-tool output when reconstructing steps ([#21061](https://github.com/n8n-io/n8n/pull/21061)) ([255db6a](https://github.com/n8n-io/n8n/commit/255db6a))
+- **AI Agent Node:** Respect maxIterations parameter ([#21081](https://github.com/n8n-io/n8n/pull/21081)) ([4ea2757](https://github.com/n8n-io/n8n/commit/4ea2757))
+- ai-builder: Auto-generate names only for workflows with default names ([#21162](https://github.com/n8n-io/n8n/pull/21162)) ([4a4d1fe](https://github.com/n8n-io/n8n/commit/4a4d1fe))
+- ai-builder: Format user message to avoid markdown formatting errors ([#21033](https://github.com/n8n-io/n8n/pull/21033)) ([70523e1](https://github.com/n8n-io/n8n/commit/70523e1))
+- ai-builder: Prompt input scrolling fix and update max line from 6 -> 10 ([#21165](https://github.com/n8n-io/n8n/pull/21165)) ([3caa5ac](https://github.com/n8n-io/n8n/commit/3caa5ac))
+- Call n8n Sub-Workflow Tool Node: Fix return format for execute path ([#21010](https://github.com/n8n-io/n8n/pull/21010)) ([b9b322e](https://github.com/n8n-io/n8n/commit/b9b322e))
+- **core:** Check all parents of subnodes for expression resolution ([#21141](https://github.com/n8n-io/n8n/pull/21141)) ([1c4b838](https://github.com/n8n-io/n8n/commit/1c4b838))
+- **core:** Handle rejected promises from Rudderstack SDK ([#21083](https://github.com/n8n-io/n8n/pull/21083)) ([520a9d4](https://github.com/n8n-io/n8n/commit/520a9d4))
+- **editor:** Close NDV on AI Builder message ([#21158](https://github.com/n8n-io/n8n/pull/21158)) ([f37864e](https://github.com/n8n-io/n8n/commit/f37864e))
+- **editor:** Fix tool params schema for object and array fields ([#20956](https://github.com/n8n-io/n8n/pull/20956)) ([b2e0f8c](https://github.com/n8n-io/n8n/commit/b2e0f8c))
+- **editor:** Icon picker always on top ([#21116](https://github.com/n8n-io/n8n/pull/21116)) ([9d764d0](https://github.com/n8n-io/n8n/commit/9d764d0))
+- **HTTP Request Node:** Fix expression value handling in url parameter ([#21101](https://github.com/n8n-io/n8n/pull/21101)) ([0a82e8d](https://github.com/n8n-io/n8n/commit/0a82e8d))
+- **Merge Node:** Block file access for alasql ([#20858](https://github.com/n8n-io/n8n/pull/20858)) ([79f1cca](https://github.com/n8n-io/n8n/commit/79f1cca))
+- **n8n Form Node:** From trigger selection ([#21069](https://github.com/n8n-io/n8n/pull/21069)) ([8b42820](https://github.com/n8n-io/n8n/commit/8b42820))
+- **OpenAI Node:** Don't include function calls when conversation id is used ([#21047](https://github.com/n8n-io/n8n/pull/21047)) ([2fff388](https://github.com/n8n-io/n8n/commit/2fff388))
+- Pin @lezer/common version ([#21074](https://github.com/n8n-io/n8n/pull/21074)) ([30ac847](https://github.com/n8n-io/n8n/commit/30ac847))
+- Sanitize cURL URLs with  to {PLACEHOLDER} ([#21032](https://github.com/n8n-io/n8n/pull/21032)) ([1e2bd08](https://github.com/n8n-io/n8n/commit/1e2bd08))
+- Update playwright version ([#21096](https://github.com/n8n-io/n8n/pull/21096)) ([e61de6f](https://github.com/n8n-io/n8n/commit/e61de6f))
+- Use correct enum import in CLI node templates ([#20950](https://github.com/n8n-io/n8n/pull/20950)) ([1853108](https://github.com/n8n-io/n8n/commit/1853108))
+### Features
+
+- Add logic to parse and apply global roles for sso provisioning ([#21007](https://github.com/n8n-io/n8n/pull/21007)) ([dc1437f](https://github.com/n8n-io/n8n/commit/dc1437f))
+- Add past execution schema viewing in NDV ([#20954](https://github.com/n8n-io/n8n/pull/20954)) ([4698b93](https://github.com/n8n-io/n8n/commit/4698b93))
+- Add patch endpoint and reload mechanisms for sso provisioning configuration ([#20904](https://github.com/n8n-io/n8n/pull/20904)) ([ef688de](https://github.com/n8n-io/n8n/commit/ef688de))
+- ai-builder: Properly separate system and user prompts in AI nodes  ([#21068](https://github.com/n8n-io/n8n/pull/21068)) ([8659a73](https://github.com/n8n-io/n8n/commit/8659a73))
+- Allow OIDC logins to sync instance roles ([#21055](https://github.com/n8n-io/n8n/pull/21055)) ([fcbf143](https://github.com/n8n-io/n8n/commit/fcbf143))
+- **core:** Add an incrementing version counter for the workflow entity ([#20816](https://github.com/n8n-io/n8n/pull/20816)) ([dd61458](https://github.com/n8n-io/n8n/commit/dd61458))
+- **core:** Add programmatic workflow validation in AI workflow builder ([#20998](https://github.com/n8n-io/n8n/pull/20998)) ([fa7cdf3](https://github.com/n8n-io/n8n/commit/fa7cdf3))
+- **core:** Handle project variables sync on source control ([#21001](https://github.com/n8n-io/n8n/pull/21001)) ([832774d](https://github.com/n8n-io/n8n/commit/832774d))
+- **core:** Support N8N_BLOCK_RUNNER_ENV_ACCESS in native Python runner ([#21215](https://github.com/n8n-io/n8n/pull/21215)) ([8527e4b](https://github.com/n8n-io/n8n/commit/8527e4b))
+- **editor:** Add custom date range options to insights dashboard ([#20952](https://github.com/n8n-io/n8n/pull/20952)) ([bf873e3](https://github.com/n8n-io/n8n/commit/bf873e3))
+- **editor:** Remove flag for project variables ([#21037](https://github.com/n8n-io/n8n/pull/21037)) ([8e7eb98](https://github.com/n8n-io/n8n/commit/8e7eb98))
+- Improve tests for loginUser ([#21144](https://github.com/n8n-io/n8n/pull/21144)) ([85fb6e4](https://github.com/n8n-io/n8n/commit/85fb6e4))
+- Only publish provisioning config changes on multi-main ([#21134](https://github.com/n8n-io/n8n/pull/21134)) ([65b6b0e](https://github.com/n8n-io/n8n/commit/65b6b0e))
+- **OpenAI Node:** Remove built-in MCP from V2 ([#21159](https://github.com/n8n-io/n8n/pull/21159)) ([12833ea](https://github.com/n8n-io/n8n/commit/12833ea))
+- **OpenAI Node:** Remove completions from V2 ([#21078](https://github.com/n8n-io/n8n/pull/21078)) ([1d41e47](https://github.com/n8n-io/n8n/commit/1d41e47))
+- Parse and apply provisioned project role mappings ([#21025](https://github.com/n8n-io/n8n/pull/21025)) ([ca624c6](https://github.com/n8n-io/n8n/commit/ca624c6))
+- Provision project roles from OIDC SSO ([#21107](https://github.com/n8n-io/n8n/pull/21107)) ([fa4c979](https://github.com/n8n-io/n8n/commit/fa4c979))
+- Reduce unauthentication information in settings endpoint ([#21133](https://github.com/n8n-io/n8n/pull/21133)) ([c859f4e](https://github.com/n8n-io/n8n/commit/c859f4e))
+- Support values configuration type for credentials in MongoDB Vector Store ([#20888](https://github.com/n8n-io/n8n/pull/20888)) ([701f4f8](https://github.com/n8n-io/n8n/commit/701f4f8))
+- Trigger projects export and import on push and pull ([#20459](https://github.com/n8n-io/n8n/pull/20459)) ([333ce1f](https://github.com/n8n-io/n8n/commit/333ce1f))
+- Wire up saml to instance role provisioning ([#21080](https://github.com/n8n-io/n8n/pull/21080)) ([b8a62c8](https://github.com/n8n-io/n8n/commit/b8a62c8))
+
+
 # Release 1.117.2
 
 ### Bug Fixes
