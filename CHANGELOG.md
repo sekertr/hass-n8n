@@ -1,3 +1,11 @@
+# Release 1.117.2
+
+### Bug Fixes
+
+- ai-builder: Prompt input scrolling fix and update max line from 6 -> 10 ([#21165](https://github.com/n8n-io/n8n/pull/21165)) ([627b3c1](https://github.com/n8n-io/n8n/commit/627b3c1))
+- **OpenAI Node:** Remove built-in MCP from V2 ([#21159](https://github.com/n8n-io/n8n/pull/21159)) ([b2342b1](https://github.com/n8n-io/n8n/commit/b2342b1))
+
+
 # Release 1.117.1
 
 ### Bug Fixes
