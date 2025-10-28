@@ -1,3 +1,11 @@
+# Release 1.118.1
+
+### Bug Fixes
+
+- **core:** Harden security restrictions in native Python runner ([#21263](https://github.com/n8n-io/n8n/pull/21263)) ([e392863](https://github.com/n8n-io/n8n/commit/e392863))
+- **editor:** Fix Cannot read properties of undefined error in evaluation loop ([#21225](https://github.com/n8n-io/n8n/pull/21225)) ([cebbf64](https://github.com/n8n-io/n8n/commit/cebbf64))
+
+
 # Release 1.118.0
 
 ### Bug Fixes
