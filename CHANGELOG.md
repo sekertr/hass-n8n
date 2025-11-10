@@ -1,3 +1,17 @@
+# Release 1.119.1
+
+### Bug Fixes
+
+- **editor:** Ensure license activation modal works when used without EULA ([#21681](https://github.com/n8n-io/n8n/pull/21681)) ([5ac5cf1](https://github.com/n8n-io/n8n/commit/5ac5cf1))
+- Note
+- Patch release with a fix for the editor’s license activation modal when used without EULA; bump versions to 1.119.1.
+- Changelog:
+- Add 1.119.1 entry with bug fix: editor license activation modal works without EULA (CHANGELOG.md).
+- Version Bumps:
+- Update version to 1.119.1 in package.json, packages/cli/package.json, and packages/frontend/editor-ui/package.json.
+- Written by Cursor Bugbot for commit 5895b00. This will update automatically on new commits. Configure here.
+
+
 # Release 1.119.0
 
 ### Bug Fixes
