@@ -1,3 +1,18 @@
+# Release 1.120.1
+
+### Features
+
+- **core:** Return WWW-Authenticate header in /mcp-server/http endpoint ([#21686](https://github.com/n8n-io/n8n/pull/21686)) ([45b17c1](https://github.com/n8n-io/n8n/commit/45b17c1))
+- Note
+- Release 1.120.1 adding WWW-Authenticate header to core /mcp-server/http endpoint and bumping package versions.
+### Features
+
+- **core:** Return WWW-Authenticate header in /mcp-server/http endpoint.
+- Release/Versioning
+- Bump versions in package.json, packages/cli, packages/core, and packages/@n8n/*; update CHANGELOG.md.
+- Written by Cursor Bugbot for commit 342dae1. This will update automatically on new commits. Configure here.
+
+
 # Release 1.120.0
 
 ### Bug Fixes
