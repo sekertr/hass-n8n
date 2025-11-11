@@ -1,3 +1,62 @@
+# Release 1.120.0
+
+### Bug Fixes
+
+- ai-builder: Add support for node versions in searching, adding and updating nodes ([#21488](https://github.com/n8n-io/n8n/pull/21488)) ([8270f37](https://github.com/n8n-io/n8n/commit/8270f37))
+- ai-builder: Reduce "workflow state too big" errors ([#21542](https://github.com/n8n-io/n8n/pull/21542)) ([e5d7fb9](https://github.com/n8n-io/n8n/commit/e5d7fb9))
+- API: Fix returning role as slug on the users api handler ([#21490](https://github.com/n8n-io/n8n/pull/21490)) ([941a54e](https://github.com/n8n-io/n8n/commit/941a54e))
+- Change unicode range to support more characters in expression parser ([#21394](https://github.com/n8n-io/n8n/pull/21394)) ([0a799e1](https://github.com/n8n-io/n8n/commit/0a799e1))
+- **Code Node:** Update error message when using .item in Run once for all items mode  ([#21416](https://github.com/n8n-io/n8n/pull/21416)) ([306972d](https://github.com/n8n-io/n8n/commit/306972d))
+- **core:** Column size for token column ([#21609](https://github.com/n8n-io/n8n/pull/21609)) ([8504beb](https://github.com/n8n-io/n8n/commit/8504beb))
+- **core:** Include role in user-invite-email-click ([#21546](https://github.com/n8n-io/n8n/pull/21546)) ([27fd768](https://github.com/n8n-io/n8n/commit/27fd768))
+- **core:** Insights fix same day queries ([#21574](https://github.com/n8n-io/n8n/pull/21574)) ([c100736](https://github.com/n8n-io/n8n/commit/c100736))
+- **core:** Insights use time aware range when end date is today, and start of day for past ranges ([#21540](https://github.com/n8n-io/n8n/pull/21540)) ([4dc58aa](https://github.com/n8n-io/n8n/commit/4dc58aa))
+- **editor:** Ensure license activation modal works when used without EULA ([#21681](https://github.com/n8n-io/n8n/pull/21681)) ([4e70050](https://github.com/n8n-io/n8n/commit/4e70050))
+- **editor:** Fix button image link in easy AI template sticky note for UK users ([#21527](https://github.com/n8n-io/n8n/pull/21527)) ([74a0b51](https://github.com/n8n-io/n8n/commit/74a0b51))
+- **editor:** Fix hanging logs panel tooltip ([#21631](https://github.com/n8n-io/n8n/pull/21631)) ([53efa28](https://github.com/n8n-io/n8n/commit/53efa28))
+- **editor:** Fix main button create variable disable state based on scopes ([#21521](https://github.com/n8n-io/n8n/pull/21521)) ([d2e623e](https://github.com/n8n-io/n8n/commit/d2e623e))
+- **editor:** Fix preview for json output with long values ([#21412](https://github.com/n8n-io/n8n/pull/21412)) ([f354200](https://github.com/n8n-io/n8n/commit/f354200))
+- **editor:** Limit telemetry event size to 32kb ([#21312](https://github.com/n8n-io/n8n/pull/21312)) ([b68d3bf](https://github.com/n8n-io/n8n/commit/b68d3bf))
+- **editor:** Log view doesn't scroll in manual execution ([#21529](https://github.com/n8n-io/n8n/pull/21529)) ([6945e21](https://github.com/n8n-io/n8n/commit/6945e21))
+- Embeddings AWS Bedrock Node, AWS Bedrock Chat Model Node: Fix HTTP proxy ([#21509](https://github.com/n8n-io/n8n/pull/21509)) ([53d91ee](https://github.com/n8n-io/n8n/commit/53d91ee))
+- Ensure workflows and folders updatedAt/createdAt aren't mixed up in project sorting ([#21484](https://github.com/n8n-io/n8n/pull/21484)) ([d9d36bf](https://github.com/n8n-io/n8n/commit/d9d36bf))
+- **Google Workspace Admin Node:** Include changePasswordAtNextLogin, password in update ([#21522](https://github.com/n8n-io/n8n/pull/21522)) ([477ffea](https://github.com/n8n-io/n8n/commit/477ffea))
+- Prevent multiple api requests when changing workflow owner ([#21335](https://github.com/n8n-io/n8n/pull/21335)) ([b610e55](https://github.com/n8n-io/n8n/commit/b610e55))
+- **SendGrid Node:** Use /scopes for credential testing ([#21499](https://github.com/n8n-io/n8n/pull/21499)) ([c5db57f](https://github.com/n8n-io/n8n/commit/c5db57f))
+- **Slack Node:** Prevent invalid array arg on team join ([#20382](https://github.com/n8n-io/n8n/pull/20382)) ([afd40c6](https://github.com/n8n-io/n8n/commit/afd40c6))
+### Features
+
+- Add support for mysql / mariadb ([#21525](https://github.com/n8n-io/n8n/pull/21525)) ([9bcad5a](https://github.com/n8n-io/n8n/commit/9bcad5a))
+- Add unit tests for getAttributesFromLoginResponse and handleSamlLogin ([#21678](https://github.com/n8n-io/n8n/pull/21678)) ([9e240d6](https://github.com/n8n-io/n8n/commit/9e240d6))
+- Allow CORS in the discovery endpoints ([#21602](https://github.com/n8n-io/n8n/pull/21602)) ([3070e44](https://github.com/n8n-io/n8n/commit/3070e44))
+- **core:** Adapt breaking changes report data to UI needs ([#21442](https://github.com/n8n-io/n8n/pull/21442)) ([a2a484e](https://github.com/n8n-io/n8n/commit/a2a484e))
+- **core:** Add OAuth to MCP server ([#21469](https://github.com/n8n-io/n8n/pull/21469)) ([cd167ac](https://github.com/n8n-io/n8n/commit/cd167ac))
+- **core:** Add workflow descriptions ([#21526](https://github.com/n8n-io/n8n/pull/21526)) ([ecc6706](https://github.com/n8n-io/n8n/commit/ecc6706))
+- **core:** Just in time role provisioning for SAML login ([#21387](https://github.com/n8n-io/n8n/pull/21387)) ([2eb1de6](https://github.com/n8n-io/n8n/commit/2eb1de6))
+- **editor:** Data size warning in AI Logs input/output sections ([#21555](https://github.com/n8n-io/n8n/pull/21555)) ([09f91a8](https://github.com/n8n-io/n8n/commit/09f91a8))
+- **Extract from File Node:** Add Skip Records With Errors option ([#21347](https://github.com/n8n-io/n8n/pull/21347)) ([0ccf470](https://github.com/n8n-io/n8n/commit/0ccf470))
+- Provide data export of access settings when enabling JIT ([#21532](https://github.com/n8n-io/n8n/pull/21532)) ([146e4ad](https://github.com/n8n-io/n8n/commit/146e4ad))
+- **Redis Node:** Add list length (LLEN) operation ([#21420](https://github.com/n8n-io/n8n/pull/21420)) ([b0df438](https://github.com/n8n-io/n8n/commit/b0df438))
+- Use experiment feature flag for SSO provisioning (no changelog) ([#21494](https://github.com/n8n-io/n8n/pull/21494)) ([a2d6c8d](https://github.com/n8n-io/n8n/commit/a2d6c8d))
+- Note
+- Release 1.120.0 with key features (MySQL/MariaDB support, OAuth for MCP, workflow descriptions, SAML JIT roles) and numerous fixes across core, editor, and nodes; bumps package versions and updates changelog.
+- Release 1.120.0
+- Update CHANGELOG.md with new features and fixes; bump versions across packages (CLI, core, editor UI, nodes, libs).
+### Features
+
+- Add MySQL/MariaDB support.
+- Core: OAuth for MCP server; workflow descriptions; SAML just‑in‑time role provisioning; adapt breaking changes report for UI; allow CORS on discovery endpoints; export access settings when enabling JIT.
+- Editor: Data size warning in AI Logs I/O sections.
+- Nodes: Redis LLEN operation; Extract from File option to skip records with errors.
+### Bug Fixes
+
+- AI Builder: support node versions in search/add/update; reduce workflow state size errors.
+- Core/API: role slug return; insights date range handling; include role in invite click; token column size; avoid duplicate owner-change requests; expression parser unicode range.
+- Editor UI: multiple UI/UX fixes (license modal without EULA, tooltips, scrolling, long JSON preview, telemetry size limit, button state, UK image link).
+- Nodes: AWS Bedrock proxy, Google Workspace Admin update fields, SendGrid credential test path, Slack team-join arg, project sorting timestamps.
+- Written by Cursor Bugbot for commit 44a23b3. This will update automatically on new commits. Configure here.
+
+
 # Release 1.119.1
 
 ### Bug Fixes
