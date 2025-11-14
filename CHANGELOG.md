@@ -1,3 +1,18 @@
+# Release 1.120.3
+
+### Bug Fixes
+
+- **core:** Validate package version when installing community node ([#21886](https://github.com/n8n-io/n8n/pull/21886)) ([ae0669a](https://github.com/n8n-io/n8n/commit/ae0669a))
+- **Git Node:** Disable git hooks by default ([#21797](https://github.com/n8n-io/n8n/pull/21797)) ([eea9bb4](https://github.com/n8n-io/n8n/commit/eea9bb4))
+- Note
+- Version bump to 1.120.3 across packages and CHANGELOG update noting two bug fixes.
+- Release: Bump versions to 1.120.3 (root package.json, packages/cli) and synchronize dependent package versions across workspace (@n8n/*, nodes-base, core, nodes-langchain, task-runner, db).
+- Changelog:
+- **core:** Validate package version when installing community node.
+- **Git Node:** Disable git hooks by default.
+- Written by Cursor Bugbot for commit 14ec2d9. This will update automatically on new commits. Configure here.
+
+
 # Release 1.120.2
 
 ### Bug Fixes
