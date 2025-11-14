@@ -1,3 +1,19 @@
+# Release 1.120.2
+
+### Bug Fixes
+
+- Fix expr-eval dependency for CVE-2025-12735 ([#21862](https://github.com/n8n-io/n8n/pull/21862)) ([e9336b3](https://github.com/n8n-io/n8n/commit/e9336b3))
+- **MCP Client Tool Node:** DCR not working on cloud ([#21808](https://github.com/n8n-io/n8n/pull/21808)) ([acfaff0](https://github.com/n8n-io/n8n/commit/acfaff0))
+- Note
+- Release 1.120.2 with bug fixes (expr-eval CVE patch and MCP Client Tool Node DCR fix) and version bumps across packages.
+- Release 1.120.2
+- Update versions in package.json, packages/cli/package.json, and packages/frontend/editor-ui/package.json.
+- Bug Fixes (from CHANGELOG)
+- Patch dependency for expr-eval CVE-2025-12735.
+- **MCP Client Tool Node:** fix DCR not working on cloud.
+- Written by Cursor Bugbot for commit 225a27f. This will update automatically on new commits. Configure here.
+
+
 # Release 1.120.1
 
 ### Features
