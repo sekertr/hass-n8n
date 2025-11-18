@@ -1,3 +1,83 @@
+# Release 1.121.0
+
+### Bug Fixes
+
+- **Code Node:** Revert node icon back to old icon ([#21777](https://github.com/n8n-io/n8n/pull/21777)) ([7bb3fdc](https://github.com/n8n-io/n8n/commit/7bb3fdc))
+- **core:** Add timeout and recovery for database connection health checks ([#21506](https://github.com/n8n-io/n8n/pull/21506)) ([09c8b2d](https://github.com/n8n-io/n8n/commit/09c8b2d))
+- **core:** Capture stoppedAt timestamp and improve fullRunData handling ([#21290](https://github.com/n8n-io/n8n/pull/21290)) ([343413d](https://github.com/n8n-io/n8n/commit/343413d))
+- **core:** Correctly filter custom nodes when NODES_INCLUDE/EXCLUDE is set ([#21705](https://github.com/n8n-io/n8n/pull/21705)) ([08fea7b](https://github.com/n8n-io/n8n/commit/08fea7b))
+- **core:** Declarative Node - Continue using Error Output returns empty item ([#21823](https://github.com/n8n-io/n8n/pull/21823)) ([e3a996d](https://github.com/n8n-io/n8n/commit/e3a996d))
+- **core:** Enforce timeout for task requests ([#21493](https://github.com/n8n-io/n8n/pull/21493)) ([e9d8757](https://github.com/n8n-io/n8n/commit/e9d8757))
+- **core:** Ensure database fallback when Redis cache fails on webhook lookup ([#21872](https://github.com/n8n-io/n8n/pull/21872)) ([7716212](https://github.com/n8n-io/n8n/commit/7716212))
+- **core:** Fix type issues for execution context ([#21852](https://github.com/n8n-io/n8n/pull/21852)) ([1098db4](https://github.com/n8n-io/n8n/commit/1098db4))
+- **core:** Validate package version when installing community node ([#21886](https://github.com/n8n-io/n8n/pull/21886)) ([6eeb739](https://github.com/n8n-io/n8n/commit/6eeb739))
+- **editor:** Avoid node overlap when adding Loop node between existing nodes ([#21419](https://github.com/n8n-io/n8n/pull/21419)) ([94e5b1e](https://github.com/n8n-io/n8n/commit/94e5b1e))
+- **editor:** Filtering for archived workflows in error workflows list ([#21874](https://github.com/n8n-io/n8n/pull/21874)) ([cc3f31a](https://github.com/n8n-io/n8n/commit/cc3f31a))
+- **editor:** Fix command bar keyboard events handing ([#21759](https://github.com/n8n-io/n8n/pull/21759)) ([86f6da3](https://github.com/n8n-io/n8n/commit/86f6da3))
+- **editor:** Fix node name tooltip in NDV header ([#21760](https://github.com/n8n-io/n8n/pull/21760)) ([6fd8ca9](https://github.com/n8n-io/n8n/commit/6fd8ca9))
+- **editor:** Make sure Pin action works only for pinnabe nodes ([#21723](https://github.com/n8n-io/n8n/pull/21723)) ([cf9eb4e](https://github.com/n8n-io/n8n/commit/cf9eb4e))
+- **editor:** Previous nodes' outputs aren't available in expression editor for sub-nodes ([#21730](https://github.com/n8n-io/n8n/pull/21730)) ([bd62be0](https://github.com/n8n-io/n8n/commit/bd62be0))
+- **editor:** Provide better output for subnode execution errors ([#21714](https://github.com/n8n-io/n8n/pull/21714)) ([5b2d15e](https://github.com/n8n-io/n8n/commit/5b2d15e))
+- **editor:** Refresh insights weekly summary when entering any of the /home routes ([#21859](https://github.com/n8n-io/n8n/pull/21859)) ([c3e6439](https://github.com/n8n-io/n8n/commit/c3e6439))
+- **editor:** Small UI tweaks for data size warnings ([#21693](https://github.com/n8n-io/n8n/pull/21693)) ([f9404ec](https://github.com/n8n-io/n8n/commit/f9404ec))
+- **editor:** Take user back to correct project after archive/delete ([#21940](https://github.com/n8n-io/n8n/pull/21940)) ([9ddedb0](https://github.com/n8n-io/n8n/commit/9ddedb0))
+- **editor:** Workflow tags style issue ([#21697](https://github.com/n8n-io/n8n/pull/21697)) ([af7417b](https://github.com/n8n-io/n8n/commit/af7417b))
+- **Embeddings Azure OpenAi Node:** Add proxy agent ([#18663](https://github.com/n8n-io/n8n/pull/18663)) ([0ab07f0](https://github.com/n8n-io/n8n/commit/0ab07f0))
+- Enable respond to chat node as tool ([#21253](https://github.com/n8n-io/n8n/pull/21253)) ([49eebcf](https://github.com/n8n-io/n8n/commit/49eebcf))
+- Fix expr-eval dependency for CVE-2025-12735 ([#21862](https://github.com/n8n-io/n8n/pull/21862)) ([2661162](https://github.com/n8n-io/n8n/commit/2661162))
+- **Form Node:** Update mime-types package to handle x-zip-compressed ([#21492](https://github.com/n8n-io/n8n/pull/21492)) ([8a935aa](https://github.com/n8n-io/n8n/commit/8a935aa))
+- **Form Trigger Node:** Do not translate checkbox values ([#21737](https://github.com/n8n-io/n8n/pull/21737)) ([64137eb](https://github.com/n8n-io/n8n/commit/64137eb))
+- **Git Node:** Disable git hooks by default ([#21797](https://github.com/n8n-io/n8n/pull/21797)) ([4dd853b](https://github.com/n8n-io/n8n/commit/4dd853b))
+- Google Vertex sub-node error handling ([#21504](https://github.com/n8n-io/n8n/pull/21504)) ([cc55fef](https://github.com/n8n-io/n8n/commit/cc55fef))
+- Improve dev mode output and command reliability in n8n-node CLI ([#21231](https://github.com/n8n-io/n8n/pull/21231)) ([970f1b7](https://github.com/n8n-io/n8n/commit/970f1b7))
+- Improve domain validation ([#21534](https://github.com/n8n-io/n8n/pull/21534)) ([404640f](https://github.com/n8n-io/n8n/commit/404640f))
+- **MCP Client Tool Node:** DCR not working on cloud ([#21808](https://github.com/n8n-io/n8n/pull/21808)) ([5f419f4](https://github.com/n8n-io/n8n/commit/5f419f4))
+- **MCP Client Tool Node:** Respect the timeout option ([#21478](https://github.com/n8n-io/n8n/pull/21478)) ([9299a7e](https://github.com/n8n-io/n8n/commit/9299a7e))
+- **MCP Client Tool Node:** Scope is not working if use credential without DRC on (Scope set but pass to /auth endpoint is null) ([#21520](https://github.com/n8n-io/n8n/pull/21520)) ([d3d2017](https://github.com/n8n-io/n8n/commit/d3d2017))
+- **MCP Client Tool Node:** Use proxy for MCP calls ([#21720](https://github.com/n8n-io/n8n/pull/21720)) ([d9e2dc2](https://github.com/n8n-io/n8n/commit/d9e2dc2))
+- **Merge Node:** Show node icon in V1 ([#21812](https://github.com/n8n-io/n8n/pull/21812)) ([65622e0](https://github.com/n8n-io/n8n/commit/65622e0))
+- **Schedule Trigger Node:** Show interval boundaries ([#21732](https://github.com/n8n-io/n8n/pull/21732)) ([6963164](https://github.com/n8n-io/n8n/commit/6963164))
+- **Slack Node:** Enable pagination for RLC - listChannels ([#21434](https://github.com/n8n-io/n8n/pull/21434)) ([bd04340](https://github.com/n8n-io/n8n/commit/bd04340))
+### Features
+
+- ai-builder: Updating prompt suggestions for the workflow builder ([#21690](https://github.com/n8n-io/n8n/pull/21690)) ([72dfa55](https://github.com/n8n-io/n8n/commit/72dfa55))
+- **Airtop Node:** Add support for airtop agents ([#21624](https://github.com/n8n-io/n8n/pull/21624)) ([6d30615](https://github.com/n8n-io/n8n/commit/6d30615))
+- **Azure AI Search API Node:** Add Azure AI Search Vector Store Node (v2) ([#21892](https://github.com/n8n-io/n8n/pull/21892)) ([9c11c3f](https://github.com/n8n-io/n8n/commit/9c11c3f))
+- Block invite acceptance on SSO systems ([#21830](https://github.com/n8n-io/n8n/pull/21830)) ([f73eba7](https://github.com/n8n-io/n8n/commit/f73eba7))
+- **core:** Add ACR parameter to OIDC settings ([#20974](https://github.com/n8n-io/n8n/pull/20974)) ([bc61f94](https://github.com/n8n-io/n8n/commit/bc61f94))
+- **core:** Enable workflow history to all users ([#21240](https://github.com/n8n-io/n8n/pull/21240)) ([e3267b2](https://github.com/n8n-io/n8n/commit/e3267b2))
+- **core:** Implement all breaking changes rules to v2 ([#21217](https://github.com/n8n-io/n8n/pull/21217)) ([363a777](https://github.com/n8n-io/n8n/commit/363a777))
+- **core:** Improve workflows text search ([#21738](https://github.com/n8n-io/n8n/pull/21738)) ([35488e7](https://github.com/n8n-io/n8n/commit/35488e7))
+- **core:** Return WWW-Authenticate header in /mcp-server/http endpoint ([#21686](https://github.com/n8n-io/n8n/pull/21686)) ([8ed3486](https://github.com/n8n-io/n8n/commit/8ed3486))
+- Disable user invites on SSO systems ([#21806](https://github.com/n8n-io/n8n/pull/21806)) ([3cdfff7](https://github.com/n8n-io/n8n/commit/3cdfff7))
+- **editor:** Add missing doc url from backend response. remove feature flag ([#21936](https://github.com/n8n-io/n8n/pull/21936)) ([8e5e596](https://github.com/n8n-io/n8n/commit/8e5e596))
+- **editor:** Auto-select operator type when drag and dropping values ([#21260](https://github.com/n8n-io/n8n/pull/21260)) ([707da6c](https://github.com/n8n-io/n8n/commit/707da6c))
+- **editor:** Create breaking change audit page ([#21633](https://github.com/n8n-io/n8n/pull/21633)) ([2e27198](https://github.com/n8n-io/n8n/commit/2e27198))
+- **editor:** Global row search on data table details view ([#21447](https://github.com/n8n-io/n8n/pull/21447)) ([95ab79f](https://github.com/n8n-io/n8n/commit/95ab79f))
+- **editor:** New simplified empty layout ([#21214](https://github.com/n8n-io/n8n/pull/21214)) ([705a781](https://github.com/n8n-io/n8n/commit/705a781))
+- Expression editor - ability to preview HTML or Markdown in results pane ([#21408](https://github.com/n8n-io/n8n/pull/21408)) ([c8a29a7](https://github.com/n8n-io/n8n/commit/c8a29a7))
+- **MCP Client Tool Node:** Add multiple headers authentication option ([#21435](https://github.com/n8n-io/n8n/pull/21435)) ([2a623ea](https://github.com/n8n-io/n8n/commit/2a623ea))
+- Prevent ldap email based account when there are deplicate emails ([#21745](https://github.com/n8n-io/n8n/pull/21745)) ([b3af602](https://github.com/n8n-io/n8n/commit/b3af602))
+- Support custom encryption keys for imports / exports ([#21863](https://github.com/n8n-io/n8n/pull/21863)) ([040dcdb](https://github.com/n8n-io/n8n/commit/040dcdb))
+- Update upgrade wording for variables ([#21939](https://github.com/n8n-io/n8n/pull/21939)) ([e0e15bf](https://github.com/n8n-io/n8n/commit/e0e15bf))
+- Note
+- Release 1.121.0: update CHANGELOG and bump package versions; ships editor/core improvements, SSO invite restrictions, and new Azure AI Search Vector Store node.
+### Features
+
+- New Azure AI Search Vector Store (v2) node.
+- Core: workflow history enabled for all users; improved text search; OIDC ACR support; WWW-Authenticate header on /mcp-server/http.
+- Access: disable user invites and block invite acceptance on SSO systems; LDAP duplicate email handling; custom encryption keys for import/export.
+- Editor: breaking change audit page; global row search; simplified empty layout; expression preview for HTML/Markdown; operator auto-select on drag/drop; added doc URL.
+- Nodes/Tools: Airtop agents; MCP Client Tool adds multi-header auth.
+- Bug fixes
+- Core: DB health-check timeout/recovery; webhook lookup DB fallback on Redis failure; task request timeouts; execution context types; custom node filtering; run data/stoppedAt handling; package version validation.
+- Editor/UI: node overlap when inserting Loop; command bar key events; NDV tooltip; pin action scope; sub-node outputs/errors; insights refresh; data size warning tweaks; correct project redirect after archive/delete; tag styles.
+- Nodes: Slack channel listing pagination; Google Vertex sub-node errors; Git node disables hooks; Form node mime-types; Form Trigger checkbox values; Azure OpenAI embeddings proxy; MCP Client Tool timeout/scope/proxy; respond-to-chat as tool; security fix for expr-eval.
+- Release/versions
+- Update CHANGELOG.md for 1.121.0 and bump versions across monorepo packages (n8n, editor-ui, core, nodes-base, @n8n/*, etc.).
+- Written by Cursor Bugbot for commit e70807e. This will update automatically on new commits. Configure here.
+
+
 # Release 1.120.3
 
 ### Bug Fixes
