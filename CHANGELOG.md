@@ -1,3 +1,13 @@
+# Release 1.121.1
+
+- Note
+- Prepare patch release 1.121.1 by updating versions across the monorepo and adding the 1.121.1 changelog entry.
+- Release management:
+- Bump versions in root package.json and multiple packages (@n8n/*, n8n, n8n-core, n8n-editor-ui, n8n-nodes-base, n8n-workflow, etc.).
+- Add CHANGELOG.md entry for 1.121.1.
+- Written by Cursor Bugbot for commit 5ff2a47. This will update automatically on new commits. Configure here.
+
+
 # Release 1.121.0
 
 ### Bug Fixes
