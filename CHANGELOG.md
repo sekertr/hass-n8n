@@ -1,3 +1,20 @@
+# Release 1.121.2
+
+### Bug Fixes
+
+- **core:** Fix mcp access scope issue ([#22031](https://github.com/n8n-io/n8n/pull/22031)) ([6335c88](https://github.com/n8n-io/n8n/commit/6335c88))
+- **editor:** Notice background colors ([#22044](https://github.com/n8n-io/n8n/pull/22044)) ([610594e](https://github.com/n8n-io/n8n/commit/610594e))
+- Note
+- Publish 1.121.2 with core and editor bug fixes; bump package versions across the monorepo.
+- Release: 1.121.2
+- Changelog — Bug Fixes:
+- **core:** Fix mcp access scope issue
+- **editor:** Adjust notice background colors
+- Version bumps:
+- Root package.json, packages/cli, packages/frontend/editor-ui, packages/frontend/@n8n/chat, packages/frontend/@n8n/design-system, packages/@n8n/backend-test-utils, packages/@n8n/db
+- Written by Cursor Bugbot for commit c366cb2. This will update automatically on new commits. Configure here.
+
+
 # Release 1.121.1
 
 - Note
