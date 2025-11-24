@@ -1,3 +1,8 @@
+# Release 1.122.1
+
+- No changelog generated. Likely points to fixes in our CI.
+
+
 # Release 1.122.0
 
 ### Bug Fixes
