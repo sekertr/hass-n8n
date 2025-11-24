@@ -1,3 +1,60 @@
+# Release 1.122.0
+
+### Bug Fixes
+
+- @n8n/scan-community-package not working on Windows ([#22077](https://github.com/n8n-io/n8n/pull/22077)) ([27eeec0](https://github.com/n8n-io/n8n/commit/27eeec0))
+- **Agent Node:** Thinking model issue - undefined .map error ([#22046](https://github.com/n8n-io/n8n/pull/22046)) ([231e4ef](https://github.com/n8n-io/n8n/commit/231e4ef))
+- ai-builder: Fixing scroll issues when workflow builder when NDV is open ([#22005](https://github.com/n8n-io/n8n/pull/22005)) ([4d525e8](https://github.com/n8n-io/n8n/commit/4d525e8))
+- ai-builder: Improving workflow builder following model instructions and using AI agent node ([#22011](https://github.com/n8n-io/n8n/pull/22011)) ([da2446e](https://github.com/n8n-io/n8n/commit/da2446e))
+- API: Add correct payload example ([#22057](https://github.com/n8n-io/n8n/pull/22057)) ([a0c2071](https://github.com/n8n-io/n8n/commit/a0c2071))
+- **ChatTrigger Node:** Keep session ID when load previous session is on ([#22150](https://github.com/n8n-io/n8n/pull/22150)) ([ca84de8](https://github.com/n8n-io/n8n/commit/ca84de8))
+- **core:** Add project id on /new and /from-url endpoints to add project scope auth ([#21865](https://github.com/n8n-io/n8n/pull/21865)) ([cb0fa96](https://github.com/n8n-io/n8n/commit/cb0fa96))
+- **core:** Allow chat to process text files as well as images ([#22093](https://github.com/n8n-io/n8n/pull/22093)) ([aa17707](https://github.com/n8n-io/n8n/commit/aa17707))
+- **core:** Fix mcp access scope issue ([#22031](https://github.com/n8n-io/n8n/pull/22031)) ([eb6cbfc](https://github.com/n8n-io/n8n/commit/eb6cbfc))
+- **core:** Prevent worker instance from running insights collection ([#21610](https://github.com/n8n-io/n8n/pull/21610)) ([219b60b](https://github.com/n8n-io/n8n/commit/219b60b))
+- **core:** Restore moment to regular runners image ([#22212](https://github.com/n8n-io/n8n/pull/22212)) ([b3ceeaf](https://github.com/n8n-io/n8n/commit/b3ceeaf))
+- **core:** Use execFile instead of exec to prevent command injection ([#21952](https://github.com/n8n-io/n8n/pull/21952)) ([296684e](https://github.com/n8n-io/n8n/commit/296684e))
+- **editor:** Add responsiveness to the templates panel ([#22132](https://github.com/n8n-io/n8n/pull/22132)) ([1527fe9](https://github.com/n8n-io/n8n/commit/1527fe9))
+- **editor:** Close card dropdowns when workflows list is scrolled ([#21630](https://github.com/n8n-io/n8n/pull/21630)) ([c6434ac](https://github.com/n8n-io/n8n/commit/c6434ac))
+- **editor:** Fixing tag style on canvas ([#21957](https://github.com/n8n-io/n8n/pull/21957)) ([2b03b5b](https://github.com/n8n-io/n8n/commit/2b03b5b))
+- **editor:** Inconsistent syntax highlight color ([#22029](https://github.com/n8n-io/n8n/pull/22029)) ([5d1c375](https://github.com/n8n-io/n8n/commit/5d1c375))
+- **editor:** Minor design fixes for the migration report ([#22110](https://github.com/n8n-io/n8n/pull/22110)) ([68a81c2](https://github.com/n8n-io/n8n/commit/68a81c2))
+- **editor:** Notice background colors ([#22044](https://github.com/n8n-io/n8n/pull/22044)) ([ad1e422](https://github.com/n8n-io/n8n/commit/ad1e422))
+- **editor:** Reduce length of the component and update position ([#21838](https://github.com/n8n-io/n8n/pull/21838)) ([29527d0](https://github.com/n8n-io/n8n/commit/29527d0))
+- **editor:** Replace icon for null in schema view ([#21415](https://github.com/n8n-io/n8n/pull/21415)) ([e569750](https://github.com/n8n-io/n8n/commit/e569750))
+- **editor:** Trim whitespace from workflow owner name ([#21483](https://github.com/n8n-io/n8n/pull/21483)) ([0dca2b0](https://github.com/n8n-io/n8n/commit/0dca2b0))
+- **editor:** Typo fix for oauth ([#21980](https://github.com/n8n-io/n8n/pull/21980)) ([2681c70](https://github.com/n8n-io/n8n/commit/2681c70))
+- Fixing failing CI tests for nodes-langchain package ([#22099](https://github.com/n8n-io/n8n/pull/22099)) ([77b7c2d](https://github.com/n8n-io/n8n/commit/77b7c2d))
+- **Google BigQuery Node:** Prevent infinite loop on job fail ([#21741](https://github.com/n8n-io/n8n/pull/21741)) ([008cd8d](https://github.com/n8n-io/n8n/commit/008cd8d))
+- Improve json repair logic ([#22088](https://github.com/n8n-io/n8n/pull/22088)) ([60a9cbf](https://github.com/n8n-io/n8n/commit/60a9cbf))
+- Improve logging for settings store ([#22216](https://github.com/n8n-io/n8n/pull/22216)) ([e3a2614](https://github.com/n8n-io/n8n/commit/e3a2614))
+- In queue mode "Respond to Webhook" node returns 500 when there is an error in the execution  ([#21981](https://github.com/n8n-io/n8n/pull/21981)) ([fe297d0](https://github.com/n8n-io/n8n/commit/fe297d0))
+- **n8n Form Node:** Allow undefined formatDate ([#21811](https://github.com/n8n-io/n8n/pull/21811)) ([a9f117c](https://github.com/n8n-io/n8n/commit/a9f117c))
+- **OpenAi Node:** Fix grammar in audio operation descriptions ([#22041](https://github.com/n8n-io/n8n/pull/22041)) ([75402fb](https://github.com/n8n-io/n8n/commit/75402fb))
+- **OpenAI Node:** Use new model for text classification ([#22130](https://github.com/n8n-io/n8n/pull/22130)) ([7c4771e](https://github.com/n8n-io/n8n/commit/7c4771e))
+- **Salesforce Trigger Node:** Fix Opportunity updated description ([#22169](https://github.com/n8n-io/n8n/pull/22169)) ([07fcd07](https://github.com/n8n-io/n8n/commit/07fcd07))
+### Features
+
+- Add best practices for all builder categories ([#21943](https://github.com/n8n-io/n8n/pull/21943)) ([214a7e9](https://github.com/n8n-io/n8n/commit/214a7e9))
+- Add support for global credentials  ([#21700](https://github.com/n8n-io/n8n/pull/21700)) ([55c3150](https://github.com/n8n-io/n8n/commit/55c3150))
+- ai-builder: Add python script for workflow comparison ([#21927](https://github.com/n8n-io/n8n/pull/21927)) ([246387e](https://github.com/n8n-io/n8n/commit/246387e))
+- ai-builder: Send workflow validation issues to telemetry ([#21837](https://github.com/n8n-io/n8n/pull/21837)) ([0a355cc](https://github.com/n8n-io/n8n/commit/0a355cc))
+- Block UI updates for instance / project roles if provisioning enabed ([#22095](https://github.com/n8n-io/n8n/pull/22095)) ([72cdca2](https://github.com/n8n-io/n8n/commit/72cdca2))
+- **core:** Allow creating data tables from csv files ([#21051](https://github.com/n8n-io/n8n/pull/21051)) ([2830665](https://github.com/n8n-io/n8n/commit/2830665))
+- **core:** Configurable workflow statistics metrics ([#18241](https://github.com/n8n-io/n8n/pull/18241)) ([a896417](https://github.com/n8n-io/n8n/commit/a896417))
+- **core:** Make user role provisioning available on enterprise ([#22166](https://github.com/n8n-io/n8n/pull/22166)) ([6786915](https://github.com/n8n-io/n8n/commit/6786915))
+- **core:** Move settings for SSO user role provisioning from dedicated page to existing form ([#21901](https://github.com/n8n-io/n8n/pull/21901)) ([34039b3](https://github.com/n8n-io/n8n/commit/34039b3))
+- **core:** Shorten copy text on confirm provisioning dialog ([#22086](https://github.com/n8n-io/n8n/pull/22086)) ([4ddd708](https://github.com/n8n-io/n8n/commit/4ddd708))
+- **core:** Update binary data breaking change ([#22100](https://github.com/n8n-io/n8n/pull/22100)) ([4c2c1ce](https://github.com/n8n-io/n8n/commit/4c2c1ce))
+- **editor:** Add dismissable callout for scaling mode enabled customers ([#21897](https://github.com/n8n-io/n8n/pull/21897)) ([fe5697d](https://github.com/n8n-io/n8n/commit/fe5697d))
+- **editor:** CSV download support for data tables ([#22048](https://github.com/n8n-io/n8n/pull/22048)) ([81a3d39](https://github.com/n8n-io/n8n/commit/81a3d39))
+- **editor:** Custom project roles Beta release ([#22228](https://github.com/n8n-io/n8n/pull/22228)) ([1a7089d](https://github.com/n8n-io/n8n/commit/1a7089d))
+- **editor:** Improve Data tables visibility ([#22074](https://github.com/n8n-io/n8n/pull/22074)) ([993040a](https://github.com/n8n-io/n8n/commit/993040a))
+- **editor:** Update command bar wf search to match by any query term ([#21798](https://github.com/n8n-io/n8n/pull/21798)) ([5591207](https://github.com/n8n-io/n8n/commit/5591207))
+- **MCP Client Node:** New node ([#21942](https://github.com/n8n-io/n8n/pull/21942)) ([69e092a](https://github.com/n8n-io/n8n/commit/69e092a))
+- **Stripe Node:** Add meter events for billing ([#21962](https://github.com/n8n-io/n8n/pull/21962)) ([5319bc8](https://github.com/n8n-io/n8n/commit/5319bc8))
+
+
 # Release 1.121.2
 
 ### Bug Fixes
