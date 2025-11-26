@@ -1,3 +1,11 @@
+# Release 1.122.2
+
+### Bug Fixes
+
+- **editor:** Fix issue for blinking/jumping UI when switching projects ([#22256](https://github.com/n8n-io/n8n/pull/22256)) ([ad2963c](https://github.com/n8n-io/n8n/commit/ad2963c))
+- **editor:** Missing duplicate workflow action on workflow list ([#22230](https://github.com/n8n-io/n8n/pull/22230)) ([f811511](https://github.com/n8n-io/n8n/commit/f811511))
+
+
 # Release 1.122.1
 
 - No changelog generated. Likely points to fixes in our CI.
