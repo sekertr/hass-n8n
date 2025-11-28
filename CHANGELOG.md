@@ -1,3 +1,12 @@
+# Release 1.122.4
+
+### Bug Fixes
+
+- **core:** Introduce batch workflow rule to fix subworkflow with wait node detection ([#22447](https://github.com/n8n-io/n8n/pull/22447)) ([8280690](https://github.com/n8n-io/n8n/commit/8280690))
+- **core:** OIDC form breaks when enabling OIDC while SAML is active ([#22463](https://github.com/n8n-io/n8n/pull/22463)) ([7c979e7](https://github.com/n8n-io/n8n/commit/7c979e7))
+- **editor:** Wording for migration rule detail table headers ([#22398](https://github.com/n8n-io/n8n/pull/22398)) ([969f0be](https://github.com/n8n-io/n8n/commit/969f0be))
+
+
 # Release 1.122.3
 
 ### Bug Fixes
