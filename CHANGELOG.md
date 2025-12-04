@@ -1,3 +1,9 @@
+# Release 2.0.0-rc.2
+
+- 🚀 Release 2.0.0-rc.2 ([#22735](https://github.com/n8n-io/n8n/pull/22735))
+- Co-authored-by: tomi <10324676+tomi@users.noreply.github.com>
+
+
 # Release 2.0.0
 
 - 2.0.0-rc.0 (2025-12-02)
