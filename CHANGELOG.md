@@ -1,3 +1,16 @@
+# Release 2.0.0-rc.4
+
+- 2.0.0-rc.4 (2025-12-05)
+### Bug Fixes
+
+- **core:** Do not prevent credential save if property has default value ([#22720](https://github.com/n8n-io/n8n/pull/22720)) ([03744c3](https://github.com/n8n-io/n8n/commit/03744c3))
+- **editor:** Bind color-scheme to app theme setting ([#22774](https://github.com/n8n-io/n8n/pull/22774)) ([3d46b97](https://github.com/n8n-io/n8n/commit/3d46b97))
+- **editor:** Design tweaks for publish modals ([#22694](https://github.com/n8n-io/n8n/pull/22694)) ([98efa19](https://github.com/n8n-io/n8n/commit/98efa19))
+- Security patches ([#22748](https://github.com/n8n-io/n8n/pull/22748)) ([d22c173](https://github.com/n8n-io/n8n/commit/d22c173))
+- ⚠️ BREAKING CHANGES
+- core Allow the activation of workflows with the errorTrigger and the executionWorkflowTrigger trigger ([#22019](https://github.com/n8n-io/n8n/pull/22019)) ([f636616](https://github.com/n8n-io/n8n/commit/f636616))
+
+
 # Release 2.0.0-rc.3
 
 ### Bug Fixes
