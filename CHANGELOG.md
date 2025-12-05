@@ -1,13 +1,20 @@
 # Release 2.0.0-rc.3
 
-- 🚀 Release 2.0.0-rc.3 ([#22757](https://github.com/n8n-io/n8n/pull/22757))
-- Co-authored-by: tomi <10324676+tomi@users.noreply.github.com>
+### Bug Fixes
+
+* **core:** Address review feedback for sub-workflow wait fix ([#22745](https://github.com/n8n-io/n8n/issues/22745)) ([ce64032](https://github.com/n8n-io/n8n/commit/ce6403262badd93ccde1a254f71631adc2176886))
+
+
+### Features
+
+* **editor:** Improve node component visual states ([#20242](https://github.com/n8n-io/n8n/issues/20242)) ([3fc1c56](https://github.com/n8n-io/n8n/commit/3fc1c566a468509c758bd0800b30f3a47d981b4c))
 
 
 # Release 2.0.0-rc.2
 
-- 🚀 Release 2.0.0-rc.2 ([#22735](https://github.com/n8n-io/n8n/pull/22735))
-- Co-authored-by: tomi <10324676+tomi@users.noreply.github.com>
+### Bug Fixes
+
+* **core:** Prevent execution data from being overwritten on manual workflow resume ([#22665](https://github.com/n8n-io/n8n/issues/22665)) ([f603bc8](https://github.com/n8n-io/n8n/commit/f603bc891f68d3779b4a8efaf667311afe38f2c9))
 
 
 # Release 2.0.0
@@ -1890,5 +1897,6 @@ Fix: Preserve query string parameters in proxy_pass for correct backend routing
 ### Performance Improvements
 - **core:** Load source control only if licensed [#15908](https://github.com/n8n-io/n8n/pull/15908)   (d7e94eb)
 - **core:** Populate cache only with static webhooks [#16048](https://github.com/n8n-io/n8n/pull/16048)   (a18822a)
+
 
 
