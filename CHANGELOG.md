@@ -1,3 +1,8 @@
+# Release 2.0.0.1
+
+Update version to 2.0.0
+
+
 # Release 2.0.0-rc.4
 
 - 2.0.0-rc.4 (2025-12-05)
