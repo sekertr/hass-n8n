@@ -1,12 +1,32 @@
 # Release 2.0.2
 
-- * Backfill missing workflow history records ([[#23070](https://github.com/n8n-io/n8n/pull/23070)](https://github.com/n8n-io/n8n/issues/23070)) ([ace3c5f](https://github.com/n8n-io/n8n/commit/ace3c5fbf0a897db90dc7fc4e3b4722880ca0fcc))
-- * Make sure duplicating workflows creates them as unpublished ([[#23113](https://github.com/n8n-io/n8n/pull/23113)](https://github.com/n8n-io/n8n/issues/23113)) ([9a01e9d](https://github.com/n8n-io/n8n/commit/9a01e9dd8dde5403ed77209ef4f0273f94de8e88))
+### Bug Fixes
+
+* Backfill missing workflow history records ([#23070](https://github.com/n8n-io/n8n/issues/23070)) ([ace3c5f](https://github.com/n8n-io/n8n/commit/ace3c5fbf0a897db90dc7fc4e3b4722880ca0fcc))
+* Make sure duplicating workflows creates them as unpublished ([#23113](https://github.com/n8n-io/n8n/issues/23113)) ([9a01e9d](https://github.com/n8n-io/n8n/commit/9a01e9dd8dde5403ed77209ef4f0273f94de8e88))
 
 
 # Release 2.0.0.1
 
-Update version to 2.0.0
+* force update version to 2.0.0
+
+### Bug Fixes
+
+* Add `HOME` env var to distroless runners image ([#22796](https://github.com/n8n-io/n8n/issues/22796)) ([2cf1021](https://github.com/n8n-io/n8n/commit/2cf10216bd396118eb170f237b918df5850a3402))
+* **core:** Allowlist `HOME` env var in JS runner config ([#22839](https://github.com/n8n-io/n8n/issues/22839)) ([a31ca3d](https://github.com/n8n-io/n8n/commit/a31ca3d19052f7fdecb1c2ed9a81e15ff9bd14b6))
+* **core:** Do not prevent credential save if property has default value ([#22720](https://github.com/n8n-io/n8n/issues/22720)) ([03744c3](https://github.com/n8n-io/n8n/commit/03744c30c59b96a8ad67d8d6b321e0f7ff0571e2))
+* **core:** Update migration that activate workflows with executeWorkflowTrigger ([#22860](https://github.com/n8n-io/n8n/issues/22860)) ([f7cb18c](https://github.com/n8n-io/n8n/commit/f7cb18ce3853a1813646460fc472b0d20f482a53))
+* **editor:** Bind color-scheme to app theme setting ([#22774](https://github.com/n8n-io/n8n/issues/22774)) ([3d46b97](https://github.com/n8n-io/n8n/commit/3d46b97bdf1c01852998ce5a5eb4631fe990d268))
+* **editor:** Design tweaks for publish modals ([#22694](https://github.com/n8n-io/n8n/issues/22694)) ([98efa19](https://github.com/n8n-io/n8n/commit/98efa19ca4d9cf17c88a3778c00fea45caa54738))
+* Fetch workflow before updating checksum ([#22927](https://github.com/n8n-io/n8n/issues/22927)) ([2260953](https://github.com/n8n-io/n8n/commit/22609531c39dce6477123734f68a53d932a26d8b))
+* Security patches ([#22748](https://github.com/n8n-io/n8n/issues/22748)) ([d22c173](https://github.com/n8n-io/n8n/commit/d22c173aec9f990f1912450399eea29893e62d24))
+* Security patches for jws ([#22918](https://github.com/n8n-io/n8n/issues/22918)) ([a642722](https://github.com/n8n-io/n8n/commit/a642722115a011f16292074833d47bee540a34b2))
+* Update checksum after restoring workflow ([#22920](https://github.com/n8n-io/n8n/issues/22920)) ([207c3f8](https://github.com/n8n-io/n8n/commit/207c3f8ba81e9c5b2148278f7def492b4789d2dc))
+
+
+### Features
+
+* Validate nodes before activating ([#22916](https://github.com/n8n-io/n8n/issues/22916)) ([1aa325a](https://github.com/n8n-io/n8n/commit/1aa325a64f26a8b377cee341df7486dcedd535b2))
 
 
 # Release 2.0.0-rc.4
@@ -1856,6 +1876,7 @@ Fix: Preserve query string parameters in proxy_pass for correct backend routing
 ### Performance Improvements
 - **core:** Load source control only if licensed [#15908](https://github.com/n8n-io/n8n/pull/15908)   (d7e94eb)
 - **core:** Populate cache only with static webhooks [#16048](https://github.com/n8n-io/n8n/pull/16048)   (a18822a)
+
 
 
 
