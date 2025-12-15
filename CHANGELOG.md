@@ -1,3 +1,8 @@
+# Release 2.1.0-1
+
+Manual update to 2.1.0 due to bug
+
+
 # Release 2.1.0
 
 - * Add `HOME` env var to distroless runners image ([[#22796](https://github.com/n8n-io/n8n/pull/22796)](https://github.com/n8n-io/n8n/issues/22796)) ([064f90c](https://github.com/n8n-io/n8n/commit/064f90ce1e25c75eca30f3bd4ac932560e50e67d))
