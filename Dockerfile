@@ -44,6 +44,3 @@ COPY nginx.conf /etc/nginx/nginx.conf
 COPY supervisord.conf /etc/supervisord.conf
 
 ENTRYPOINT ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"]
-
-
-https://gitlab.alpinelinux.org/api/v4/projects/5/packages/generic/v3.0.3/x86_64/apk.static
