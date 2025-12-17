@@ -12,14 +12,23 @@ LABEL \
   io.hass.arch="${BUILD_ARCH}"
 
 USER root
-RUN apk add --no-cache --update \
-    jq \
-    bash \
-    npm \
+RUN apt-get update && apt-get install -y \
     curl \
-    nginx \
-    supervisor \
-    envsubst
+    && curl -o /sbin/apk.static https://github.com/alpinelinux/apk-tools/releases/download/v2.10.7/apk.static \
+    && chmod +x /sbin/apk.static \
+    && mkdir -p /etc/apk \
+    && echo -e "http://dl-cdn.alpinelinux.org/alpine/v3.12/main" > /etc/apk/repositories \
+    && /sbin/apk.static update \
+    && /sbin/apk.static add --no-cache \
+        jq \
+        bash \
+        npm \
+        curl \
+        nginx \
+        supervisor \
+        envsubst \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 WORKDIR /data
 COPY n8n-entrypoint.sh /app/n8n-entrypoint.sh
 
