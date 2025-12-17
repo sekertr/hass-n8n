@@ -1,3 +1,13 @@
+# Release 2.1.1-5
+
+## What's Changed
+* chore: update changelog for release 2.1.1-3 by @github-actions[bot] in https://github.com/sekertr/hass-n8n/pull/103
+* chore: update changelog for release 2.1.1-4 by @github-actions[bot] in https://github.com/sekertr/hass-n8n/pull/104
+
+
+**Full Changelog**: https://github.com/sekertr/hass-n8n/compare/2.1.1-3...2.1.1-5
+
+
 # Release 2.1.1-4
 
 ## What's Changed
