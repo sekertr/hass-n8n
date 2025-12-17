@@ -12,7 +12,24 @@ LABEL \
   io.hass.arch="${BUILD_ARCH}"
 
 USER root
-RUN apt-get update && apt-get install -y     curl     && curl -o /sbin/apk.static https://github.com/alpinelinux/apk-tools/releases/download/v2.10.7/apk.static     && chmod +x /sbin/apk.static     && mkdir -p /etc/apk     && echo -e "http://dl-cdn.alpinelinux.org/alpine/v3.12/main" > /etc/apk/repositories     && /sbin/apk.static update     && /sbin/apk.static add --no-cache         jq         bash         npm         curl         nginx         supervisor         envsubst     && apt-get clean     && rm -rf /var/lib/apt/lists/*
+#Reinstall apk-tools
+RUN ARCH=$(uname -m) && \
+    wget -qO- "http://dl-cdn.alpinelinux.org/alpine/latest-stable/main/${ARCH}/" | \
+    grep -o 'href="apk-tools-static-[^"]*\.apk"' | head -1 | cut -d'"' -f2 | \
+    xargs -I {} wget -q "http://dl-cdn.alpinelinux.org/alpine/latest-stable/main/${ARCH}/{}" && \
+    tar -xzf apk-tools-static-*.apk && \
+    ./sbin/apk.static -X http://dl-cdn.alpinelinux.org/alpine/latest-stable/main \
+        -U --allow-untrusted add apk-tools && \
+    rm -rf sbin apk-tools-static-*.apk
+# Now install your packages
+RUN apk add --no-cache --update \
+    jq \
+    bash \
+    npm \
+    curl \
+    nginx \
+    supervisor \
+    envsubst
 WORKDIR /data
 COPY n8n-entrypoint.sh /app/n8n-entrypoint.sh
 
