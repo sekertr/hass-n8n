@@ -1,3 +1,12 @@
+# Release 2.1.1-1
+
+## What's Changed
+* chore: update changelog for release 2.1.1 by @github-actions[bot] in https://github.com/sekertr/hass-n8n/pull/100
+
+
+**Full Changelog**: https://github.com/sekertr/hass-n8n/compare/2.1.1...2.1.1-1
+
+
 # Release 2.1.1
 
 - * **ai-builder:** Connection validation respects node version and type ([[#23349](https://github.com/n8n-io/n8n/pull/23349)](https://github.com/n8n-io/n8n/issues/23349)) ([adc07da](https://github.com/n8n-io/n8n/commit/adc07da00b99b000eeda48077f243b739872b777))
