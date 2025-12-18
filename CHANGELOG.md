@@ -1,3 +1,8 @@
+# Release 2.1.1.1
+
+Apktools, which was removed by n8n, has been reinstalled and versions 2.0.2 and later are now supported.
+
+
 # Release 2.1.1-5
 
 ## What's Changed
