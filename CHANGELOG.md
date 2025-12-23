@@ -1,3 +1,10 @@
+# Release 2.2.1
+
+- * OAuth2 cloud hook integration ([[#23574](https://github.com/n8n-io/n8n/pull/23574)](https://github.com/n8n-io/n8n/issues/23574)) ([61f9d06](https://github.com/n8n-io/n8n/commit/61f9d06c4495fb8af72f3408e494471d2bac8cd4))
+- * Improve expression handling ([[#23560](https://github.com/n8n-io/n8n/pull/23560)](https://github.com/n8n-io/n8n/issues/23560)) ([8a5d4d5](https://github.com/n8n-io/n8n/commit/8a5d4d5746f55a2fbb1566508bccfa729a304b60))
+- * Improve markdown rendering ([[#23561](https://github.com/n8n-io/n8n/pull/23561)](https://github.com/n8n-io/n8n/issues/23561)) ([e6313f6](https://github.com/n8n-io/n8n/commit/e6313f636412d7659e6ff9afb147bb02c9d12068))
+
+
 # Release 2.2.0
 
 - * **ai-builder:** Allow running `get-node-examples` tool in parallel ([[#23473](https://github.com/n8n-io/n8n/pull/23473)](https://github.com/n8n-io/n8n/issues/23473)) ([041a39b](https://github.com/n8n-io/n8n/commit/041a39b083e2bb17017bc45ffc0bd28dd2ba7a0c))
