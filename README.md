@@ -1,5 +1,5 @@
 > [!WARNING]  
-> This is a test version that closely tracks the latest developments in n8n, including pre-release builds.  
+> This is a test version that follows n8n pre-release builds and closely tracks the latest developments. 
 > As such, it may contain bugs or unstable features.  
 > **It is not recommended for use in production environments.**
 
@@ -9,11 +9,10 @@
 
 ⚡️ A new release is automatically published within 5 minutes after a new n8n version becomes available.
 
-The first three digits `a.b.c` represent the official n8n version, while the optional fourth digit `.d` indicates additional modifications or bug fixes made by me. If no such changes were applied, the fourth digit may be omitted.
+The first three digits `a.b.c` represent the official n8n version. The optional fourth identifier `.d` or `-d` indicates additional modifications or bug fixes applied by me. If no custom changes are present, this fourth identifier is omitted.
 
-For example: `1.98.1.1`  
-This indicates that the base version is **n8n 1.98.1**, and the final `.1` refers to a custom update or patch applied on top of that version.
-
+For example: `1.98.1.1`  or `1.98.1-1` 
+In both cases, the base version is **n8n 1.98.1**, and the final `.1` or `-1` denotes a custom patch or update layered on top of the official release.
 
 ## Installation
 
