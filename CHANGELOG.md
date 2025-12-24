@@ -75,7 +75,7 @@
 
 # Release 2.1.1.1
 
-Apktools, which was removed by n8n, has been reinstalled and versions 2.0.2 and later are now supported.
+- Apktools, which was removed by n8n, has been reinstalled and versions 2.0.2 and later are now supported.
 
 
 # Release 2.1.1-5
@@ -2146,6 +2146,7 @@ Fix: Preserve query string parameters in proxy_pass for correct backend routing
 ### Performance Improvements
 - **core:** Load source control only if licensed [#15908](https://github.com/n8n-io/n8n/pull/15908)   (d7e94eb)
 - **core:** Populate cache only with static webhooks [#16048](https://github.com/n8n-io/n8n/pull/16048)   (a18822a)
+
 
 
 
