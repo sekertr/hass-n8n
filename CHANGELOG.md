@@ -1,3 +1,8 @@
+# Release 2.2.1-1
+
+* add internal python
+
+
 # Release 2.2.1
 
 - OAuth2 cloud hook integration ([[#23574](https://github.com/n8n-io/n8n/pull/23574)](https://github.com/n8n-io/n8n/issues/23574)) ([61f9d06](https://github.com/n8n-io/n8n/commit/61f9d06c4495fb8af72f3408e494471d2bac8cd4))
