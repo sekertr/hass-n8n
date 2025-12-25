@@ -39,8 +39,13 @@ RUN apk add --no-cache --update \
     supervisor \
     envsubst \
     python3 \
-    py3-pip
+    py3-pip \
+    python3-venv
 
+RUN mkdir -p /home/node/.n8n/python_env && \
+    chown -R node:node /home/node/.n8n && \
+    python3 -m venv /home/node/.n8n/python_env && \
+    chown -R node:node /home/node/.n8n/python_env
 
 WORKDIR /data
 COPY n8n-entrypoint.sh /app/n8n-entrypoint.sh
