@@ -40,7 +40,7 @@ RUN apk add --no-cache --update \
     envsubst \
     python3 \
     py3-pip \
-    python3-venv
+    py3-venv
 
 RUN mkdir -p /home/node/.n8n/python_env && \
     chown -R node:node /home/node/.n8n && \
