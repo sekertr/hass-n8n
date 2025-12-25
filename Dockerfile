@@ -13,7 +13,7 @@ LABEL \
 
 USER root
 
-# 1. Standart HA Add-on araçlarını kur (Dokunmadık)
+# 1. Standart HA Add-on araçları (Dokunmadık)
 RUN ARCH=$(uname -m) && \
     wget -qO- "http://dl-cdn.alpinelinux.org/alpine/latest-stable/main/${ARCH}/" | \
     grep -o 'href="apk-tools-static-[^"]*.apk"' | head -1 | cut -d'"' -f2 | \
@@ -23,32 +23,34 @@ RUN ARCH=$(uname -m) && \
         -U --allow-untrusted add apk-tools && \
     rm -rf sbin apk-tools-static-*.apk
 
-# 2. Python ve Pip Kurulumu
+# 2. Python ve Pip Kurulumu (Alpine'de python3 venv'i de içerir)
 RUN apk add --no-cache --update \
     jq bash npm curl nginx supervisor envsubst \
     python3 py3-pip
 
-# 3. KRİTİK ADIM: Sanal Ortam (VENV) Oluşturma
-# n8n v2, Native Python için izole bir ortam şart koşar.
+# 3. Sanal Ortam (VENV) Oluşturma
 RUN python3 -m venv /opt/n8n_venv
 
-# 4. Kütüphaneleri Bu Ortama Kur (İstediğin paketleri buraya ekle)
-RUN /opt/n8n_venv/bin/pip install --no-cache-dir requests pandas numpy
+# 4. Kütüphaneleri VENV içine kuruyoruz
+RUN /opt/n8n_venv/bin/pip install --no-cache-dir requests pandas
 
-# 5. İzinleri Ayarla (Root olarak kurduk, Node kullanıcısına veriyoruz)
+# 5. İzinleri Ayarla
 RUN chown -R node:node /opt/n8n_venv
 
-# --- ORTAM DEĞİŞKENLERİ (Config.yaml yerine buraya gömdük) ---
-# Task Runner'ı aç
+# --- ORTAM DEĞİŞKENLERİ ---
+
+# A) Senin attığın linkteki resmi değişkenler (Runner'ı açar)
 ENV N8N_RUNNERS_ENABLED=true
 ENV N8N_RUNNERS_MODE=internal
 
-# Python'un yerini göster (Yoksa sistemde bulamaz)
-ENV N8N_PYTHON_INTERPRETER=/opt/n8n_venv/bin/python
-
-# Güvenlik ayarı: Tüm kütüphanelere izin ver (Native mod kısıtlamasını kaldırır)
+# B) Python İzinleri (Code node için gereklidir)
 ENV N8N_PYTHON_MODULES_ALLOWED="*"
-# -------------------------------------------------------------
+
+# C) ÇÖZÜM BURADA: PATH GÜNCELLEMESİ
+# Sistem yolunun (PATH) en başına bizim venv klasörünü ekliyoruz.
+# Böylece n8n "python3" dediğinde sisteminkini değil, bizim venv'i buluyor.
+ENV PATH="/opt/n8n_venv/bin:$PATH"
+# --------------------------
 
 WORKDIR /data
 COPY n8n-entrypoint.sh /app/n8n-entrypoint.sh
