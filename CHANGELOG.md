@@ -1,3 +1,12 @@
+# Release 2.2.1-3
+
+## What's Changed
+* chore: update changelog for release 2.2.1-2 by @github-actions[bot] in https://github.com/sekertr/hass-n8n/pull/111
+
+
+**Full Changelog**: https://github.com/sekertr/hass-n8n/compare/2.2.1-2...2.2.1-3
+
+
 # Release 2.2.1-2
 
 - added python internal 
