@@ -3,11 +3,12 @@ FROM n8nio/n8n:2.2.1
 ARG NGINX_ALLOWED_IP=172.30.32.2
 ENV NGINX_ALLOWED_IP=${NGINX_ALLOWED_IP}
 
-# --- N8N RUNNER AYARLARI ---
-# Code Node içinde Python'u aktif eder
+# --- 1. AYARLAR: Python ve Internal Runner Aktif ---
 ENV N8N_RUNNERS_ENABLED=true
 ENV N8N_RUNNERS_MODE=internal
-# ---------------------------
+# n8n'e sanal ortamın yerini gosteriyoruz (COZUM BU)
+ENV N8N_PYTHON_INTERPRETER=/opt/n8n_venv/bin/python
+# ---------------------------------------------------
 
 ARG BUILD_VERSION
 ARG BUILD_ARCH
@@ -19,7 +20,7 @@ LABEL \
 
 USER root
 
-# APK araçlarını manuel kuran blok (Orijinal hali)
+# --- 2. APK KURULUMLARI (Senin Orijinal Kodun) ---
 RUN ARCH=$(uname -m) && \
     wget -qO- "http://dl-cdn.alpinelinux.org/alpine/latest-stable/main/${ARCH}/" | \
     grep -o 'href="apk-tools-static-[^"]*.apk"' | head -1 | cut -d'"' -f2 | \
@@ -29,9 +30,8 @@ RUN ARCH=$(uname -m) && \
         -U --allow-untrusted add apk-tools && \
     rm -rf sbin apk-tools-static-*.apk
 
-# --- GÜNCELLENEN PAKET LISTESI ---
-# Hatalı olan 'python3-venv' kaldırıldı.
-# Alpine'de 'python3' paketi venv modülünü zaten içerir.
+# --- 3. PYTHON KURULUMU ve VENV OLUŞTURMA ---
+# Alpine'de python3 ve pip kuruyoruz
 RUN apk add --no-cache --update \
     jq \
     bash \
@@ -43,16 +43,17 @@ RUN apk add --no-cache --update \
     python3 \
     py3-pip
 
-# --- KRİTİK DÜZELTME: SANAL ORTAM KURULUMU ---
-# n8n'in kendi kendine oluştururken hata aldığı sanal ortamı
-# biz önden oluşturup yetkisini 'node' kullanıcısına veriyoruz.
-RUN mkdir -p /home/node/.n8n/python_env && \
-    python3 -m venv /home/node/.n8n/python_env && \
-    chown -R node:node /home/node/.n8n
+# KRİTİK ADIM: Sanal Ortamı (venv) manuel oluşturuyoruz
+# n8n'in otomatik yapmasını beklemiyoruz, çünkü Alpine'de genelde başaramıyor.
+RUN python3 -m venv /opt/n8n_venv
 
-# Gerekirse kütüphaneleri buraya ekle (Pandas örneği):
-# RUN /home/node/.n8n/python_env/bin/pip install pandas requests
-# ---------------------------------------------
+# Gerekli kütüphaneleri bu sanal ortama kuruyoruz (Örn: pandas, requests)
+RUN /opt/n8n_venv/bin/pip install --no-cache-dir requests pandas
+
+# Sanal ortamın sahibini 'node' kullanıcısı yapıyoruz (Çok Önemli!)
+# Yoksa n8n çalışırken "Permission Denied" hatası alırsın.
+RUN chown -R node:node /opt/n8n_venv
+# ----------------------------------------------
 
 WORKDIR /data
 COPY n8n-entrypoint.sh /app/n8n-entrypoint.sh
