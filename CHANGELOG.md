@@ -1,3 +1,10 @@
+# Release 2.4.1
+
+### Bug Fixes
+
+* Fix CLI import ([#24215](https://github.com/n8n-io/n8n/issues/24215)) ([55e02bb](https://github.com/n8n-io/n8n/commit/55e02bb0aea31a6a7390f54ce6985064fa034d87))
+
+
 # Release 2.4.0
 
 ### Bug Fixes
