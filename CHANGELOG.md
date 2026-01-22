@@ -120,13 +120,12 @@
 
 # Release 2.4.4
 
-
+* n8n base version is updated to 2.4.4
 
 
 # Release 2.4.3
 
-
-
+* n8n base version is updated to 2.4.3
 
 # Release 2.4.2
 
@@ -2522,6 +2521,7 @@ Fix: Preserve query string parameters in proxy_pass for correct backend routing
 ### Performance Improvements
 - **core:** Load source control only if licensed [#15908](https://github.com/n8n-io/n8n/pull/15908)   (d7e94eb)
 - **core:** Populate cache only with static webhooks [#16048](https://github.com/n8n-io/n8n/pull/16048)   (a18822a)
+
 
 
 
