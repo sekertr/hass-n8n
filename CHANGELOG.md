@@ -1,3 +1,8 @@
+# Release 2.5.1-1
+
+* fixes for CORS error.
+
+
 # Release 2.5.1
 
 ### Bug Fixes
