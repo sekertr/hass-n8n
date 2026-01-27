@@ -1,3 +1,10 @@
+# Release 2.6.1
+
+### Bug Fixes
+
+* Validate OpenAI urls ([#24922](https://github.com/n8n-io/n8n/issues/24922)) ([2e738d6](https://github.com/n8n-io/n8n/commit/2e738d64c8092b40f3f32fdd6ead2c4b5bf4b70f))
+
+
 # Release 2.6.0
 
 ### Bug Fixes
