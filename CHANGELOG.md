@@ -1,3 +1,15 @@
+# Release 2.6.2
+
+### Bug Fixes
+
+* **editor:** Improve checkbox and lock icon alignment ([#24575](https://github.com/n8n-io/n8n/issues/24575)) ([bf81840](https://github.com/n8n-io/n8n/commit/bf81840e365a3817f5b720c7ccbc973c2bee2fd5))
+
+
+### Features
+
+* **Zendesk Trigger Node:** Add webhook signature verification ([#24881](https://github.com/n8n-io/n8n/issues/24881)) ([3839e31](https://github.com/n8n-io/n8n/commit/3839e310bd4c3002c646c363d1411916fa195151))
+
+
 # Release 2.6.1
 
 ### Bug Fixes
