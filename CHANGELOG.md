@@ -1,3 +1,8 @@
+# Release 2.7.2-1
+
+- Add healthz and metrics endpoints to location block
+
+
 # Release 2.7.2
 
 ### Bug Fixes
