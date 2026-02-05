@@ -1,3 +1,10 @@
+# Release 2.7.1-3
+
+- The storage directory "/data/n8n/.n8n/binaryData"  will be renamed to "/data/n8n/.n8n/storage" in n8n v3. `N8N_MIGRATE_FS_STORAGE_PATH=true` variable added to migrate
+
+- `N8N_RUNNERS_ENABLED` removed.
+
+
 # Release 2.7.1-2
 
 ## What's Changed
