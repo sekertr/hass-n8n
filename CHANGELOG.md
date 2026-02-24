@@ -1,3 +1,12 @@
+# Release 2.10.0-2
+
+## What's Changed
+* chore: update changelog for release 2.10.0-1 by @github-actions[bot] in https://github.com/sekertr/hass-n8n/pull/161
+
+
+**Full Changelog**: https://github.com/sekertr/hass-n8n/compare/2.10.0-1...2.10.0-2
+
+
 # Release 2.10.0-1
 
 
