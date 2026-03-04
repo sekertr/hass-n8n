@@ -1,3 +1,8 @@
+# Release 2.11.1-2
+
+Update base image to n8nio/n8n:2.11.0
+
+
 # Release 2.11.1-1
 
 Downgrade n8n to 2.10.3 stable version due to bug in 2.11.1
