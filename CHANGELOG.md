@@ -1,3 +1,8 @@
+# Release 2.11.1-4
+
+- base to 2.10.4
+
+
 # Release 2.11.1-3
 
 upgrade again to n8n base 2.11.1 after bug fixed
