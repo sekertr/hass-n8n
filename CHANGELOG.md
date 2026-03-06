@@ -1,3 +1,8 @@
+# Release 2.11.1-3
+
+upgrade again to n8n base 2.11.1 after bug fixed
+
+
 # Release 2.11.1-2
 
 Update base image to n8nio/n8n:2.11.0
