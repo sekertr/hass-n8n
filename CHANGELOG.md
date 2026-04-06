@@ -1,3 +1,8 @@
+# Release 2.15.0-2
+
+- back to n8n version 2.14.2
+
+
 # Release 2.15.0-1
 
 ## What's Changed
