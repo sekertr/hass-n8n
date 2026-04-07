@@ -1,4 +1,4 @@
-FROM n8nio/n8n:2.14.2
+FROM n8nio/n8n:2.16.0
 
 ARG NGINX_ALLOWED_IP=172.30.32.2
 ENV NGINX_ALLOWED_IP=${NGINX_ALLOWED_IP}
@@ -29,8 +29,6 @@ COPY nginx-entrypoint.sh /app/nginx-entrypoint.sh
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY supervisord.conf /etc/supervisord.conf
 
-RUN chmod +x /app/n8n-entrypoint.sh \
-    && chmod +x /app/nginx-entrypoint.sh \
-    && chmod +x /app/n8n-exports.sh
+RUN chmod +x /app/n8n-entrypoint.sh     && chmod +x /app/nginx-entrypoint.sh     && chmod +x /app/n8n-exports.sh
 
 ENTRYPOINT ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"]
