@@ -1,3 +1,8 @@
+# Release 2.16.0-3
+
+- remove healtz endpoint
+
+
 # Release 2.16.0-2
 
 ## What's Changed
