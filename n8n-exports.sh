@@ -81,4 +81,8 @@ echo "External Home Assistant n8n URL: ${EXTERNAL_N8N_URL}"
 export N8N_PATH=${N8N_PATH:-"${INGRESS_PATH}"}
 export N8N_EDITOR_BASE_URL=${N8N_EDITOR_BASE_URL:-"${EXTERNAL_N8N_URL}${N8N_PATH}"}
 export WEBHOOK_URL=${WEBHOOK_URL:-"http://${LOCAL_HA_HOSTNAME}:8081"}
-#export N8N_ENDPOINT_HEALTH="healthz"
+
+# v2.15.0+ sürümlerindeki "double-prefix" hatasını önlemek için:
+# Kullanıcı env_vars_list ile tanımlamış olsa bile bu değişkeni temizliyoruz.
+unset N8N_ENDPOINT_HEALTH
+echo "Unset N8N_ENDPOINT_HEALTH to allow n8n internal resolution."
