@@ -1,3 +1,12 @@
+# Release 2.16.0-2
+
+## What's Changed
+* chore: update changelog for release 2.16.0-1 by @github-actions[bot] in https://github.com/sekertr/hass-n8n/pull/186
+
+
+**Full Changelog**: https://github.com/sekertr/hass-n8n/compare/2.16.0-1...2.16.0-2
+
+
 # Release 2.16.0-1
 
 - fix healtz endpoint after [this n8n commit](https://github.com/n8n-io/n8n/commit/4436e4b71cc17b022cec1c5e03c0b5b7fdbafa8d) 
