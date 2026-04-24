@@ -1,3 +1,10 @@
+# Release 2.18.3
+
+### Features
+
+* **Google Gemini Node:** Gemini default models update ([#28938](https://github.com/n8n-io/n8n/issues/28938)) ([548f90d](https://github.com/n8n-io/n8n/commit/548f90d22258e5aff22b4fd08d7b8eb14ce57147))
+
+
 # Release 2.18.2
 
 ### Bug Fixes
