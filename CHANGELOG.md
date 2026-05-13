@@ -1,3 +1,10 @@
+# Release 2.21.1
+
+### Bug Fixes
+
+* **core:** Preserve AxiosHeaders instance when applying OpenAI vendor defaults ([#30296](https://github.com/n8n-io/n8n/issues/30296)) ([6e6a286](https://github.com/n8n-io/n8n/commit/6e6a286724b5cdda9a69280ee14578ce2c96bd1b))
+
+
 # Release 2.21.0
 
 ### Bug Fixes
