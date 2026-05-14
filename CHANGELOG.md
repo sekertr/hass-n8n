@@ -1,3 +1,11 @@
+# Release 2.21.2
+
+### Bug Fixes
+
+* **core:** Preserve nested arrays in VM expression engine output ([#30333](https://github.com/n8n-io/n8n/issues/30333)) ([f5698a1](https://github.com/n8n-io/n8n/commit/f5698a1047b9fd8b53c9b0ba638bd960f602e50c))
+* **core:** Resolve empty expressions to empty string in VM evaluator ([#30324](https://github.com/n8n-io/n8n/issues/30324)) ([6dd1306](https://github.com/n8n-io/n8n/commit/6dd130617c0ff69ea4712e1edd2857d3ef7dd77b))
+
+
 # Release 2.21.1
 
 ### Bug Fixes
