@@ -1,3 +1,15 @@
+# Release 2.25.3
+
+### Bug Fixes
+
+* **core:** Prevent evaluation executions from stalling in status new ([#31701](https://github.com/n8n-io/n8n/issues/31701)) ([4bfa365](https://github.com/n8n-io/n8n/commit/4bfa3657df5fb7c004d6832597233e642ff0c97d))
+
+
+### Features
+
+* Implements AI Assistant empty state workflow previews experiment ([#31663](https://github.com/n8n-io/n8n/issues/31663)) ([ff5e472](https://github.com/n8n-io/n8n/commit/ff5e4721c73dc0ae00751ccbb4da43670e66e874))
+
+
 # Release 2.25.2
 
 ### Bug Fixes
