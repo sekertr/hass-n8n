@@ -1,3 +1,10 @@
+# Release 2.25.6
+
+### Bug Fixes
+
+* **editor:** Copy only selected markdown editor text ([#31891](https://github.com/n8n-io/n8n/issues/31891)) ([7627351](https://github.com/n8n-io/n8n/commit/7627351cd53c718cea95634d7f343763dac73273))
+
+
 # Release 2.25.5
 
 ### Bug Fixes
