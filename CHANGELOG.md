@@ -1,3 +1,10 @@
+# Release 2.26.3
+
+### Bug Fixes
+
+* **editor:** Insert instance ai prompt suggestions instead of submit ([#32126](https://github.com/n8n-io/n8n/issues/32126)) ([b4242c8](https://github.com/n8n-io/n8n/commit/b4242c895343ece2b6497d05128c3a89b9ad8deb))
+
+
 # Release 2.26.2
 
 
