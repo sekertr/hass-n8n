@@ -1,3 +1,8 @@
+# Release 2.27.1-3
+
+- CORS removed
+
+
 # Release 2.27.1-2
 
 - bug fixed
