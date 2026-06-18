@@ -1,3 +1,8 @@
+# Release 2.27.1-2
+
+- bug fixed
+
+
 # Release 2.27.1-1
 
 - added cors policies
