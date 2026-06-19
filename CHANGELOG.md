@@ -1,3 +1,11 @@
+# Release 2.27.3
+
+### Bug Fixes
+
+* **Form Trigger Node:** Add default value for authentication parameter to prevent crash on old workflows ([#32628](https://github.com/n8n-io/n8n/issues/32628)) ([f077bfc](https://github.com/n8n-io/n8n/commit/f077bfcee2baf241544c8b0ec6ef0d960152d0c5))
+* Hides preview suggestions on smaller screens due to lack of space ([#32561](https://github.com/n8n-io/n8n/issues/32561)) ([dfe722f](https://github.com/n8n-io/n8n/commit/dfe722f2b5406bbc4377490f4e28cefd2988df21))
+
+
 # Release 2.27.2
 
 ### Bug Fixes
