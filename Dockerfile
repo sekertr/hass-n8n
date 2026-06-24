@@ -1,4 +1,4 @@
-FROM n8nio/n8n:2.28.0 AS n8n_base
+FROM n8nio/n8n:2.27.3 AS n8n_base
 
 FROM alpine:3.22 AS alpine_tools
 
