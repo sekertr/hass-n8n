@@ -1,8 +1,10 @@
 FROM n8nio/n8n:2.28.0 AS base
-FROM alpine:latest AS alpine
+FROM alpine:latest AS alpine_tools
 
-COPY --from=alpine /sbin/apk /sbin/apk
-COPY --from=alpine /usr/lib/libapk.so* /usr/lib/
+COPY --from=alpine_tools /sbin/apk /sbin/apk
+COPY --from=alpine_tools /lib/apk /lib/apk
+COPY --from=alpine_tools /etc/apk /etc/apk
+COPY --from=alpine_tools /usr/lib/libapk* /usr/lib/
 
 ARG NGINX_ALLOWED_IP=172.30.32.2
 ENV NGINX_ALLOWED_IP=${NGINX_ALLOWED_IP}
