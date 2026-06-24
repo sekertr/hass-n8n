@@ -1,13 +1,9 @@
-FROM n8nio/n8n:2.27.3 AS n8n_base
-
-FROM alpine:3.22 AS alpine_tools
+FROM n8nio/n8n:2.28.0
 
 ARG NGINX_ALLOWED_IP=172.30.32.2
 ENV NGINX_ALLOWED_IP=${NGINX_ALLOWED_IP}
 ARG BUILD_VERSION
 ARG BUILD_ARCH
-
-FROM n8n_base
 
 LABEL \
   io.hass.version="${BUILD_VERSION}" \
@@ -16,14 +12,14 @@ LABEL \
 
 USER root
 
-# apk'yi paket çözümleyiciyi hiç çalıştırmadan, doğrudan
-# temiz bir Alpine imajından dosya olarak kopyalıyoruz.
-# Bu, base imajdaki bozuk/eksik apk veritabanı kalıntılarıyla
-# çakışma riskini ortadan kaldırır.
-COPY --from=alpine_tools /sbin/apk /sbin/apk
-COPY --from=alpine_tools /lib/apk /lib/apk
-COPY --from=alpine_tools /etc/apk /etc/apk
-COPY --from=alpine_tools /usr/lib/libapk* /usr/lib/
+RUN ARCH=$(uname -m) && \
+    wget -qO- "http://dl-cdn.alpinelinux.org/alpine/v3.23/main/${ARCH}/" | \
+    grep -o 'href="apk-tools-static-[^"]*.apk"' | head -1 | cut -d'"' -f2 | \
+    xargs -I {} wget -q "http://dl-cdn.alpinelinux.org/alpine/v3.23/main/${ARCH}/{}" && \
+    tar -xzf apk-tools-static-*.apk && \
+    ./sbin/apk.static -X http://dl-cdn.alpinelinux.org/alpine/v3.23/main \
+        -U --allow-untrusted add apk-tools && \
+    rm -rf sbin apk-tools-static-*.apk
 
 RUN apk add --no-cache --update \
     jq \
@@ -32,7 +28,7 @@ RUN apk add --no-cache --update \
     curl \
     nginx \
     supervisor \
-    gettext
+    envsubst
 
 WORKDIR /data
 
