@@ -1,7 +1,8 @@
-FROM n8nio/n8n:2.28.0
+FROM n8nio/n8n:2.26.8 AS base
 
 ARG NGINX_ALLOWED_IP=172.30.32.2
 ENV NGINX_ALLOWED_IP=${NGINX_ALLOWED_IP}
+
 ARG BUILD_VERSION
 ARG BUILD_ARCH
 
@@ -12,14 +13,16 @@ LABEL \
 
 USER root
 
+#Reinstall apk-tools since n8n removes it
 RUN ARCH=$(uname -m) && \
-    wget -qO- "http://dl-cdn.alpinelinux.org/alpine/v3.23/main/${ARCH}/" | \
-    grep -o 'href="apk-tools-static-[^"]*.apk"' | head -1 | cut -d'"' -f2 | \
-    xargs -I {} wget -q "http://dl-cdn.alpinelinux.org/alpine/v3.23/main/${ARCH}/{}" && \
+    wget -qO- "http://dl-cdn.alpinelinux.org/alpine/latest-stable/main/${ARCH}/" | \
+    grep -o 'href="apk-tools-static-[^"]*\.apk"' | head -1 | cut -d'"' -f2 | \
+    xargs -I {} wget -q "http://dl-cdn.alpinelinux.org/alpine/latest-stable/main/${ARCH}/{}" && \
     tar -xzf apk-tools-static-*.apk && \
-    ./sbin/apk.static -X http://dl-cdn.alpinelinux.org/alpine/v3.23/main \
+    ./sbin/apk.static -X http://dl-cdn.alpinelinux.org/alpine/latest-stable/main \
         -U --allow-untrusted add apk-tools && \
     rm -rf sbin apk-tools-static-*.apk
+
 
 RUN apk add --no-cache --update \
     jq \
@@ -28,15 +31,18 @@ RUN apk add --no-cache --update \
     curl \
     nginx \
     supervisor \
-    envsubst 
-
+    envsubst
 WORKDIR /data
-
 COPY n8n-entrypoint.sh /app/n8n-entrypoint.sh
+
 RUN mkdir -p /run/nginx
+
 COPY nginx.conf /etc/nginx/nginx.conf.template
+
 COPY n8n-exports.sh /app/n8n-exports.sh
+COPY n8n-entrypoint.sh /app/n8n-entrypoint.sh
 COPY nginx-entrypoint.sh /app/nginx-entrypoint.sh
+
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY supervisord.conf /etc/supervisord.conf
 
