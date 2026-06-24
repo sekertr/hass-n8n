@@ -1,10 +1,13 @@
-FROM n8nio/n8n:2.28.0
+FROM n8nio/n8n:2.28.0 AS n8n_base
+
+FROM alpine:3.22 AS alpine_tools
 
 ARG NGINX_ALLOWED_IP=172.30.32.2
 ENV NGINX_ALLOWED_IP=${NGINX_ALLOWED_IP}
-
 ARG BUILD_VERSION
 ARG BUILD_ARCH
+
+FROM n8n_base
 
 LABEL \
   io.hass.version="${BUILD_VERSION}" \
@@ -12,33 +15,37 @@ LABEL \
   io.hass.arch="${BUILD_ARCH}"
 
 USER root
-RUN ARCH=$(uname -m) && \
-    ALPINE_VER=$(grep VERSION_ID /etc/os-release | cut -d= -f2 | cut -d. -f1,2) && \
-    echo "Detected Alpine version: ${ALPINE_VER}" && \
-    wget -qO- "http://dl-cdn.alpinelinux.org/alpine/v${ALPINE_VER}/main/${ARCH}/" | \
-    grep -o 'href="apk-tools-static-[^"]*.apk"' | head -1 | cut -d'"' -f2 | \
-    xargs -I {} wget -q "http://dl-cdn.alpinelinux.org/alpine/v${ALPINE_VER}/main/${ARCH}/{}" && \
-    tar -xzf apk-tools-static-*.apk && \
-    ./sbin/apk.static -X http://dl-cdn.alpinelinux.org/alpine/v${ALPINE_VER}/main \
-        -U --allow-untrusted --initdb add apk-tools && \
-    rm -rf sbin apk-tools-static-*.apk
 
-RUN apk add --no-cache --update     jq     bash     npm     curl     nginx     supervisor     envsubst
+# apk'yi paket çözümleyiciyi hiç çalıştırmadan, doğrudan
+# temiz bir Alpine imajından dosya olarak kopyalıyoruz.
+# Bu, base imajdaki bozuk/eksik apk veritabanı kalıntılarıyla
+# çakışma riskini ortadan kaldırır.
+COPY --from=alpine_tools /sbin/apk /sbin/apk
+COPY --from=alpine_tools /lib/apk /lib/apk
+COPY --from=alpine_tools /etc/apk /etc/apk
+COPY --from=alpine_tools /usr/lib/libapk* /usr/lib/
+
+RUN apk add --no-cache --update \
+    jq \
+    bash \
+    npm \
+    curl \
+    nginx \
+    supervisor \
+    gettext
 
 WORKDIR /data
-COPY n8n-entrypoint.sh /app/n8n-entrypoint.sh
 
+COPY n8n-entrypoint.sh /app/n8n-entrypoint.sh
 RUN mkdir -p /run/nginx
-
 COPY nginx.conf /etc/nginx/nginx.conf.template
-
 COPY n8n-exports.sh /app/n8n-exports.sh
-COPY n8n-entrypoint.sh /app/n8n-entrypoint.sh
 COPY nginx-entrypoint.sh /app/nginx-entrypoint.sh
-
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY supervisord.conf /etc/supervisord.conf
 
-RUN chmod +x /app/n8n-entrypoint.sh     && chmod +x /app/nginx-entrypoint.sh     && chmod +x /app/n8n-exports.sh
+RUN chmod +x /app/n8n-entrypoint.sh \
+    && chmod +x /app/nginx-entrypoint.sh \
+    && chmod +x /app/n8n-exports.sh
 
 ENTRYPOINT ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"]
