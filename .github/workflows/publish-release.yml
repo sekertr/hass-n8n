@@ -7,6 +7,11 @@ on:
     types: [published]
 
   workflow_dispatch:
+   inputs:
+     tag:
+       description: '2.28.0'
+       required: true
+       type: string
  
 jobs:
   update_changelog:
