@@ -15,11 +15,12 @@ USER root
 
 #Reinstall apk-tools since n8n removes it
 RUN ARCH=$(uname -m) && \
-    wget -qO- "http://dl-cdn.alpinelinux.org/alpine/latest-stable/main/${ARCH}/" | \
+    ALPINE_BRANCH="v$(. /etc/os-release && echo "${VERSION_ID}")" && \
+    wget -qO- "https://dl-cdn.alpinelinux.org/alpine/${ALPINE_BRANCH}/main/${ARCH}/" | \
     grep -o 'href="apk-tools-static-[^"]*\.apk"' | head -1 | cut -d'"' -f2 | \
-    xargs -I {} wget -q "http://dl-cdn.alpinelinux.org/alpine/latest-stable/main/${ARCH}/{}" && \
+    xargs -I {} wget -q "https://dl-cdn.alpinelinux.org/alpine/${ALPINE_BRANCH}/main/${ARCH}/{}" && \
     tar -xzf apk-tools-static-*.apk && \
-    ./sbin/apk.static -X http://dl-cdn.alpinelinux.org/alpine/latest-stable/main \
+    ./sbin/apk.static -X "https://dl-cdn.alpinelinux.org/alpine/${ALPINE_BRANCH}/main" \
         -U --allow-untrusted add apk-tools && \
     rm -rf sbin apk-tools-static-*.apk
 
