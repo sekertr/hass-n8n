@@ -28,7 +28,7 @@ RUN apk add --no-cache --update \
     curl \
     nginx \
     supervisor \
-    gettext
+    envsubst 
 
 WORKDIR /data
 
