@@ -1,4 +1,8 @@
-FROM n8nio/n8n:2.27.0 AS base
+FROM n8nio/n8n:2.28.0 AS base
+FROM alpine:latest AS alpine
+
+COPY --from=alpine /sbin/apk /sbin/apk
+COPY --from=alpine /usr/lib/libapk.so* /usr/lib/
 
 ARG NGINX_ALLOWED_IP=172.30.32.2
 ENV NGINX_ALLOWED_IP=${NGINX_ALLOWED_IP}
@@ -12,17 +16,6 @@ LABEL \
   io.hass.arch="${BUILD_ARCH}"
 
 USER root
-
-#Reinstall apk-tools since n8n removes it
-RUN ARCH=$(uname -m) && \
-    wget -qO- "http://dl-cdn.alpinelinux.org/alpine/latest-stable/main/${ARCH}/" | \
-    grep -o 'href="apk-tools-static-[^"]*\.apk"' | head -1 | cut -d'"' -f2 | \
-    xargs -I {} wget -q "http://dl-cdn.alpinelinux.org/alpine/latest-stable/main/${ARCH}/{}" && \
-    tar -xzf apk-tools-static-*.apk && \
-    ./sbin/apk.static -X http://dl-cdn.alpinelinux.org/alpine/latest-stable/main \
-        -U --allow-untrusted add apk-tools && \
-    rm -rf sbin apk-tools-static-*.apk
-
 
 RUN apk add --no-cache --update \
     jq \
