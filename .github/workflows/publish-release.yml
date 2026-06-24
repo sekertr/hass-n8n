@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
    inputs:
      tag:
-       description: '2.28.0'
+       description: 'Release tag'
        required: true
        type: string
  
