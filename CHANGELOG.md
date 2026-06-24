@@ -1,3 +1,14 @@
+# Release 2.28.0-1
+
+## What's Changed
+* chore: update changelog for release 2.28.0 by @github-actions[bot] in https://github.com/sekertr/hass-n8n/pull/240
+* chore: update changelog for release null by @github-actions[bot] in https://github.com/sekertr/hass-n8n/pull/241
+* chore: update changelog for release null by @github-actions[bot] in https://github.com/sekertr/hass-n8n/pull/242
+
+
+**Full Changelog**: https://github.com/sekertr/hass-n8n/compare/2.28.0...2.28.0-1
+
+
 # Release null
 
 null
