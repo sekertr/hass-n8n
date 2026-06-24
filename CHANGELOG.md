@@ -1,3 +1,29 @@
+# Release 2.27.4
+
+## What's Changed
+* chore: update changelog for release 2.28.0 by @github-actions[bot] in https://github.com/sekertr/hass-n8n/pull/240
+* chore: update changelog for release null by @github-actions[bot] in https://github.com/sekertr/hass-n8n/pull/241
+* chore: update changelog for release null by @github-actions[bot] in https://github.com/sekertr/hass-n8n/pull/242
+* chore: update changelog for release 2.28.0-1 by @github-actions[bot] in https://github.com/sekertr/hass-n8n/pull/243
+* chore: update changelog for release 2.28.0-2 by @github-actions[bot] in https://github.com/sekertr/hass-n8n/pull/244
+* chore: update changelog for release 2.28.0-3 by @github-actions[bot] in https://github.com/sekertr/hass-n8n/pull/245
+* chore: update changelog for release 2.28.0-4 by @github-actions[bot] in https://github.com/sekertr/hass-n8n/pull/246
+* chore: update changelog for release 2.28.0-5 by @github-actions[bot] in https://github.com/sekertr/hass-n8n/pull/247
+* chore: update changelog for release 2.28.0-6 by @github-actions[bot] in https://github.com/sekertr/hass-n8n/pull/248
+* chore: update changelog for release 2.28.0-7 by @github-actions[bot] in https://github.com/sekertr/hass-n8n/pull/249
+* chore: update changelog for release 2.28.0-8 by @github-actions[bot] in https://github.com/sekertr/hass-n8n/pull/250
+* chore: update changelog for release 2.28.0-9 by @github-actions[bot] in https://github.com/sekertr/hass-n8n/pull/251
+* Fix publish_release amd64 build by pinning apk bootstrap to base Alpine branch by @sekertr with @Copilot in https://github.com/sekertr/hass-n8n/pull/252
+* chore: update changelog for release 2.28.0-10 by @github-actions[bot] in https://github.com/sekertr/hass-n8n/pull/253
+* chore: update changelog for release 2.28.0-11 by @github-actions[bot] in https://github.com/sekertr/hass-n8n/pull/254
+* chore: update changelog for release 2.28.0-12 by @github-actions[bot] in https://github.com/sekertr/hass-n8n/pull/255
+
+## New Contributors
+* @sekertr with @Copilot made their first contribution in https://github.com/sekertr/hass-n8n/pull/252
+
+**Full Changelog**: https://github.com/sekertr/hass-n8n/compare/2.28.0...2.27.4
+
+
 # Release 2.28.0-12
 
 - bug fixes
