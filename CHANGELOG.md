@@ -1,3 +1,12 @@
+# Release 2.27.0-1
+
+## What's Changed
+* chore: update changelog for release 2.27.4 by @github-actions[bot] in https://github.com/sekertr/hass-n8n/pull/256
+
+
+**Full Changelog**: https://github.com/sekertr/hass-n8n/compare/2.27.4...2.27.0-1
+
+
 # Release 2.27.4
 
 ## What's Changed
