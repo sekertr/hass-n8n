@@ -13,11 +13,11 @@ LABEL \
 USER root
 
 RUN ARCH=$(uname -m) && \
-    wget -qO- "http://dl-cdn.alpinelinux.org/alpine/v3.22/main/${ARCH}/" | \
+    wget -qO- "http://dl-cdn.alpinelinux.org/alpine/v3.23/main/${ARCH}/" | \
     grep -o 'href="apk-tools-static-[^"]*.apk"' | head -1 | cut -d'"' -f2 | \
-    xargs -I {} wget -q "http://dl-cdn.alpinelinux.org/alpine/v3.22/main/${ARCH}/{}" && \
+    xargs -I {} wget -q "http://dl-cdn.alpinelinux.org/alpine/v3.23/main/${ARCH}/{}" && \
     tar -xzf apk-tools-static-*.apk && \
-    ./sbin/apk.static -X http://dl-cdn.alpinelinux.org/alpine/v3.22/main \
+    ./sbin/apk.static -X http://dl-cdn.alpinelinux.org/alpine/v3.23/main \
         -U --allow-untrusted add apk-tools && \
     rm -rf sbin apk-tools-static-*.apk
 
