@@ -1,6 +1,4 @@
-FROM n8nio/n8n:2.28.1 AS n8n_base
-
-FROM alpine:3.24 AS alpine_tools
+FROM n8nio/n8n:2.28.2
 
 ARG NGINX_ALLOWED_IP=172.30.32.2
 ENV NGINX_ALLOWED_IP=${NGINX_ALLOWED_IP}
@@ -14,14 +12,8 @@ LABEL \
   io.hass.arch="${BUILD_ARCH}"
 
 USER root
-
-COPY --from=alpine_tools /sbin/apk /sbin/apk
-COPY --from=alpine_tools /lib/apk /lib/apk
-COPY --from=alpine_tools /etc/apk /etc/apk
-COPY --from=alpine_tools /usr/lib/libapk* /usr/lib/
-
-
-RUN apk add --no-cache --update     jq     bash     npm     curl     nginx     supervisor     gettext
+RUN ARCH=$(uname -m) &&     wget -qO- "http://dl-cdn.alpinelinux.org/alpine/latest-stable/main/${ARCH}/" |     grep -o 'href="apk-tools-static-[^"]*.apk"' | head -1 | cut -d'"' -f2 |     xargs -I {} wget -q "http://dl-cdn.alpinelinux.org/alpine/latest-stable/main/${ARCH}/{}" &&     tar -xzf apk-tools-static-*.apk &&     ./sbin/apk.static -X http://dl-cdn.alpinelinux.org/alpine/latest-stable/main         -U --allow-untrusted add apk-tools &&     rm -rf sbin apk-tools-static-*.apk
+RUN apk add --no-cache --update     jq     bash     npm     curl     nginx     supervisor     envsubst
 
 WORKDIR /data
 COPY n8n-entrypoint.sh /app/n8n-entrypoint.sh
