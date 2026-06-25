@@ -1,6 +1,6 @@
 FROM n8nio/n8n:2.28.1 AS n8n_base
 
-FROM alpine:3.22 AS alpine_tools
+FROM alpine:3.24 AS alpine_tools
 
 ARG NGINX_ALLOWED_IP=172.30.32.2
 ENV NGINX_ALLOWED_IP=${NGINX_ALLOWED_IP}
