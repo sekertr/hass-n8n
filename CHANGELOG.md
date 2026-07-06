@@ -1,3 +1,10 @@
+# Release 2.29.6
+
+### Bug Fixes
+
+* **core:** Pin langgraph and langgraph-checkpoint to prevent broken npm installs ([#33609](https://github.com/n8n-io/n8n/issues/33609)) ([a1d2108](https://github.com/n8n-io/n8n/commit/a1d2108900210c316840e6121efd4acc22ecb727))
+
+
 # Release 2.29.5
 
 
