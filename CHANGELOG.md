@@ -1,3 +1,11 @@
+# Release 2.30.2
+
+### Bug Fixes
+
+* **core:** Acquire expression isolate when resolving node inputs ([#33771](https://github.com/n8n-io/n8n/issues/33771)) ([ae7c66c](https://github.com/n8n-io/n8n/commit/ae7c66c3c09c71caff8baffa2a1c725a21292745))
+* **core:** Acquire expression isolate when resolving node parameters ([#33770](https://github.com/n8n-io/n8n/issues/33770)) ([26068c9](https://github.com/n8n-io/n8n/commit/26068c9d5061eff692b9704b205af012fe108182))
+
+
 # Release 2.30.1
 
 ### Bug Fixes
