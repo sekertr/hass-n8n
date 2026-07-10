@@ -1,3 +1,10 @@
+# Release 2.30.3
+
+### Bug Fixes
+
+* **editor:** Keep AI Assistant thread state intact on editor hand-off ([#33924](https://github.com/n8n-io/n8n/issues/33924)) ([ee10d01](https://github.com/n8n-io/n8n/commit/ee10d01e96a1a621efb5cb671b8af0ed0436bb91))
+
+
 # Release 2.30.2
 
 ### Bug Fixes
