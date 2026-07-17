@@ -1,3 +1,11 @@
+# Release 2.31.3
+
+### Bug Fixes
+
+* **core:** Sign SES requests with the ses service name ([#34282](https://github.com/n8n-io/n8n/issues/34282)) ([4e72e25](https://github.com/n8n-io/n8n/commit/4e72e2536d9c78c668f9f71cbc8f01c507379fb2))
+* Correct end-user credential validation, re-evaluation, and identity-hook recognition ([#34277](https://github.com/n8n-io/n8n/issues/34277)) ([d8c9e45](https://github.com/n8n-io/n8n/commit/d8c9e45a55fe851490ab8e406bafbec3f02550a7))
+
+
 # Release 2.31.2
 
 ### Bug Fixes
