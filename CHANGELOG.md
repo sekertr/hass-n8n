@@ -1,3 +1,10 @@
+# Release 2.36.5
+
+### Bug Fixes
+
+* **core:** Raise AI Assistant model verification token limit ([#36797](https://github.com/n8n-io/n8n/issues/36797)) ([ec5244b](https://github.com/n8n-io/n8n/commit/ec5244bb2c82bb3a5531b5c88539a14ea7b1dd01))
+
+
 # Release 2.36.4
 
 ### Bug Fixes
