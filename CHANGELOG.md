@@ -1,3 +1,10 @@
+# Release 2.37.4
+
+### Bug Fixes
+
+* **core:** Allow a domain-restricted credential to work in its own node ([#37247](https://github.com/n8n-io/n8n/issues/37247)) ([7452313](https://github.com/n8n-io/n8n/commit/745231314e2d9cd789b0ed5907af65b339800074))
+
+
 # Release 2.37.3
 
 ### Bug Fixes
