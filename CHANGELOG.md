@@ -1,3 +1,10 @@
+# Release 2.37.6
+
+### Bug Fixes
+
+* **core:** Thread execution id through dynamic-credential storage ([#37314](https://github.com/n8n-io/n8n/issues/37314)) ([537524f](https://github.com/n8n-io/n8n/commit/537524f2b1600be07d97512063f7199431bfe45c))
+
+
 # Release 2.37.4
 
 ### Bug Fixes
