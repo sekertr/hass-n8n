@@ -1,3 +1,10 @@
+# Release 2.38.3
+
+### Bug Fixes
+
+* **core:** Ensure running job cleanup when a workflow run rejects ([#37629](https://github.com/n8n-io/n8n/issues/37629)) ([cebb7bd](https://github.com/n8n-io/n8n/commit/cebb7bd6396587e9791a9afa1f7b08c2948a7ef0))
+
+
 # Release 2.38.2
 
 
