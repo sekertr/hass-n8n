@@ -1,3 +1,11 @@
+# Release 2.40.3
+
+### Bug Fixes
+
+* **core:** Repair data-encryption keys stored as the raw instance key ([#38910](https://github.com/n8n-io/n8n/issues/38910)) ([a8e0e7c](https://github.com/n8n-io/n8n/commit/a8e0e7c3844510321894bf661cc0610baeae8fc3))
+* **editor:** Fix blank workflow previews in AI Assistant ([#38914](https://github.com/n8n-io/n8n/issues/38914)) ([2049d15](https://github.com/n8n-io/n8n/commit/2049d15dbe7e7e034165d76048dde92a8b28a36f))
+
+
 # Release 2.40.2
 
 ### Bug Fixes
