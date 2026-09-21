@@ -1,3 +1,10 @@
+# Release 2.40.5
+
+### Bug Fixes
+
+* Limit declarative routing during base URL ownership checks ([#39147](https://github.com/n8n-io/n8n/issues/39147)) ([ebe5a73](https://github.com/n8n-io/n8n/commit/ebe5a73bdeea371d7ca2b10fcf228980a3c5a52f))
+
+
 # Release 2.40.4
 
 ### Bug Fixes
