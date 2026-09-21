@@ -1,3 +1,15 @@
+# Release 2.40.4
+
+### Bug Fixes
+
+* **core:** Tear down workflow triggers when publication meets a node type the instance cannot load ([#39056](https://github.com/n8n-io/n8n/issues/39056)) ([6a941e4](https://github.com/n8n-io/n8n/commit/6a941e4a99ad8b99164b36a76c31f4581966012a))
+
+
+### Performance Improvements
+
+* **core:** Stop loading project members when listing credentials ([#39095](https://github.com/n8n-io/n8n/issues/39095)) ([b9b79ae](https://github.com/n8n-io/n8n/commit/b9b79ae6d0a2aa8adc65da5eb94951755101db70))
+
+
 # Release 2.40.3
 
 ### Bug Fixes
