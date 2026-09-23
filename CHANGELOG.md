@@ -1,3 +1,15 @@
+# Release 2.41.1
+
+### Bug Fixes
+
+* **core:** Restore pubsub subscriptions after Redis reconnect and detect half-open subscriber connections ([#39241](https://github.com/n8n-io/n8n/issues/39241)) ([b3196fb](https://github.com/n8n-io/n8n/commit/b3196fb520d4011ed66fdfcceb8da5da2b2e819d))
+
+
+### Features
+
+* **core:** Enable Agents by default ([#39328](https://github.com/n8n-io/n8n/issues/39328)) ([d8c49e2](https://github.com/n8n-io/n8n/commit/d8c49e2a3e85344e3d651bcf26dea90fa3707d2c))
+
+
 # Release 2.41.0
 
 ### Bug Fixes
