@@ -1,3 +1,10 @@
+# Release 2.42.2
+
+### Bug Fixes
+
+* **core:** Stop waiting on Bull job.finished() for queued executions ([#39945](https://github.com/n8n-io/n8n/issues/39945)) ([c7841e5](https://github.com/n8n-io/n8n/commit/c7841e551ffb264ef602cbf57e7852b6829ec651))
+
+
 # Release 2.42.1
 
 ### Bug Fixes
