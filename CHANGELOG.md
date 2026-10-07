@@ -1,3 +1,16 @@
+# Release 2.43.1
+
+### Bug Fixes
+
+* **editor:** Polish n8n Assistant and Execute button UI details ([#40438](https://github.com/n8n-io/n8n/issues/40438)) ([345ae01](https://github.com/n8n-io/n8n/commit/345ae0100c073de418cab4eaf3f48926b414e6e1))
+
+
+### Performance Improvements
+
+* **core:** Keep agent builder system prompt static for prompt caching ([#40441](https://github.com/n8n-io/n8n/issues/40441)) ([9ea7835](https://github.com/n8n-io/n8n/commit/9ea78350fa4a3972cbef036ccfd8355b0e127262))
+* **core:** Prepare Instance AI skill sandbox in the background ([#40442](https://github.com/n8n-io/n8n/issues/40442)) ([fda8dac](https://github.com/n8n-io/n8n/commit/fda8dac7d8bd7a3fe427285de281911d68f8f63b))
+
+
 # Release 2.43.0
 
 ### Bug Fixes
