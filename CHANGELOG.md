@@ -1,3 +1,11 @@
+# Release 2.43.3
+
+### Features
+
+* **core:** Block create/update of workflows with deprecated nodes ([#40706](https://github.com/n8n-io/n8n/issues/40706)) ([3c4f6e3](https://github.com/n8n-io/n8n/commit/3c4f6e33934adf29d2c76e7723256fa5b69b9ab9))
+* **Google Gemini Node:** Show Nano Banana 2.1 and 2 Lite in the image model list ([#40655](https://github.com/n8n-io/n8n/issues/40655)) ([1830ccf](https://github.com/n8n-io/n8n/commit/1830ccfcda55fc948197fbb88ac7438211a39940))
+
+
 # Release 2.43.2
 
 ### Bug Fixes
