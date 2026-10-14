@@ -1,3 +1,10 @@
+# Release 2.44.1
+
+### Features
+
+* Show Gemini models by name and list prioritized models first in model pickers ([#41015](https://github.com/n8n-io/n8n/issues/41015)) ([321b020](https://github.com/n8n-io/n8n/commit/321b0203b73e3351c766cbece6a8f79c800d453f))
+
+
 # Release 2.44.0
 
 ### Bug Fixes
