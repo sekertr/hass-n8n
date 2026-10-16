@@ -1,3 +1,10 @@
+# Release 2.44.3
+
+### Bug Fixes
+
+* **core:** Keep Observer detail lines instead of discarding the response ([#41157](https://github.com/n8n-io/n8n/issues/41157)) ([c09e0a9](https://github.com/n8n-io/n8n/commit/c09e0a94f57d7b046232b78f6cf2c9066784f87e))
+
+
 # Release 2.44.2
 
 ### Bug Fixes
